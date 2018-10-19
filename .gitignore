@@ -34,3 +34,4 @@
 # Codeblock folders
 */obj
 **/bin
+*.layout
