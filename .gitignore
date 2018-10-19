@@ -32,7 +32,5 @@
 *.app
 
 # Codeblock folders
-/bin/
-/bin/Debug/
-/obj/
-
+*/obj
+**/bin
