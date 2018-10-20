@@ -59,8 +59,8 @@
 		<Unit filename="Model/Character.h" />
 		<Unit filename="Model/Warrior.cpp" />
 		<Unit filename="Model/Warrior.h" />
-		<Unit filename="View/Map.cpp" />
-		<Unit filename="View/Map.h" />
+		<Unit filename="View/TileMap.cpp" />
+		<Unit filename="View/TileMap.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<envvars />
