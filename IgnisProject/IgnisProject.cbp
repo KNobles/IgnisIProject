@@ -23,6 +23,9 @@
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
 					<Add directory="/usr/lib" />
 					<Add directory="libraries/SFML-2.5.1/lib" />
 				</Linker>
