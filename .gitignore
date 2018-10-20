@@ -33,6 +33,6 @@
 
 # Codeblock folders
 */obj
-**/bin
+**/IgnisProject/bin
 *.layout
 *.depend
