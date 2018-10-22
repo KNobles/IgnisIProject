@@ -1,18 +1,23 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
 #include <iostream>
 #include "TileMap.h"
 #include "Warrior.h"
 
+using namespace std;
 void create(){
     Warrior *w = new Warrior();
 }
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(512, 512), "TileMap test");
-    sf::CircleShape shape(100.f);
+    int width = 512;
+    int height = 512;
+    sf::RenderWindow window(sf::VideoMode(width, height), "TileMap test");
+    window.setFramerateLimit(60);
+    sf::CircleShape shape(8.f);
     shape.setFillColor(sf::Color::Green);
-
     const int level[] =
     {
         32, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -36,10 +41,31 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && shape.getPosition().y+16 < height)
+            {
+                shape.move(0,16.f);
+                cout << "x: " << shape.getPosition().x << " y: " << shape.getPosition().y << endl;
+            }
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && shape.getPosition().y > 0)
+            {
+                shape.move(0,-16.f);
+                cout << "x: " << shape.getPosition().x << " y: " << shape.getPosition().y << endl;            }
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && shape.getPosition().x+16 < width)
+            {
+                shape.move(16.f, 0);
+                cout << "x: " << shape.getPosition().x << " y: " << shape.getPosition().y << endl;
+            }
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && shape.getPosition().x > 0)
+            {
+                shape.move(-16.f, 0);
+                cout << "x: " << shape.getPosition().x << " y: " << shape.getPosition().y << endl;
+            }
         }
 
         window.clear();
         window.draw(map);
+        window.draw(shape);
         window.display();
     }
 
@@ -47,7 +73,7 @@ int main()
 
     Warrior *w1 = new Warrior();
 
-    cout << w1->str();
+    std::cout << w1->str();
 
 
     return 0;
