@@ -1,5 +1,11 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "TileMap.h"
+#include "Warrior.h"
+
+void create(){
+    Warrior *w = new Warrior();
+}
 
 int main()
 {
@@ -36,6 +42,13 @@ int main()
         window.draw(map);
         window.display();
     }
+
+
+
+    Warrior *w1 = new Warrior();
+
+    cout << w1->str();
+
 
     return 0;
 }
