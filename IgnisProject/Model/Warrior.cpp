@@ -1,23 +1,33 @@
 #include "Warrior.h"
 
-Warrior::Warrior()
+Warrior::Warrior():Character()
 {
-    //ctor
+    this->setName("Kevin");
+    this->setHealth(200);
+    this->setStrength(20);
+    this->setDefense(30);
+    this->setSpeed(4);
+    this->setMovement(6);
 }
 
 Warrior::~Warrior()
 {
-    //dtor
+    std::cout << "Warrior Destructor" << std::endl;
 }
-
-Warrior::Warrior(const Warrior& other)
+/*
+Warrior::Warrior(const Warrior& other):Character(const Character& other)
 {
     //copy ctor
 }
 
-Warrior& Warrior::operator=(const Warrior& rhs)
+Warrior& Warrior::operator=(const Warrior& rhs):Character::operator=(const Character& rhs)
 {
-    if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
-    return *this;
+
+}
+*/
+std::string Warrior::str()const{
+    stringstream strs;
+    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength()
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() << endl;
+    return strs.str();
 }

@@ -2,7 +2,7 @@
 #define CHARACTER_H
 #include<string>
 #include<sstream>
-
+#include<iostream>
 
 class Character
 {
@@ -31,7 +31,7 @@ class Character
         int getSpeed()const;
         int getMovement()const;
         std::string getName()const;
-        int getCharId()const;
+        int* getCharId()const;
 
 
         void setHealth(const int health);
@@ -42,7 +42,8 @@ class Character
         void setCharId(const int* id);
         void setMovement(const int movement);
 
-        virtual void str()const = 0;     //Fonction virtuelle pure qui rend la classe abstraite.
+        virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
+
 
 
 
