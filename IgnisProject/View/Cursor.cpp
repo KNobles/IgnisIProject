@@ -1,15 +1,44 @@
 #include "Cursor.h"
 
 
-Cursor::Cursor(float radius, sf::Color color)
+Cursor::Cursor()
 {
-    this->setFillColor(color);
-    this->setRadius(radius);
+    this->setFillColor(sf::Color::Transparent);
+    this->setOutlineThickness(1.f);
+    this->setOutlineColor(sf::Color::Blue);
+    this->setSize(sf::Vector2f(16.f, 16.f));
+}
+
+Cursor::Cursor(float size, float thickness, sf::Color color)
+{
+    this->setFillColor(sf::Color::Transparent);
+    this->setOutlineThickness(1.f);
+    this->setOutlineColor(color);
+    this->setSize(sf::Vector2f(size, size));
 }
 
 Cursor::~Cursor()
 {
     //dtor
+}
+
+Cursor& Cursor::operator=(const Cursor& rhs)
+{
+    if(this == &rhs) return *this;
+
+    this->setFillColor(rhs.getFillColor());
+    this->setOutlineColor(rhs.getOutlineColor());
+    this->setOutlineThickness(rhs.getOutlineThickness());
+    this->setSize(rhs.getSize());
+    return *this;
+}
+
+Cursor::Cursor(const Cursor& cursor)
+{
+    this->setFillColor(cursor.getFillColor());
+    this->setOutlineColor(cursor.getOutlineColor());
+    this->setOutlineThickness(cursor.getOutlineThickness());
+    this->setSize(cursor.getSize());
 }
 
 void Cursor::setMovement()

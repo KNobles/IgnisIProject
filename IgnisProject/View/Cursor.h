@@ -5,11 +5,15 @@
 #include <SFML/System.hpp>
 #include <iostream>
 using namespace std;
-class Cursor : public sf::CircleShape
+class Cursor : public sf::RectangleShape
 {
     public:
-        Cursor(float radius, sf::Color color);
+        Cursor(float size, float thickness, sf::Color color);
+        Cursor();
+//        Cursor(float size=16.f, float thickness=1.f, sf::Color color=sf::Color::Blue);
         virtual ~Cursor();
+        Cursor& operator=(const Cursor& cursor);
+        Cursor(const Cursor& cursor);
         void setMovement();
 
     protected:
