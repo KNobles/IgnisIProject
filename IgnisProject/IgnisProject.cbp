@@ -54,6 +54,8 @@
 		<Unit filename="Model/Character.h" />
 		<Unit filename="Model/Warrior.cpp" />
 		<Unit filename="Model/Warrior.h" />
+		<Unit filename="View/Cursor.cpp" />
+		<Unit filename="View/Cursor.h" />
 		<Unit filename="View/TileMap.cpp" />
 		<Unit filename="View/TileMap.h" />
 		<Unit filename="main.cpp" />

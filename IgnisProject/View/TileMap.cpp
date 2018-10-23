@@ -1,5 +1,5 @@
 #include "TileMap.h"
-
+#include <iostream>
 TileMap::TileMap()
 {
     //ctor
@@ -26,7 +26,7 @@ bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize, const int*
         {
             // get the current tile number
             int tileNumber = tiles[i + j * width];
-
+//            std::cout << "TILE NUMBER :" << tiles->at(i + j * width) << std::endl;
             // find its position in the tileset texture
             int tu = tileNumber % (m_tileset.getSize().x / tileSize.x);
             int tv = tileNumber / (m_tileset.getSize().x / tileSize.x);

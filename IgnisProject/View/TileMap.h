@@ -1,7 +1,7 @@
 #ifndef TILEMAP_H
 #define TILEMAP_H
 #include <SFML/Graphics.hpp>
-
+#include <vector>
 
 class TileMap : public sf::Drawable, public sf::Transformable
 {

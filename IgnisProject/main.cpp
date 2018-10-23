@@ -5,24 +5,44 @@
 #include "TileMap.h"
 #include "Warrior.h"
 #include "Cursor.h"
+#include<sstream>
+#include<fstream>
+#include<iomanip>
 
 using namespace std;
 void create(){
     Warrior *w = new Warrior();
 }
 
+const int WIDTH = 800;
+const int HEIGHT = 608;
+
 int main()
 {
-    Cursor myCursor(8.f, sf::Color::Red);
-    int width = 512;
-    int height = 512;
-    sf::RenderWindow window(sf::VideoMode(width, height), "TileMap test");
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    sf::CircleShape shape(8.f);
-    shape.setFillColor(sf::Color::Green);
+    Cursor myCursor(8.f, sf::Color::Red);
+    sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
+    view.setViewport(sf::FloatRect(0, 0, 2.5f, 2.5f));
+
+    ifstream infile("Assets/Sprites/Tiles/map1.txt", ios::in);
+    cout << "AVANT" << endl;
+    int x,y;
+    infile >> x >> y;
+    int lvl[x] = {0};
+    for(int i = 0; i <= y; i++)
+    {
+        for(int j = 0; j <= x; j++)
+        {
+            infile >> lvl[j];
+            cout << lvl[j];
+        }
+        cout << endl;
+    }
+
     const int level[] =
     {
-        32, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        705, 705, 96, 487, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0,
         1, 1, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3,
         0, 1, 0, 0, 2, 0, 3, 3, 3, 0, 1, 1, 1, 0, 0, 0,
@@ -36,6 +56,17 @@ int main()
     TileMap map;
     if (!map.load("Assets/Sprites/Tiles/Arcadia Temple.png", sf::Vector2u(16, 16), level, 16, 8))
         return -1;
+
+    cout << "APRES" << endl;
+        for(int i = 0; i <= y; i++)
+    {
+        for(int j = 0; j <= x; j++)
+        {
+            cout << lvl[j];
+        }
+        cout << endl;
+    }
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -48,16 +79,15 @@ int main()
         }
 
         window.clear();
+        window.setView(view);
         window.draw(map);
         window.draw(myCursor);
         window.display();
     }
 
-
-
     Warrior *w1 = new Warrior();
 
-    std::cout << w1->str();
+    cout << w1->str();
 
 
     return 0;

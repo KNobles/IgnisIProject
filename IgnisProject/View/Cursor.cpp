@@ -3,8 +3,8 @@
 
 Cursor::Cursor(float radius, sf::Color color)
 {
-    this->setRadius(radius);
     this->setFillColor(color);
+    this->setRadius(radius);
 }
 
 Cursor::~Cursor()
