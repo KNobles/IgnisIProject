@@ -21,7 +21,7 @@ int main()
     srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    Cursor myCursor(8.f, sf::Color::Red);
+    Cursor myCursor(8.f, 1.5f,  sf::Color::Red);
     sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
     view.setViewport(sf::FloatRect(0, 0, 2.5f, 2.5f));
 

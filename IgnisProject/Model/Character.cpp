@@ -135,6 +135,11 @@ void Character::setSpeed(const int speed){
         this->speed = speed;
 }
 
+void Character::die()
+{
+    delete this;
+}
+
 void Character::setStrength(const int strength){
     if(strength>0)
         this->strength = strength;
