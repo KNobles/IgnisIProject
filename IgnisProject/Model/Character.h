@@ -3,6 +3,7 @@
 #include<string>
 #include<sstream>
 #include<iostream>
+#include "Weapon.h"
 
 class Character
 {
@@ -54,6 +55,7 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
 
+        void die();
         virtual void attack(Character& c)const;
         virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
