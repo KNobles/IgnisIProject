@@ -56,6 +56,22 @@ int Character::getDefense()const{
     return defense;
 }
 
+int Character::getSkill()const{
+    return skill;
+}
+
+int Character::getResistance()const{
+    return resistance;
+}
+
+int Character::getMagic()const{
+    return magic;
+}
+
+int Character::getLuck()const{
+    return luck;
+}
+
 int Character::getMovement()const{
     return movement;
 }
@@ -86,6 +102,29 @@ void Character::setDefense(const int defense){
         this->defense = defense;
 }
 
+void Character::setSkill(const int skill){
+    if(skill>0)
+        this->skill = skill;
+}
+
+void Character::setResistance(const int resistance)
+{
+    if(resistance>0)
+        this->resistance = resistance;
+}
+
+void Character::setMagic(const int magic)
+{
+    if(magic>0)
+        this->magic = magic;
+}
+
+void Character::setLuck(const int luck)
+{
+    if(luck>0)
+        this->luck = luck;
+}
+
 void Character::setMovement(const int movement){
     if(movement>0)
         this->movement = movement;
@@ -101,4 +140,23 @@ void Character::setStrength(const int strength){
         this->strength = strength;
 }
 
+void Character::attack(Character& c)const{
+}
 
+void combat(Character& c1, Character& c2){
+    int diff = c1.getSpeed() - c2.getSpeed();
+    if(diff >= 5){
+        c1.attack(c2);
+        c2.attack(c1);
+        c1.attack(c2);
+    }
+    else if(diff <= -5 ){
+        c1.attack(c2);
+        c2.attack(c1);
+        c2.attack(c1);
+    }
+    else{
+        c1.attack(c2);
+        c2.attack(c1);
+    }
+}

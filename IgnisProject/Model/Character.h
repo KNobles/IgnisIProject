@@ -11,6 +11,10 @@ class Character
         std::string name;
         int health;
         int strength;
+        int magic;
+        int skill;
+        int resistance;
+        int luck;
         int defense;
         int speed;
         int movement;
@@ -30,6 +34,10 @@ class Character
         int getDefense()const;
         int getSpeed()const;
         int getMovement()const;
+        int getSkill()const;
+        int getResistance()const;
+        int getMagic()const;
+        int getLuck()const;
         std::string getName()const;
         int* getCharId()const;
 
@@ -41,14 +49,14 @@ class Character
         void setName(const std::string name);
         void setCharId(const int* id);
         void setMovement(const int movement);
+        void setSkill(const int skill);
+        void setResistance(const int resistance);
+        void setMagic(const int magic);
+        void setLuck(const int luck);
 
+        virtual void attack(Character& c)const;
         virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
-
-
-
-
-
-
+        friend void combat(Character& c1, Character& c2);
 };
 
 #endif // CHARACTER_H

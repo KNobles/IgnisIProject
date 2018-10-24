@@ -8,20 +8,20 @@
 #include<sstream>
 #include<fstream>
 #include<iomanip>
+#include<time.h>
 
 using namespace std;
-void create(){
-    Warrior *w = new Warrior();
-}
 
 const int WIDTH = 800;
 const int HEIGHT = 608;
-const int TILE_SIZE = 16;
+
 int main()
 {
+
+    srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    Cursor myCursor(TILE_SIZE, 1.4f, sf::Color::Red);
+    Cursor myCursor(8.f, sf::Color::Red);
     sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
     view.setViewport(sf::FloatRect(0, 0, 2.5f, 2.5f));
 
@@ -54,7 +54,7 @@ int main()
 
     // create the tilemap from the level definition
     TileMap map;
-    if (!map.load("Assets/Sprites/Tiles/Arcadia Temple.png", sf::Vector2u(TILE_SIZE, TILE_SIZE), level, 16, 8))
+    if (!map.load("Assets/Sprites/Tiles/Arcadia Temple.png", sf::Vector2u(16, 16), level, 16, 8))
         return -1;
 
     cout << "APRES" << endl;
@@ -74,6 +74,7 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+
             myCursor.setMovement();
         }
 
@@ -84,9 +85,15 @@ int main()
         window.display();
     }
 
-    Warrior *w1 = new Warrior();
+    Warrior *w1 = new Warrior("Kevin");
+    Warrior *w2 = new Warrior("Axel");
+
+
+
+    combat(*w1, *w2);
 
     cout << w1->str();
+    cout << w2->str();
 
 
     return 0;
