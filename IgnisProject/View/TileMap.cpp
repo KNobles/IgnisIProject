@@ -1,5 +1,6 @@
 #include "TileMap.h"
 #include <iostream>
+#include <algorithm>
 TileMap::TileMap()
 {
     //ctor
@@ -48,6 +49,51 @@ bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize, const int*
         }
 
     return true;
+}
+
+int TileMap::fileLines(std::ifstream& infile)const
+{
+    int count = 0;
+    std::string line;
+    infile.open("Assets/Sprites/Tiles/map1.txt");
+
+    while (getline(infile, line))
+    {
+        count++;
+    }
+    infile.close();
+    return count;
+}
+
+bool TileMap::loadLevel1()
+{
+    std::ifstream infile;
+    infile.open("Assets/Sprites/Tiles/map1.txt");
+    int index;
+    std::vector<int> arr;
+    while(infile >> index)
+    {
+        arr.push_back(index);
+    }
+    infile.close();
+
+    int lvl[arr.size()];
+
+    std::copy(arr.begin(), arr.end(), lvl);
+    for(int i = 0; i < arr.size(); i++)
+    {
+        if(i%32 == 0)
+        {
+            std::cout << std::endl;
+        }
+        std::cout << lvl[i];
+    }
+    int tileHeight = fileLines(infile);
+    int tileWidth = arr.size()/tileHeight;
+    if (!this->load("Assets/Sprites/Tiles/Castle Blue.png", sf::Vector2u(16, 16), lvl, tileWidth, tileHeight))
+        return -1;
+
+
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const

@@ -43,23 +43,23 @@ Cursor::Cursor(const Cursor& cursor)
 
 void Cursor::setMovement()
 {
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->getPosition().y+16 < 512)
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->getPosition().y < 600-16)
     {
         this->move(0,16.f);
-        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
+        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && this->getPosition().y > 0)
     {
         this->move(0,-16.f);
-        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->getPosition().x+16 < 512)
+        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->getPosition().x < 800-16)
     {
         this->move(16.f, 0);
-        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
+        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && this->getPosition().x > 0)
     {
         this->move(-16.f, 0);
-        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
+        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
     }
 }
