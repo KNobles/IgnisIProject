@@ -14,6 +14,45 @@ using namespace std;
 
 const int WIDTH = 800;
 const int HEIGHT = 608;
+<<<<<<< HEAD
+=======
+int file(string &fileName)
+{
+    char newLine = '.';
+    int numLines = 0;
+    string text;
+    ifstream openFile(fileName.c_str());
+
+    cout << endl;
+
+    if(!openFile)
+    {
+        cerr << "Error, file does not exist. " << endl;
+        exit(EXIT_FAILURE);
+    }
+
+    srand(time(NULL));
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
+    window.setFramerateLimit(60);
+    Cursor myCursor(8.f, 1.5f,  sf::Color::Red);
+    sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
+    view.setViewport(sf::FloatRect(0, 0, 2.5f, 2.5f));
+
+    while(getline(openFile, text, '\n'))
+    {
+        for(unsigned int i=0; i< text.length(); i++)
+        {
+            if(text.at(i) == newLine)
+            {
+                numLines++;
+            }
+        }
+    }
+
+    return numLines;
+}
+
+>>>>>>> refs/remotes/origin/master
 
 int main()
 {
