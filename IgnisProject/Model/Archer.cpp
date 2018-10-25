@@ -2,7 +2,7 @@
 
 const WeaponType Archer::types[] = {WeaponType::bow};
 
-Archer::Archer(std::string name):public Character ()
+Archer::Archer(std::string name):Character ()
 {
     this->setName(name);
     this->setHealth(16);
@@ -24,10 +24,10 @@ Archer::Archer(const Archer& other)
 {
     //copy ctor
 }
-Archer::Weapon getWeapon()const{
-    return weapon
+Weapon Archer::getWeapon()const{
+    return weapon;
 }
-Archer::void setWeapon(const Weapon weapon){
+void Archer::setWeapon(const Weapon weapon){
     this->weapon=weapon;
 }
 Archer& Archer::operator=(const Archer& rhs)

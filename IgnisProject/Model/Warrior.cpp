@@ -14,6 +14,7 @@ Warrior::Warrior(std::string name):Character()
     this->setLuck(6);
     this->setMagic(0);
     this->setResistance(3);
+    this->setExp(0);
 }
 
 Warrior::~Warrior()
@@ -73,4 +74,9 @@ std::string Warrior::str()const{
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength()
     << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() << endl;
     return strs.str();
+}
+void Warrior::setExp(const int exp){
+    if(this->getExp()>=100){
+
+    }
 }

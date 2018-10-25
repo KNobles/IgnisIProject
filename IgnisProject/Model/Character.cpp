@@ -83,6 +83,9 @@ int Character::getSpeed()const{
 int Character::getStrength()const{
     return strength;
 }
+int Character::getExp()const{
+    return exp;
+}
 
 std::string Character::getName()const{
     return name;
@@ -134,6 +137,10 @@ void Character::setSpeed(const int speed){
     if(speed>0)
         this->speed = speed;
 }
+void Character::setExp(const int exp){
+    if(exp>0)
+        this->exp = exp;
+}
 
 void Character::die()
 {
@@ -165,3 +172,4 @@ void combat(Character& c1, Character& c2){
         c2.attack(c1);
     }
 }
+

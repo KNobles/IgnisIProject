@@ -19,7 +19,7 @@ class Character
         int defense;
         int speed;
         int movement;
-
+        int exp;
         static int increment;
 
     public:
@@ -28,7 +28,6 @@ class Character
         Character(const Character& other);
         Character& operator=(const Character& other);
         bool operator==(const Character& c)const;
-
 
         int getHealth()const;
         int getStrength()const;
@@ -41,7 +40,7 @@ class Character
         int getLuck()const;
         std::string getName()const;
         int* getCharId()const;
-
+        int getExp()const;
 
         void setHealth(const int health);
         void setStrength(const int strenth);
@@ -54,11 +53,13 @@ class Character
         void setResistance(const int resistance);
         void setMagic(const int magic);
         void setLuck(const int luck);
+        void setExp(const int exp);
 
         void die();
         virtual void attack(Character& c)const;
         virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
+
 };
 
 #endif // CHARACTER_H
