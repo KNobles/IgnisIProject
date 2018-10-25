@@ -13,8 +13,8 @@ class TileMap : public sf::Drawable, public sf::Transformable
 
         bool load(const std::string& tileset, sf::Vector2u tileSize, const int* tiles, unsigned int width, unsigned int height);
         bool loadLevel1();
-        int fileLines(std::ifstream& infile)const;
-
+        int fileLines(std::ifstream& infile, std::string fileName)const;
+        bool loadFromFile(std::string fileName, std::string imageName);
 
     protected:
 

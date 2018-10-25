@@ -51,11 +51,11 @@ bool TileMap::load(const std::string& tileset, sf::Vector2u tileSize, const int*
     return true;
 }
 
-int TileMap::fileLines(std::ifstream& infile)const
+int TileMap::fileLines(std::ifstream& infile, std::string fileName)const
 {
     int count = 0;
     std::string line;
-    infile.open("Assets/Sprites/Tiles/map1.txt");
+    infile.open("Assets/Sprites/Tiles/" + fileName);
 
     while (getline(infile, line))
     {
@@ -65,11 +65,11 @@ int TileMap::fileLines(std::ifstream& infile)const
     return count;
 }
 
-bool TileMap::loadLevel1()
+bool TileMap::loadFromFile(std::string fileName, std::string imageName)
 {
     std::ifstream infile;
-    infile.open("Assets/Sprites/Tiles/map1.txt");
     int index;
+    infile.open("Assets/Sprites/Tiles/" + fileName);
     std::vector<int> arr;
     while(infile >> index)
     {
@@ -77,23 +77,19 @@ bool TileMap::loadLevel1()
     }
     infile.close();
 
+    int tileHeight = fileLines(infile, fileName);
+    int tileWidth = arr.size()/tileHeight;
     int lvl[arr.size()];
 
     std::copy(arr.begin(), arr.end(), lvl);
-    for(int i = 0; i < arr.size(); i++)
-    {
-        if(i%32 == 0)
-        {
-            std::cout << std::endl;
-        }
-        std::cout << lvl[i];
-    }
-    int tileHeight = fileLines(infile);
-    int tileWidth = arr.size()/tileHeight;
-    if (!this->load("Assets/Sprites/Tiles/Castle Blue.png", sf::Vector2u(16, 16), lvl, tileWidth, tileHeight))
+
+    if (!this->load("Assets/Sprites/Tiles/" + imageName, sf::Vector2u(16, 16), lvl, tileWidth, tileHeight))
         return -1;
+}
 
-
+bool TileMap::loadLevel1()
+{
+    return loadFromFile("map1.txt", "Castle Blue.png");
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
