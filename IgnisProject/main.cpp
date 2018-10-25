@@ -46,7 +46,8 @@ int main()
         window.display();
     }
 //
-//    Warrior *w1 = new Warrior("Kevin");
+      Warrior *w1 = new Warrior("Kevin");
+      cout<<w1->str()<<endl;
 //    Warrior *w2 = new Warrior("Axel");
 //
 //

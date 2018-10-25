@@ -32,7 +32,6 @@ class Warrior : public Character
         Weapon getWeapon()const;
         void setWeapon(const Weapon weapon);
 
-        void setExp(const int exp);
 
         void attack(Character& c)const override;
         std::string str()const override;    //Redéfinition de la fonction virtuelle de Character

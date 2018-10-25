@@ -20,6 +20,7 @@ class Character
         int speed;
         int movement;
         int exp;
+        int level;
         static int increment;
 
     public:
@@ -41,6 +42,7 @@ class Character
         std::string getName()const;
         int* getCharId()const;
         int getExp()const;
+        int getLevel()const;
 
         void setHealth(const int health);
         void setStrength(const int strenth);
@@ -54,6 +56,7 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
         void setExp(const int exp);
+        void setLevel(const int level);
 
         void die();
         virtual void attack(Character& c)const;

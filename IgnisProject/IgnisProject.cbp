@@ -19,6 +19,7 @@
 					<Add directory="libraries/SFML-2.5.1/include" />
 					<Add directory="Model" />
 					<Add directory="View" />
+					<Add directory="Model/" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-s-d" />
@@ -37,6 +38,7 @@
 					<Add option="-O2" />
 					<Add directory="Model" />
 					<Add directory="View" />
+					<Add directory="Model/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -50,6 +52,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Model/Archer.cpp" />
+		<Unit filename="Model/Archer.h" />
 		<Unit filename="Model/Character.cpp" />
 		<Unit filename="Model/Character.h" />
 		<Unit filename="Model/Warrior.cpp" />
