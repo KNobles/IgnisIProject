@@ -76,3 +76,23 @@ std::string Warrior::str()const{
     << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() <<" EXPERIENCE :" <<getExp() <<" LEVEL :" <<getLevel()<<endl;
     return strs.str();
 }
+void Warrior::addExp(const int exp){
+    int tmp= this->getExp();
+    int cmp=0 ;
+    if(exp>0)
+        tmp+=exp;
+    if(tmp>100){
+         cmp=tmp/100;
+         tmp=tmp%100;
+        this->addLevel(cmp);
+    }
+    this->setExp(tmp);
+
+}
+void Warrior::addLevel(const int level){
+    int tmp =this->getLevel();
+    if(level>0){
+        tmp+=level;
+    }
+    this->setLevel(tmp);
+}

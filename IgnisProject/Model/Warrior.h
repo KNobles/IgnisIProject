@@ -32,6 +32,8 @@ class Warrior : public Character
         Weapon getWeapon()const;
         void setWeapon(const Weapon weapon);
 
+        void addExp(const int exp);
+        void addLevel(const int level);
 
         void attack(Character& c)const override;
         std::string str()const override;    //Redéfinition de la fonction virtuelle de Character

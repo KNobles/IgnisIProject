@@ -63,6 +63,9 @@ class Character
         virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
 
+        virtual void addExp(const int exp);
+        virtual void addLevel(const int level);
+
 };
 
 #endif // CHARACTER_H

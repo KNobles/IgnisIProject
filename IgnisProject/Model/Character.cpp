@@ -103,53 +103,53 @@ void Character::setName(const std::string name){
 }
 
 void Character::setHealth(const int health){
-    if(health>0)
+    if(health>=0)
         this->health = health;
 }
 
 void Character::setDefense(const int defense){
-    if(defense>0)
+    if(defense>=0)
         this->defense = defense;
 }
 
 void Character::setSkill(const int skill){
-    if(skill>0)
+    if(skill>=0)
         this->skill = skill;
 }
 
 void Character::setResistance(const int resistance)
 {
-    if(resistance>0)
+    if(resistance>=0)
         this->resistance = resistance;
 }
 
 void Character::setMagic(const int magic)
 {
-    if(magic>0)
+    if(magic>=0)
         this->magic = magic;
 }
 
 void Character::setLuck(const int luck)
 {
-    if(luck>0)
+    if(luck>=0)
         this->luck = luck;
 }
 
 void Character::setMovement(const int movement){
-    if(movement>0)
+    if(movement>=0)
         this->movement = movement;
 }
 
 void Character::setSpeed(const int speed){
-    if(speed>0)
+    if(speed>=0)
         this->speed = speed;
 }
 void Character::setExp(const int exp){
-    if(exp>0)
+    if(exp>=0)
         this->exp = exp;
 }
 void Character::setLevel(const int level){
-    if(level>0)
+    if(level>=0)
         this->level=level;
 }
 
@@ -183,4 +183,7 @@ void combat(Character& c1, Character& c2){
         c2.attack(c1);
     }
 }
-
+void Character::addExp(const int exp){
+}
+void Character::addLevel(const int level){
+}
