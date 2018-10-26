@@ -4,7 +4,8 @@
 #include <iostream>
 #include "TileMap.h"
 #include "Warrior.h"
-#include "Cursor.h"
+#include "Selector.h"
+#include "Animation.h"
 #include<sstream>
 #include<fstream>
 #include<iomanip>
@@ -23,22 +24,30 @@ int main()
     srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    Cursor myCursor(16.f,1.f, sf::Color::Red);
+    Selector myCursor("mapCursor.png");
     sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
     view.setViewport(sf::FloatRect(0, 0, 2.f, 2.f));
+    sf::Texture playerTexture;
 
+    playerTexture.loadFromFile("Assets/Sprites/Tiles/cursor.png");
+    Animation animation(&myCursor.getTexture(), sf::Vector2u(2, 1), 0.3f);
+    float deltaTime = .0f;
+    sf::Clock clock;
 
     while (window.isOpen())
     {
+        deltaTime = clock.restart().asSeconds();
+
         sf::Event event;
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
                 window.close();
-
-            myCursor.setMovement();
+            myCursor.updatePosition();
         }
 
+        animation.update(0, deltaTime);
+        myCursor.setTextureRect(animation.uvRect);
         window.clear();
         window.setView(view);
         window.draw(map);
@@ -51,11 +60,7 @@ int main()
 //    w1->addExp(320);
 //    cout<<w1->str()<<endl;
 //    Warrior *w2 = new Warrior("Axel");
-//
-//
-//
 //    combat(*w1, *w2);
-
 
     return 0;
 }

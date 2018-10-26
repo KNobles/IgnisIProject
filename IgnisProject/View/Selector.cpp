@@ -1,47 +1,42 @@
-#include "Cursor.h"
+#include "Selector.h"
 
 
-Cursor::Cursor()
+Selector::Selector(std::string name)
 {
-    this->setFillColor(sf::Color::Transparent);
-    this->setOutlineThickness(1.f);
-    this->setOutlineColor(sf::Color::Blue);
-    this->setSize(sf::Vector2f(16.f, 16.f));
+    if(!this->texture.loadFromFile("Assets/Sprites/Tiles/" + name))
+    {
+        std::cout << "FAILED TO LOAD" << std::endl;
+        system("pause");
+    }
+    this->setTexture(this->texture);
+//    this->setTextureRect(sf::IntRect(0,0, 16, 16));
 }
 
-Cursor::Cursor(float size, float thickness, sf::Color color)
+sf::Texture& Selector::getTexture()
 {
-    this->setFillColor(sf::Color::Transparent);
-    this->setOutlineThickness(1.f);
-    this->setOutlineColor(color);
-    this->setSize(sf::Vector2f(size, size));
+    return this->texture;
 }
 
-Cursor::~Cursor()
+Selector::~Selector()
 {
     //dtor
 }
 
-Cursor& Cursor::operator=(const Cursor& rhs)
+Selector& Selector::operator=(const Selector& rhs)
 {
     if(this == &rhs) return *this;
 
-    this->setFillColor(rhs.getFillColor());
-    this->setOutlineColor(rhs.getOutlineColor());
-    this->setOutlineThickness(rhs.getOutlineThickness());
-    this->setSize(rhs.getSize());
+    this->texture = rhs.texture;
     return *this;
 }
 
-Cursor::Cursor(const Cursor& cursor)
+Selector::Selector(const Selector& cursor)
 {
-    this->setFillColor(cursor.getFillColor());
-    this->setOutlineColor(cursor.getOutlineColor());
-    this->setOutlineThickness(cursor.getOutlineThickness());
-    this->setSize(cursor.getSize());
+        this->texture = cursor.texture;
+
 }
 
-void Cursor::setMovement()
+void Selector::updatePosition()
 {
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->getPosition().y < 600-16)
     {

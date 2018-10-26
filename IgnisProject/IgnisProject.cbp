@@ -60,8 +60,10 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
-		<Unit filename="View/Cursor.cpp" />
-		<Unit filename="View/Cursor.h" />
+		<Unit filename="View/Animation.cpp" />
+		<Unit filename="View/Animation.h" />
+		<Unit filename="View/Selector.cpp" />
+		<Unit filename="View/Selector.h" />
 		<Unit filename="View/TileMap.cpp" />
 		<Unit filename="View/TileMap.h" />
 		<Unit filename="main.cpp" />
