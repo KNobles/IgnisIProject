@@ -1,44 +1,44 @@
-#include "Sword.h"
+#include "Light.h"
 
-Sword::Sword():Weapon()
+Light::Light()
 {
     //ctor
 }
 
-Sword::~Sword()
+Light::~Light()
 {
     //dtor
 }
 
-Sword::Sword(const Sword& other)
+Light::Light(const Light& other)
 {
     //copy ctor
 }
 
-Sword& Sword::operator=(const Sword& rhs)
+Light& Light::operator=(const Light& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
     //assignment operator
     return *this;
 }
 
-float Sword::strategyAccuracy(const Character& att, const Character& def)const
+float Light::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula
     float accuracy = ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));
 
     //Weapon Triangle Advantage
-    if(def.getWeapon().TYPE == WeaponType::axe)
+    if(def.getWeapon().TYPE == WeaponType::dark)
         accuracy+=5;
 
     //Weapon Triangle Disadvantage
-    else if(def.getWeapon().TYPE == WeaponType::lance)
+    else if(def.getWeapon().TYPE == WeaponType::anima)
         accuracy-=5;
 
     return accuracy;
 }
 
-float Sword::strategyDamages(const Character& att, const Character& def)const
+float Light::strategyDamages(const Character& att, const Character& def)const
 {
-    return att.getStrength()+this->getDamages()-def.getDefense();
+    return att.getMagic()+this->getDamages()-def.getResistance();
 }
