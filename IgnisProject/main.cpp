@@ -24,13 +24,14 @@ int main()
     srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    Selector myCursor("mapCursor.png");
+    Selector myCursor("mapCursor3.png");
     sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
-    view.setViewport(sf::FloatRect(0, 0, 2.f, 2.f));
+
+    view.setViewport(sf::FloatRect(0, 0, 3.f, 3.f));
     sf::Texture playerTexture;
 
     playerTexture.loadFromFile("Assets/Sprites/Tiles/cursor.png");
-    Animation animation(&myCursor.getTexture(), sf::Vector2u(2, 1), 0.3f);
+    Animation animation(&myCursor.getTexture(), sf::Vector2u(2, 1), 1.f);
     float deltaTime = .0f;
     sf::Clock clock;
 
@@ -41,15 +42,21 @@ int main()
         sf::Event event;
         while (window.pollEvent(event))
         {
+
             if (event.type == sf::Event::Closed)
                 window.close();
             myCursor.updatePosition();
+//            cout << "VIEW: " << view.getCenter().x << endl;
+
         }
 
         animation.update(0, deltaTime);
         myCursor.setTextureRect(animation.uvRect);
         window.clear();
         window.setView(view);
+        sf::RectangleShape x(sf::Vector2f(16.f,16.f));
+        x.setFillColor(sf::Color::Red);
+        window.draw(x);
         window.draw(map);
         window.draw(myCursor);
         window.display();
