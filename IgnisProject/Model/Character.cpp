@@ -9,7 +9,7 @@ Character::Character()
 
 Character::~Character()
 {
-    std::cout << "Character Destructor" << std::endl;
+    cout << "Character Destructor" << endl;
     delete charId;
 }
 
@@ -87,11 +87,17 @@ int Character::getExp()const{
     return exp;
 }
 
-std::string Character::getName()const{
+string Character::getName()const{
     return name;
 }
 
-void Character::setName(const std::string name){
+Weapon& Character::getWeapon()const
+{
+    return *weapon;
+}
+
+
+void Character::setName(const string name){
     this->name = name;
 }
 
@@ -152,7 +158,41 @@ void Character::setStrength(const int strength){
         this->strength = strength;
 }
 
+void Character::setWeapon(Weapon& weapon)
+{
+        this->weapon = &weapon;
+}
+
 void Character::attack(Character& c)const{
+    //Accuracy = chances to hit from this - chances to avoid from c
+    float accuracy = this->getWeapon().strategyAccuracy(*this, c);
+
+    float critical = this->getWeapon().getCrit() + this->getSkill()/2;
+
+    int rate = rand()%100+1;
+
+    cout << rate << endl;
+
+    int damage = this->getWeapon().strategyDamages(*this, c);
+    if(damage<0)
+        damage=0;
+
+    if(rate <= critical)
+    {
+        c.setHealth(c.getHealth() - damage*2);
+        if(c.getHealth() <=0)
+            c.die();
+        cout << this->getName() << " dealt " << damage << endl;
+    }
+    else if (rate <= accuracy)
+    {
+        c.setHealth(c.getHealth() - damage);
+        if(c.getHealth() <=0)
+            c.die();
+        cout << this->getName() << " dealt " << damage << endl;
+    }
+    else
+        cout << this->getName() << " missed" << endl;
 }
 
 void combat(Character& c1, Character& c2){
