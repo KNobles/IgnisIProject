@@ -24,13 +24,10 @@ int main()
     srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TileMap test");
     window.setFramerateLimit(60);
-    Selector myCursor("mapCursor3.png");
+    Selector myCursor("selectorAnimated.png");
     sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
 
-    view.setViewport(sf::FloatRect(0, 0, 3.f, 3.f));
-    sf::Texture playerTexture;
-
-    playerTexture.loadFromFile("Assets/Sprites/Tiles/cursor.png");
+    view.setViewport(sf::FloatRect(0, 0, 2.f, 2.f));
     Animation animation(&myCursor.getTexture(), sf::Vector2u(2, 1), 1.f);
     float deltaTime = .0f;
     sf::Clock clock;
@@ -62,7 +59,8 @@ int main()
         window.display();
     }
 //
-//    Warrior *w1 = new Warrior("Kevin");
+    Warrior *w1 = new Warrior("Kevin");
+    cout << w1->str() << endl;
 //    Warrior *w2 = new Warrior("Axel");
 //    combat(*w1, *w2);
 

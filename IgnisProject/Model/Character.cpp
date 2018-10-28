@@ -179,7 +179,7 @@ void Character::attack(Character& c)const{
 
     if(rate <= critical)
     {
-        c.setHealth(c.getHealth() - damage*2);
+        c.setHealth(c.getHealth() - damage*3);
         if(c.getHealth() <=0)
             c.die();
         cout << this->getName() << " dealt " << damage << endl;
