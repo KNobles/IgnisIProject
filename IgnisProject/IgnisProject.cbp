@@ -56,6 +56,8 @@
 		<Unit filename="Model/Archer.h" />
 		<Unit filename="Model/Character.cpp" />
 		<Unit filename="Model/Character.h" />
+		<Unit filename="Model/Sword.cpp" />
+		<Unit filename="Model/Sword.h" />
 		<Unit filename="Model/Warrior.cpp" />
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />

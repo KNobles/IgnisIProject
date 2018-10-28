@@ -7,6 +7,7 @@
 #include<iostream>
 #include<thread>
 #include<vector>
+#include "Sword.h"
 
 
 using std::string;
@@ -20,22 +21,23 @@ class Warrior : public Character
 {
     private:
         static const WeaponType types[];
-        Weapon weapon;
 
 
     public:
-        Warrior(std::string name);
+        Warrior(string name);
         virtual ~Warrior();
         Warrior(const Warrior& other);
         Warrior& operator=(const Warrior& other);
 
-        Weapon getWeapon()const;
-        void setWeapon(const Weapon weapon);
 
+<<<<<<< HEAD
         void addExp(const int exp);
         void addLevel(const int level);
+=======
+        void setWeapon(Weapon& weapon);
+        void setExp(const int exp);
+>>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
 
-        void attack(Character& c)const override;
         std::string str()const override;    //Redéfinition de la fonction virtuelle de Character
 
     protected:

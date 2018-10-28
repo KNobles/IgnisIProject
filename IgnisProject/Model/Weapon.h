@@ -11,7 +11,7 @@ using std::endl;
 
 enum WeaponType {sword, axe, lance, bow, anima, light, dark, staff};
 
-
+class Character;
 class Weapon
 {
     private:
@@ -19,17 +19,19 @@ class Weapon
         static int increment;
 
         string name;
+        int damages;
         int hit;
         int range;
         int crit;
         int worth;
+        int uses;
 
     protected:
 
 
     public:
         const WeaponType TYPE;
-        Weapon(string name="DEFAULT", int hit=1, int range=1, int crit=0, int worth=1, WeaponType type=sword);
+        Weapon(string name="DEFAULT", int damages=1, int hit=85, int range=1, int crit=0, int worth=1, int uses = 40, WeaponType type=sword);
         virtual ~Weapon();
         Weapon(const Weapon& other);
         Weapon& operator=(const Weapon& other);
@@ -38,16 +40,24 @@ class Weapon
 
         int getId()const;
         string getName()const;
+        int getDamages()const;
         int getHit()const;
         int getRange()const;
         int getCrit()const;
         int getWorth()const;
+        int getDurability()const;
 
         void setName(const string name);
         void setHit(const int hit);
         void setRange(const int range);
         void setCrit(const int crit);
         void setWorth(const int worth);
+        void setDurability(const int uses);
+
+        void decrement();
+
+        virtual float strategyAccuracy(const Character& att, const Character& def)const=0;
+        virtual float strategyDamages(const Character& att, const Character& def)const=0;
 
         string str()const;
 

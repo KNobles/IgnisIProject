@@ -5,11 +5,16 @@
 #include<iostream>
 #include "Weapon.h"
 
+using std::string;
+using std::cout;
+using std::stringstream;
+using std::endl;
+
 class Character
 {
     private:
         int *charId;
-        std::string name;
+        string name;
         int health;
         int strength;
         int magic;
@@ -22,6 +27,7 @@ class Character
         int exp;
         int level;
         static int increment;
+        Weapon* weapon;
 
     public:
         Character();
@@ -39,16 +45,20 @@ class Character
         int getResistance()const;
         int getMagic()const;
         int getLuck()const;
-        std::string getName()const;
+        string getName()const;
         int* getCharId()const;
         int getExp()const;
+<<<<<<< HEAD
         int getLevel()const;
+=======
+        Weapon& getWeapon()const;
+>>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
 
         void setHealth(const int health);
         void setStrength(const int strenth);
         void setDefense(const int defense);
         void setSpeed(const int speed);
-        void setName(const std::string name);
+        void setName(const string name);
         void setCharId(const int* id);
         void setMovement(const int movement);
         void setSkill(const int skill);
@@ -56,11 +66,15 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
         void setExp(const int exp);
+<<<<<<< HEAD
         void setLevel(const int level);
+=======
+        void setWeapon(Weapon& weapon);
+>>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
 
         void die();
-        virtual void attack(Character& c)const;
-        virtual std::string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
+        void attack(Character& c)const;
+        virtual string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
 
         virtual void addExp(const int exp);
