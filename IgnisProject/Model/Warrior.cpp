@@ -15,8 +15,12 @@ Warrior::Warrior(std::string name):Character()
     this->setMagic(0);
     this->setResistance(3);
     this->setExp(0);
+
+    this->setLevel(0);
+
     Weapon *weapon = new Sword();
     setWeapon(*weapon);
+
 }
 
 Warrior::~Warrior()
@@ -46,11 +50,26 @@ void Warrior::setWeapon(Weapon& weapon)
 std::string Warrior::str()const{
     stringstream strs;
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() << endl;
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() <<" EXPERIENCE :" <<getExp() <<" LEVEL :" <<getLevel()<<endl;
     return strs.str();
 }
-void Warrior::setExp(const int exp){
-    if(this->getExp()>=100){
-
+void Warrior::addExp(const int exp){
+    int tmp= this->getExp();
+    int cmp=0 ;
+    if(exp>0)
+        tmp+=exp;
+    if(tmp>100){
+         cmp=tmp/100;
+         tmp=tmp%100;
+        this->addLevel(cmp);
     }
+    this->setExp(tmp);
+
+}
+void Warrior::addLevel(const int level){
+    int tmp =this->getLevel();
+    if(level>0){
+        tmp+=level;
+    }
+    this->setLevel(tmp);
 }

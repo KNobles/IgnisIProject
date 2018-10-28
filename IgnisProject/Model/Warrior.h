@@ -30,8 +30,12 @@ class Warrior : public Character
         Warrior& operator=(const Warrior& other);
 
 
+
+        void addExp(const int exp);
+        void addLevel(const int level);
+
         void setWeapon(Weapon& weapon);
-        void setExp(const int exp);
+
 
         std::string str()const override;    //Redéfinition de la fonction virtuelle de Character
 

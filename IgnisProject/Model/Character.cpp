@@ -22,6 +22,8 @@ Character::Character(const Character& other)
     this->speed = other.speed;
     this->movement = other.movement;
     this->charId = new int(*other.charId);
+    this->exp=other.exp;
+    this->level=other.level;
 }
 
 Character& Character::operator=(const Character& rhs)
@@ -33,6 +35,8 @@ Character& Character::operator=(const Character& rhs)
     this->defense = rhs.defense;
     this->speed = rhs.speed;
     this->movement = rhs.movement;
+    this->exp=rhs.exp;
+    this->level=rhs.exp;
     delete charId;
     this->charId = new int(*rhs.charId);
     return *this;
@@ -86,6 +90,9 @@ int Character::getStrength()const{
 int Character::getExp()const{
     return exp;
 }
+int Character::getLevel()const{
+    return level;
+}
 
 string Character::getName()const{
     return name;
@@ -102,50 +109,54 @@ void Character::setName(const string name){
 }
 
 void Character::setHealth(const int health){
-    if(health>0)
+    if(health>=0)
         this->health = health;
 }
 
 void Character::setDefense(const int defense){
-    if(defense>0)
+    if(defense>=0)
         this->defense = defense;
 }
 
 void Character::setSkill(const int skill){
-    if(skill>0)
+    if(skill>=0)
         this->skill = skill;
 }
 
 void Character::setResistance(const int resistance)
 {
-    if(resistance>0)
+    if(resistance>=0)
         this->resistance = resistance;
 }
 
 void Character::setMagic(const int magic)
 {
-    if(magic>0)
+    if(magic>=0)
         this->magic = magic;
 }
 
 void Character::setLuck(const int luck)
 {
-    if(luck>0)
+    if(luck>=0)
         this->luck = luck;
 }
 
 void Character::setMovement(const int movement){
-    if(movement>0)
+    if(movement>=0)
         this->movement = movement;
 }
 
 void Character::setSpeed(const int speed){
-    if(speed>0)
+    if(speed>=0)
         this->speed = speed;
 }
 void Character::setExp(const int exp){
-    if(exp>0)
+    if(exp>=0)
         this->exp = exp;
+}
+void Character::setLevel(const int level){
+    if(level>=0)
+        this->level=level;
 }
 
 void Character::die()
@@ -212,4 +223,7 @@ void combat(Character& c1, Character& c2){
         c2.attack(c1);
     }
 }
-
+void Character::addExp(const int exp){
+}
+void Character::addLevel(const int level){
+}

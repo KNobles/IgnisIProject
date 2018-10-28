@@ -52,10 +52,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Model/Anima.cpp" />
+		<Unit filename="Model/Anima.h" />
 		<Unit filename="Model/Archer.cpp" />
 		<Unit filename="Model/Archer.h" />
+		<Unit filename="Model/Axe.cpp" />
+		<Unit filename="Model/Axe.h" />
+		<Unit filename="Model/Bow.cpp" />
+		<Unit filename="Model/Bow.h" />
 		<Unit filename="Model/Character.cpp" />
 		<Unit filename="Model/Character.h" />
+		<Unit filename="Model/Dark.cpp" />
+		<Unit filename="Model/Dark.h" />
+		<Unit filename="Model/Lance.cpp" />
+		<Unit filename="Model/Lance.h" />
+		<Unit filename="Model/Light.cpp" />
+		<Unit filename="Model/Light.h" />
 		<Unit filename="Model/Sword.cpp" />
 		<Unit filename="Model/Sword.h" />
 		<Unit filename="Model/Warrior.cpp" />

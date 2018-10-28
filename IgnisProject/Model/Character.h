@@ -25,6 +25,7 @@ class Character
         int speed;
         int movement;
         int exp;
+        int level;
         static int increment;
         Weapon* weapon;
 
@@ -47,7 +48,10 @@ class Character
         string getName()const;
         int* getCharId()const;
         int getExp()const;
+        int getLevel()const;
+
         Weapon& getWeapon()const;
+
 
         void setHealth(const int health);
         void setStrength(const int strenth);
@@ -61,12 +65,19 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
         void setExp(const int exp);
+
+        void setLevel(const int level);
+
         void setWeapon(Weapon& weapon);
+
 
         void die();
         void attack(Character& c)const;
         virtual string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
+
+        virtual void addExp(const int exp);
+        virtual void addLevel(const int level);
 
 };
 

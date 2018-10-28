@@ -24,18 +24,21 @@ Archer::Archer(const Archer& other)
 {
     //copy ctor
 }
+
 //Weapon Archer::getWeapon()const{
 //    return weapon;
 //}
 //void Archer::setWeapon(const Weapon weapon){
 //    this->weapon=weapon;
 //}
+
 Archer& Archer::operator=(const Archer& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
     //assignment operator
     return *this;
 }
+
 
 //void Archer::attack(Character &c)const{
 //    //Normalement c'est un pourcentage de l'arme, ici on a mis 85. Pour le moins, en temps normal, on ajoute l'avoid de l'arme.
@@ -61,6 +64,7 @@ Archer& Archer::operator=(const Archer& rhs)
 //    else
 //        cout << this->getName() << " missed" << endl;
 //}
+
 std::string Archer::str()const{
     stringstream strs;
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength()
