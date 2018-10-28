@@ -15,12 +15,12 @@ Warrior::Warrior(std::string name):Character()
     this->setMagic(0);
     this->setResistance(3);
     this->setExp(0);
-<<<<<<< HEAD
+
     this->setLevel(0);
-=======
+
     Weapon *weapon = new Sword();
     setWeapon(*weapon);
->>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
+
 }
 
 Warrior::~Warrior()
@@ -49,13 +49,8 @@ void Warrior::setWeapon(Weapon& weapon)
 
 std::string Warrior::str()const{
     stringstream strs;
-<<<<<<< HEAD
-    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength()
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() <<" EXPERIENCE :" <<getExp() <<" LEVEL :" <<getLevel()<<endl;
-=======
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() << endl;
->>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() <<" EXPERIENCE :" <<getExp() <<" LEVEL :" <<getLevel()<<endl;
     return strs.str();
 }
 void Warrior::addExp(const int exp){

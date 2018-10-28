@@ -24,12 +24,6 @@ Archer::Archer(const Archer& other)
 {
     //copy ctor
 }
-Weapon Archer::getWeapon()const{
-    return weapon;
-}
-void Archer::setWeapon(const Weapon weapon){
-    this->weapon=weapon;
-}
 Archer& Archer::operator=(const Archer& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
@@ -37,30 +31,6 @@ Archer& Archer::operator=(const Archer& rhs)
     return *this;
 }
 
-void Archer::attack(Character &c)const{
-    //Normalement c'est un pourcentage de l'arme, ici on a mis 85. Pour le moins, en temps normal, on ajoute l'avoid de l'arme.
-    float accuracy = ((float)((this->getSkill() * 3. + this->getLuck())/2 + 85) - (float)((c.getSpeed()*3 + c.getLuck())/2));
-
-    //float critical = this->weapon.getCritical() + this->skill/2;
-
-    int rate = rand()%100+1;
-
-    cout << rate << endl;
-
-    int damage = this->getStrength() - c.getDefense();
-    if(damage<0)
-        damage=0;
-
-    if(rate <= accuracy)
-    {
-        c.setHealth(c.getHealth() - damage);
-        if(c.getHealth() <=0)
-            c.die();
-        cout << this->getName() << " dealt " << damage << endl;
-    }
-    else
-        cout << this->getName() << " missed" << endl;
-}
 std::string Archer::str()const{
     stringstream strs;
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength()

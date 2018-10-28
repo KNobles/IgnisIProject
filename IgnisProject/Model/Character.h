@@ -48,11 +48,10 @@ class Character
         string getName()const;
         int* getCharId()const;
         int getExp()const;
-<<<<<<< HEAD
         int getLevel()const;
-=======
+
         Weapon& getWeapon()const;
->>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
+
 
         void setHealth(const int health);
         void setStrength(const int strenth);
@@ -66,11 +65,11 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
         void setExp(const int exp);
-<<<<<<< HEAD
+
         void setLevel(const int level);
-=======
+
         void setWeapon(Weapon& weapon);
->>>>>>> ee138f724aff40215987272e0d258fcd89f147b7
+
 
         void die();
         void attack(Character& c)const;

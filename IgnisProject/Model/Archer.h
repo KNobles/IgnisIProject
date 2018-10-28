@@ -18,7 +18,6 @@ using std::vector;
 class Archer : public Character
 {
     private:
-        Weapon weapon;
         static const WeaponType types[];
 
     public:
@@ -29,7 +28,6 @@ class Archer : public Character
 
 //        void setWeapon(const Weapon weapon);
 
-        void attack(Character& c)const override;
         std::string str()const override;
 
 
