@@ -1,5 +1,6 @@
 #include "Warrior.h"
 
+
 const WeaponType Warrior::types[] = {WeaponType::sword, WeaponType::axe};
 
 Warrior::Warrior(std::string name):Character()
@@ -52,7 +53,11 @@ std::string Warrior::str()const{
 }
 void Warrior::addHealth(){
     int tmp= this->getHealth();
-    if(tmp>0){
+    int ran=rand();
+    while (ran>100){
+        ran=rand();
+    }
+    if((tmp>0) && (ran>15)){
         tmp++;
     }
     this->setHealth(tmp);
