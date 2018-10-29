@@ -63,7 +63,6 @@ int main()
 //    cout<<w1->str()<<endl;
 //    w1->addExp(320);
 //    cout<<w1->str()<<endl;
-
 //    Warrior *w2 = new Warrior("Axel");
 //    combat(*w1, *w2);
 

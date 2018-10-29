@@ -65,9 +65,7 @@ class Character
         void setMagic(const int magic);
         void setLuck(const int luck);
         void setExp(const int exp);
-
         void setLevel(const int level);
-
         void setWeapon(Weapon& weapon);
 
 
@@ -75,9 +73,16 @@ class Character
         void attack(Character& c)const;
         virtual string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
         friend void combat(Character& c1, Character& c2);
-
-        virtual void addExp(const int exp);
-        virtual void addLevel(const int level);
+        void addExp(const int exp);
+        void addLevel(const int level);
+        virtual void addHealth();
+        virtual void addStrength();
+        virtual void addDefense();
+        virtual void addSpeed();
+        virtual void addMovement();
+        virtual void addResistance();
+        virtual void addMagic();
+        virtual void addLuck();
 
 };
 

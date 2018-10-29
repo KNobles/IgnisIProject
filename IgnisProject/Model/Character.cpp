@@ -224,6 +224,49 @@ void combat(Character& c1, Character& c2){
     }
 }
 void Character::addExp(const int exp){
+    int tmp= this->getExp();
+    int cmp=0 ;
+    if(exp>0)
+        tmp+=exp;
+    if(tmp>100){
+         cmp=tmp/100;
+         tmp=tmp%100;
+        this->addLevel(cmp);
+    }
+    this->setExp(tmp);
 }
 void Character::addLevel(const int level){
+      int tmp =this->getLevel();
+    if(level>0){
+        tmp+=level;
+    }
+    this->setLevel(tmp);
+    for (int i=1;i<=tmp;i++){
+        this->addHealth();
+        this->addStrength();
+        this->addDefense();
+        this->addSpeed();
+        this->addMovement();
+        this->addResistance();
+        this->addMagic();
+        this->addLuck();
+
+    }
+
+}
+void Character::addHealth(){
+}
+void Character::addStrength(){
+}
+void Character::addDefense(){
+}
+void Character::addSpeed(){
+}
+void Character::addMovement(){
+}
+void Character::addResistance(){
+}
+void Character::addMagic(){
+}
+void Character::addLuck(){
 }

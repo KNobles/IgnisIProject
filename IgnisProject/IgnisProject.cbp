@@ -19,7 +19,7 @@
 					<Add directory="libraries/SFML-2.5.1/include" />
 					<Add directory="Model" />
 					<Add directory="View" />
-					<Add directory="State" />
+					<Add directory="Model/" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-s-d" />
@@ -38,7 +38,7 @@
 					<Add option="-O2" />
 					<Add directory="Model" />
 					<Add directory="View" />
-					<Add directory="State" />
+					<Add directory="Model/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -74,9 +74,6 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
-		<Unit filename="State/State.h" />
-		<Unit filename="State/StateMachine.cpp" />
-		<Unit filename="State/StateMachine.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
 		<Unit filename="View/Selector.cpp" />
