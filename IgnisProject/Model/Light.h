@@ -1,11 +1,10 @@
 #ifndef LIGHT_H
 #define LIGHT_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <MagicWeapon.h>
 
 
-class Light : public Weapon
+class Light : public MagicWeapon
 {
     public:
         Light();
@@ -14,7 +13,6 @@ class Light : public Weapon
         Light& operator=(const Light& other);
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 
 };

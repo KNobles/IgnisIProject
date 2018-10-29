@@ -68,6 +68,10 @@
 		<Unit filename="Model/Lance.h" />
 		<Unit filename="Model/Light.cpp" />
 		<Unit filename="Model/Light.h" />
+		<Unit filename="Model/MagicWeapon.cpp" />
+		<Unit filename="Model/MagicWeapon.h" />
+		<Unit filename="Model/PhysycalWeapon.cpp" />
+		<Unit filename="Model/PhysycalWeapon.h" />
 		<Unit filename="Model/Sword.cpp" />
 		<Unit filename="Model/Sword.h" />
 		<Unit filename="Model/Warrior.cpp" />

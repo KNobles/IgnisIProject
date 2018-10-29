@@ -1,6 +1,6 @@
 #include "Axe.h"
 
-Axe::Axe()
+Axe::Axe():PhysycalWeapon()
 {
     //ctor
 }
@@ -25,7 +25,7 @@ Axe& Axe::operator=(const Axe& rhs)
 float Axe::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula
-    float accuracy = ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));
+    float accuracy = PhysycalWeapon::strategyAccuracy(att, def);
 
     //Weapon Triangle Advantage
     if(def.getWeapon().TYPE == WeaponType::lance)
@@ -38,8 +38,4 @@ float Axe::strategyAccuracy(const Character& att, const Character& def)const
     return accuracy;
 }
 
-float Axe::strategyDamages(const Character& att, const Character& def)const
-{
-    return att.getStrength()+this->getDamages()-def.getDefense();
-}
 

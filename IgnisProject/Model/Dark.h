@@ -1,11 +1,10 @@
 #ifndef DARK_H
 #define DARK_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <MagicWeapon.h>
 
 
-class Dark : public Weapon
+class Dark : public MagicWeapon
 {
     public:
         Dark();
@@ -14,7 +13,6 @@ class Dark : public Weapon
         Dark& operator=(const Dark& other);
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 };
 

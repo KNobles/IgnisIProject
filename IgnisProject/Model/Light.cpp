@@ -1,6 +1,6 @@
 #include "Light.h"
 
-Light::Light()
+Light::Light():MagicWeapon()
 {
     //ctor
 }
@@ -25,7 +25,7 @@ Light& Light::operator=(const Light& rhs)
 float Light::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula
-    float accuracy = ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));
+    float accuracy = MagicWeapon::strategyAccuracy(att, def);
 
     //Weapon Triangle Advantage
     if(def.getWeapon().TYPE == WeaponType::dark)
@@ -38,7 +38,4 @@ float Light::strategyAccuracy(const Character& att, const Character& def)const
     return accuracy;
 }
 
-float Light::strategyDamages(const Character& att, const Character& def)const
-{
-    return att.getMagic()+this->getDamages()-def.getResistance();
-}
+

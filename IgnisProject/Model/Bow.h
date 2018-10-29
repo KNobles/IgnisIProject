@@ -1,11 +1,11 @@
 #ifndef BOW_H
 #define BOW_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <PhysycalWeapon.h>
 
 
-class Bow : public Weapon
+
+class Bow : public PhysycalWeapon
 {
     public:
         Bow();
@@ -13,8 +13,6 @@ class Bow : public Weapon
         Bow(const Bow& other);
         Bow& operator=(const Bow& other);
 
-        float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 };
 

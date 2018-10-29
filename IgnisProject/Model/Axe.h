@@ -1,11 +1,10 @@
 #ifndef AXE_H
 #define AXE_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <PhysycalWeapon.h>
 
 
-class Axe : public Weapon
+class Axe : public PhysycalWeapon
 {
     private:
 
@@ -16,7 +15,6 @@ class Axe : public Weapon
         Axe& operator=(const Axe& other);
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 
 

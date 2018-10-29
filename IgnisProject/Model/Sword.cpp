@@ -1,6 +1,6 @@
 #include "Sword.h"
 
-Sword::Sword():Weapon()
+Sword::Sword():PhysycalWeapon()
 {
     //ctor
 }
@@ -25,7 +25,7 @@ Sword& Sword::operator=(const Sword& rhs)
 float Sword::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula
-    float accuracy = ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));
+    float accuracy = PhysycalWeapon::strategyAccuracy(att, def);
 
     //Weapon Triangle Advantage
     if(def.getWeapon().TYPE == WeaponType::axe)
@@ -36,9 +36,4 @@ float Sword::strategyAccuracy(const Character& att, const Character& def)const
         accuracy-=5;
 
     return accuracy;
-}
-
-float Sword::strategyDamages(const Character& att, const Character& def)const
-{
-    return att.getStrength()+this->getDamages()-def.getDefense();
 }

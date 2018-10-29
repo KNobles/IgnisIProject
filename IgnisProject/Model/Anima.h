@@ -1,10 +1,9 @@
 #ifndef ANIMA_H
 #define ANIMA_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <MagicWeapon.h>
 
-class Anima : public Weapon
+class Anima : public MagicWeapon
 {
     public:
         Anima();
@@ -13,7 +12,6 @@ class Anima : public Weapon
         Anima& operator=(const Anima& other);
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 };
 

@@ -1,11 +1,10 @@
 #ifndef LANCE_H
 #define LANCE_H
 
-#include <Weapon.h>
-#include "Character.h"
+#include <PhysycalWeapon.h>
 
 
-class Lance : public Weapon
+class Lance : public PhysycalWeapon
 {
     public:
         Lance();
@@ -14,7 +13,6 @@ class Lance : public Weapon
         Lance& operator=(const Lance& other);
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
-        float strategyDamages(const Character& att, const Character& def)const override;
 
 };
 
