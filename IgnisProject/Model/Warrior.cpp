@@ -48,65 +48,94 @@ void Warrior::setWeapon(Weapon& weapon)
 std::string Warrior::str()const{
     stringstream strs;
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement() <<" EXPERIENCE :" <<getExp() <<" LEVEL :" <<getLevel()<<endl;
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl <<"RESISTANCE : "<<getResistance()
+    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
     return strs.str();
 }
 void Warrior::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
     while (ran>100){
-        ran=rand();
+            ran=rand();
     }
-    if((tmp>0) && (ran>15)){
+    if((tmp>0) && (ran>=15)){
         tmp++;
     }
     this->setHealth(tmp);
 }
 void Warrior::addStrength(){
     int tmp= this->getStrength();
-    if(tmp>0){
+    int ran = rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=20)){
         tmp++;
     }
     this->setStrength(tmp);
 }
 void Warrior::addDefense(){
-     int tmp= this->getDefense();
-    if(tmp>0){
+    int tmp= this->getDefense();
+    int ran= rand();
+    while(ran>100){
+        ran = rand();
+    }
+    if((tmp>0)&&(ran>=20)){
         tmp++;
     }
     this->setDefense(tmp);
 }
 void Warrior::addSpeed(){
-     int tmp= this->getSpeed();
-    if(tmp>0){
+    int tmp= this->getSpeed();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=50)){
         tmp++;
     }
     this->setSpeed(tmp);
 }
 void Warrior::addMovement(){
-     int tmp= this->getMovement();
-    if(tmp>0){
+    int tmp= this->getMovement();
+    int ran=rand();
+    while (ran>100){
+        ran = rand();
+    }
+    if((tmp>0)&&(ran>=80)){
         tmp++;
     }
     this->setMovement(tmp);
 }
 void Warrior::addResistance(){
-     int tmp= this->getResistance();
-    if(tmp>0){
+    int tmp= this->getResistance();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=60)){
         tmp++;
     }
     this->setResistance(tmp);
 }
 void Warrior::addMagic(){
-     int tmp= this->getMagic();
-    if(tmp>0){
+    int tmp= this->getMagic();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=90)){
         tmp++;
     }
     this->setMagic(tmp);
 }
 void Warrior::addLuck(){
-     int tmp= this->getLuck();
-    if(tmp>0){
+    int tmp= this->getLuck();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=85)){
         tmp++;
     }
     this->setLuck(tmp);
