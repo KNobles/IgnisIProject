@@ -4,6 +4,7 @@
 #include <iostream>
 #include "TileMap.h"
 #include "Warrior.h"
+#include "Archer.h"
 #include "Selector.h"
 #include "Animation.h"
 #include<sstream>
@@ -58,12 +59,15 @@ int main()
         window.draw(myCursor);
         window.display();
     }
-
-    Warrior *w1 = new Warrior("Kevin");
+/*    Warrior *w1 = new Warrior("Kevin");
     cout<<w1->str()<<endl;
     w1->addExp(320);
     cout<<w1->str()<<endl;
-//    Warrior *w2 = new Warrior("Axel");
+    Archer *a1 = new Archer("Axel");
+    cout<<a1->str()<<endl;
+    a1->addExp(320);
+    cout<<a1->str()<<endl;
+*/
 //    combat(*w1, *w2);
 
 

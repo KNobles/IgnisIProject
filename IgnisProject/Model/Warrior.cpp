@@ -16,7 +16,7 @@ Warrior::Warrior(std::string name):Character()
     this->setMagic(0);
     this->setResistance(3);
     this->setExp(0);
-    this->setLevel(0);
+    this->setLevel(1);
 
     Weapon *weapon = new Sword();
     setWeapon(*weapon);

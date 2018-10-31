@@ -26,9 +26,17 @@ class Archer : public Character
         Archer(const Archer& other);
         Archer& operator=(const Archer& other);
 
-//        void setWeapon(const Weapon weapon);
+//      void setWeapon(const Weapon weapon);
 
         std::string str()const override;
+        void addHealth();
+        void addStrength();
+        void addDefense();
+        void addSpeed();
+        void addMovement();
+        void addResistance();
+        void addMagic();
+        void addLuck();
 
 
     protected:

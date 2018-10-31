@@ -236,12 +236,13 @@ void Character::addExp(const int exp){
     this->setExp(tmp);
 }
 void Character::addLevel(const int level){
-      int tmp =this->getLevel();
+      int tmpBefore =this->getLevel();
+      int tmpAfter =this->getLevel();
     if(level>0){
-        tmp+=level;
+        tmpAfter+=level;
     }
-    this->setLevel(tmp);
-    for (int i=1;i<=tmp;i++){
+    this->setLevel(tmpAfter);
+    for (int i=tmpBefore;i<=tmpAfter;i++){
         this->addHealth();
         this->addStrength();
         this->addDefense();
@@ -250,7 +251,6 @@ void Character::addLevel(const int level){
         this->addResistance();
         this->addMagic();
         this->addLuck();
-
     }
 
 }
