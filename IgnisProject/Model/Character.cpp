@@ -111,6 +111,8 @@ void Character::setName(const string name){
 void Character::setHealth(const int health){
     if(health>=0)
         this->health = health;
+    else
+        this->health=0;
 }
 
 void Character::setDefense(const int defense){
@@ -222,6 +224,8 @@ void combat(Character& c1, Character& c2){
         c1.attack(c2);
         c2.attack(c1);
     }
+    c1.addExp(c1.calculatorExp(c2));
+    c2.addExp(c2.calculatorExp(c1));
 }
 void Character::addExp(const int exp){
     int tmp= this->getExp();
@@ -234,6 +238,21 @@ void Character::addExp(const int exp){
         this->addLevel(cmp);
     }
     this->setExp(tmp);
+}
+int Character::calculatorExp(Character& c){
+    int LD =c.getLevel()-this->getLevel();
+    int exp=0;
+    if(this->getHealth()>0){
+        if(c.getHealth()>0){
+            exp= (31+LD)/3;
+            return exp;
+        }
+        else{
+            exp=20+(LD*3);
+            return exp;
+        }
+    }
+    return exp;
 }
 void Character::addLevel(const int level){
       int tmpBefore =this->getLevel();

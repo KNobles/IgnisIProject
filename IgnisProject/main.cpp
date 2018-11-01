@@ -59,16 +59,20 @@ int main()
         window.draw(myCursor);
         window.display();
     }
-/*    Warrior *w1 = new Warrior("Kevin");
-    cout<<w1->str()<<endl;
-    w1->addExp(320);
+    /*
+    Warrior *w1 = new Warrior("Kevin");
+    Warrior *w2 = new Warrior("Alexandre");
     cout<<w1->str()<<endl;
     Archer *a1 = new Archer("Axel");
     cout<<a1->str()<<endl;
     a1->addExp(320);
     cout<<a1->str()<<endl;
-*/
-//    combat(*w1, *w2);
+    cout<<"----------------Combat---------"<<endl;
+    combat(*w1, *w2);
+    cout<<"----------------Result---------"<<endl;
+    cout<<w1->str()<<endl;
+    cout<<w2->str()<<endl;*/
+
 
 
     return 0;

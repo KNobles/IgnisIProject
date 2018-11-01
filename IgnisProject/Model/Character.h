@@ -75,6 +75,7 @@ class Character
         friend void combat(Character& c1, Character& c2);
         void addExp(const int exp);
         void addLevel(const int level);
+        int calculatorExp(Character& c);
         virtual void addHealth();
         virtual void addStrength();
         virtual void addDefense();
