@@ -13,7 +13,7 @@ class MagicWeapon : public Weapon
         MagicWeapon(const MagicWeapon& other);
         MagicWeapon& operator=(const MagicWeapon& other);
 
-        float strategyAccuracy(const Character& att, const Character& def)const override;
+        virtual float strategyAccuracy(const Character& att, const Character& def)const override;
         float strategyDamages(const Character& att, const Character& def)const override;
 
 

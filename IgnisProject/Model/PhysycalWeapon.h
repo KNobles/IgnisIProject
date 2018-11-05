@@ -13,7 +13,7 @@ class PhysycalWeapon : public Weapon
         PhysycalWeapon(const PhysycalWeapon& other);
         PhysycalWeapon& operator=(const PhysycalWeapon& other);
 
-        float strategyAccuracy(const Character& att, const Character& def)const override;
+        virtual float strategyAccuracy(const Character& att, const Character& def)const override;
         float strategyDamages(const Character& att, const Character& def)const override;
 
     protected:
