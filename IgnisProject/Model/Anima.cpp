@@ -10,7 +10,7 @@ Anima::~Anima()
     //dtor
 }
 
-Anima::Anima(const Anima& other)
+Anima::Anima(const Anima& other):MagicWeapon(other)
 {
     //copy ctor
 }
@@ -18,7 +18,7 @@ Anima::Anima(const Anima& other)
 Anima& Anima::operator=(const Anima& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    MagicWeapon::operator=(rhs);
     return *this;
 }
 

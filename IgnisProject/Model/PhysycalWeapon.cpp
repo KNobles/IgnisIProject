@@ -10,7 +10,7 @@ PhysycalWeapon::~PhysycalWeapon()
     //dtor
 }
 
-PhysycalWeapon::PhysycalWeapon(const PhysycalWeapon& other)
+PhysycalWeapon::PhysycalWeapon(const PhysycalWeapon& other):Weapon(other)
 {
     //copy ctor
 }
@@ -18,7 +18,7 @@ PhysycalWeapon::PhysycalWeapon(const PhysycalWeapon& other)
 PhysycalWeapon& PhysycalWeapon::operator=(const PhysycalWeapon& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    Weapon::operator=(rhs);
     return *this;
 }
 

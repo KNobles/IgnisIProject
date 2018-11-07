@@ -10,7 +10,7 @@ MagicWeapon::~MagicWeapon()
     //dtor
 }
 
-MagicWeapon::MagicWeapon(const MagicWeapon& other)
+MagicWeapon::MagicWeapon(const MagicWeapon& other):Weapon(other)
 {
     //copy ctor
 }
@@ -18,7 +18,7 @@ MagicWeapon::MagicWeapon(const MagicWeapon& other)
 MagicWeapon& MagicWeapon::operator=(const MagicWeapon& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    Weapon::operator=(rhs);
     return *this;
 }
 

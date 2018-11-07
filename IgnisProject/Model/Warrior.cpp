@@ -27,17 +27,19 @@ Warrior::~Warrior()
 {
     std::cout << "Warrior Destructor" << std::endl;
 }
-/*
-Warrior::Warrior(const Warrior& other):Character(const Character& other)
+
+Warrior::Warrior(const Warrior& other):Character(other)
 {
     //copy ctor
 }
 
-Warrior& Warrior::operator=(const Warrior& rhs):Character::operator=(const Character& rhs)
-{i
-
+Warrior& Warrior::operator=(const Warrior& rhs)
+{
+    if(this==&rhs) return *this;
+    Character::operator=(rhs);
+    return *this;
 }
-*/
+
 
 void Warrior::setWeapon(Weapon& weapon)
 {

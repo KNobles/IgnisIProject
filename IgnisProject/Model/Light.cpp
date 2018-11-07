@@ -10,7 +10,7 @@ Light::~Light()
     //dtor
 }
 
-Light::Light(const Light& other)
+Light::Light(const Light& other):MagicWeapon(other)
 {
     //copy ctor
 }
@@ -18,7 +18,7 @@ Light::Light(const Light& other)
 Light& Light::operator=(const Light& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    MagicWeapon::operator=(rhs);
     return *this;
 }
 

@@ -22,7 +22,7 @@ Archer::~Archer()
      std::cout << "Archer Destructor" << std::endl;
 }
 
-Archer::Archer(const Archer& other)
+Archer::Archer(const Archer& other):Character(other)
 {
     //copy ctor
 }
@@ -37,7 +37,7 @@ Archer::Archer(const Archer& other)
 Archer& Archer::operator=(const Archer& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    Character::operator=(rhs);
     return *this;
 }
 

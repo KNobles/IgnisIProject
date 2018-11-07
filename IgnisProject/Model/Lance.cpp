@@ -10,7 +10,7 @@ Lance::~Lance()
     //dtor
 }
 
-Lance::Lance(const Lance& other)
+Lance::Lance(const Lance& other):PhysycalWeapon(other)
 {
     //copy ctor
 }
@@ -18,7 +18,7 @@ Lance::Lance(const Lance& other)
 Lance& Lance::operator=(const Lance& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    PhysycalWeapon::operator=(rhs);
     return *this;
 }
 
