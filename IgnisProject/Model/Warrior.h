@@ -39,6 +39,7 @@ class Warrior : public Character
         void addResistance();
         void addMagic();
         void addLuck();
+        void addSkill();
 
 
     protected:

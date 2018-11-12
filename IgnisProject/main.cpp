@@ -59,7 +59,8 @@ int main()
         window.draw(myCursor);
         window.display();
     }
-    /*
+
+ /*
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
     cout<<w1->str()<<endl;
@@ -71,7 +72,7 @@ int main()
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
     cout<<w1->str()<<endl;
-    cout<<w2->str()<<endl;*/
+    cout<<w2->str()<<endl; */
 
 
 

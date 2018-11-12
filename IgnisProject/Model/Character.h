@@ -84,6 +84,7 @@ class Character
         virtual void addResistance();
         virtual void addMagic();
         virtual void addLuck();
+        virtual void addSkill();
 
 };
 

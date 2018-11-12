@@ -2,7 +2,7 @@
 #define KNIGHT_H
 
 #include<string>
-#include<stringstream>
+#include<sstream>
 #include <Character.h>
 
 using std::string;
