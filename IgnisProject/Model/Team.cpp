@@ -32,27 +32,38 @@ void Team::add(Character* c)
 
 void Team::remove(Character* c)
 {
-    for(unsigned int i=0; i< team.size(); i++){
-        if(*team[i] == c)
-        {
-            team.erase(team.begin()+i);
-            delete c;
-            return;
-        }
+    team.erase(team.begin()+indexOf(c));
+}
 
+Character* Team::get(const int index)const
+{
+    return team[index];
+}
+
+int Team::indexOf(const Character* c)const
+{
+    if(contains(c))
+    {
+        for(unsigned int i=0; i < team.size(); i++)
+        {
+            if(*team[i] == c)
+            {
+                return i;
+            }
+        }
     }
+    return -1;
+
 }
 
 void Team::setTeam(const Character* a, const Character* b)
 {
-    for(unsigned int i=0; i<team.size(); i++)
+    int index = indexOf(a);
+    if(index >= 0)
     {
-        if(*team[i] == a)
-        {
-            team[i] = b->clone();
-            delete a;
-            return;
-        }
+        team[index] = b->clone();
+        delete a;
+        return;
     }
 }
 

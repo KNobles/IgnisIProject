@@ -30,6 +30,8 @@ class Team
         bool contains(const Character* c)const;
         void add(Character* c);
         void remove(Character* c);
+        Character* get(const int index)const;
+        int indexOf(const Character* c)const;
         void setTeam(const Character* a, const Character* b);
         vector<Character*> getTeam()const;
 

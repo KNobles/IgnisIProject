@@ -167,7 +167,7 @@ void Character::setLevel(const int level){
 
 void Character::die()
 {
-    delete this;
+    Team::getInstance()->remove(this);
 }
 
 void Character::setStrength(const int strength){

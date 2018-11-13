@@ -4,6 +4,7 @@
 #include<sstream>
 #include<iostream>
 #include "Weapon.h"
+#include "Team.h"
 
 using std::string;
 using std::cout;
