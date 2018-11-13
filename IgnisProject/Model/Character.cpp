@@ -21,6 +21,10 @@ Character::Character(const Character& other)
     this->defense = other.defense;
     this->speed = other.speed;
     this->movement = other.movement;
+    this->resistance = other.resistance;
+    this->luck = other.luck;
+    this->skill = other.skill;
+    this->magic = other.magic;
     this->charId = new int(*other.charId);
     this->exp=other.exp;
     this->level=other.level;
@@ -42,8 +46,8 @@ Character& Character::operator=(const Character& rhs)
     return *this;
 }
 
-bool Character::operator==(const Character& c)const{
-    if(charId == c.getCharId())
+bool Character::operator==(const Character* c)const{
+    if(this->name == c->name)
         return true;
     return false;
 }
@@ -98,9 +102,9 @@ string Character::getName()const{
     return name;
 }
 
-Weapon& Character::getWeapon()const
+Weapon* Character::getWeapon()const
 {
-    return *weapon;
+    return weapon;
 }
 
 
@@ -171,22 +175,22 @@ void Character::setStrength(const int strength){
         this->strength = strength;
 }
 
-void Character::setWeapon(Weapon& weapon)
+void Character::setWeapon(Weapon* weapon)
 {
-        this->weapon = &weapon;
+        this->weapon = weapon;
 }
 
 void Character::attack(Character& c)const{
     //Accuracy = chances to hit from this - chances to avoid from c
-    float accuracy = this->getWeapon().strategyAccuracy(*this, c);
+    float accuracy = this->getWeapon()->strategyAccuracy(*this, c);
 
-    float critical = this->getWeapon().getCrit() + this->getSkill()/2;
+    float critical = this->getWeapon()->getCrit() + this->getSkill()/2;
 
     int rate = rand()%100+1;
 
     cout << rate << endl;
 
-    int damage = this->getWeapon().strategyDamages(*this, c);
+    int damage = this->getWeapon()->strategyDamages(*this, c);
     if(damage<0)
         damage=0;
 

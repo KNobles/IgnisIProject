@@ -5,13 +5,15 @@
 
 
 
-class Bow : public PhysycalWeapon
+class Bow : public PhysicalWeapon
 {
     public:
         Bow();
         virtual ~Bow();
         Bow(const Bow& other);
         Bow& operator=(const Bow& other);
+
+        Bow* clone()const;
 
 
 };

@@ -6,6 +6,7 @@
 #include "Warrior.h"
 #include "Archer.h"
 #include "Selector.h"
+#include "Team.h"
 #include "Animation.h"
 #include<sstream>
 #include<fstream>
@@ -59,20 +60,32 @@ int main()
         window.draw(myCursor);
         window.display();
     }
-    /*
+
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
-    cout<<w1->str()<<endl;
+   // cout<<w1->str()<<endl;
     Archer *a1 = new Archer("Axel");
-    cout<<a1->str()<<endl;
+/*    cout<<a1->str()<<endl;
     a1->addExp(320);
     cout<<a1->str()<<endl;
     cout<<"----------------Combat---------"<<endl;
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
     cout<<w1->str()<<endl;
-    cout<<w2->str()<<endl;*/
+    cout<<w2->str()<<endl;
+/*
+    Team *t = Team::getInstance();
+    t->add(w1);
+    t->add(w2);
+    t->add(a1);
+    cout << t->getTeam().size() << endl;
+    t->add(w1);
 
+
+    t->remove(w2);
+
+    cout << t->getTeam().size() << endl;
+*/
 
 
     return 0;

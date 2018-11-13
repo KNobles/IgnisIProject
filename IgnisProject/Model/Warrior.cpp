@@ -19,7 +19,7 @@ Warrior::Warrior(std::string name):Character()
     this->setLevel(1);
 
     Weapon *weapon = new Sword();
-    setWeapon(*weapon);
+    setWeapon(weapon);
 
 }
 
@@ -30,7 +30,12 @@ Warrior::~Warrior()
 
 Warrior::Warrior(const Warrior& other):Character(other)
 {
-    //copy ctor
+
+    if(other.getWeapon()->TYPE == types[0] || other.getWeapon()->TYPE == types[0])
+    {
+        this->setWeapon(other.getWeapon());
+    }
+
 }
 
 Warrior& Warrior::operator=(const Warrior& rhs)
@@ -40,10 +45,22 @@ Warrior& Warrior::operator=(const Warrior& rhs)
     return *this;
 }
 
-
-void Warrior::setWeapon(Weapon& weapon)
+bool Warrior::operator==(const Warrior* w)const
 {
-    if (weapon.TYPE == types[0] || weapon.TYPE == types[1])
+    cout << "bonjour" << endl;
+    return Character::operator==(w);
+}
+
+
+Warrior* Warrior::clone()const
+{
+    return new Warrior(*this);
+}
+
+
+void Warrior::setWeapon(Weapon* weapon)
+{
+    if (weapon->TYPE == types[0] || weapon->TYPE == types[1])
         Character::setWeapon(weapon);
 }
 

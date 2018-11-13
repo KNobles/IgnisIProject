@@ -4,7 +4,7 @@
 #include <PhysycalWeapon.h>
 
 
-class Axe : public PhysycalWeapon
+class Axe : public PhysicalWeapon
 {
     private:
 
@@ -14,6 +14,7 @@ class Axe : public PhysycalWeapon
         Axe(const Axe& other);
         Axe& operator=(const Axe& other);
 
+        Axe* clone()const;
         float strategyAccuracy(const Character& att, const Character& def)const override;
 
 

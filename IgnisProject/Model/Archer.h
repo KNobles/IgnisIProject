@@ -27,6 +27,7 @@ class Archer : public Character
         Archer& operator=(const Archer& other);
 
 //      void setWeapon(const Weapon weapon);
+        Archer* clone()const;
 
         std::string str()const override;
         void addHealth();

@@ -11,6 +11,7 @@ class Anima : public MagicWeapon
         Anima(const Anima& other);
         Anima& operator=(const Anima& other);
 
+        virtual Anima* clone()const;
         float strategyAccuracy(const Character& att, const Character& def)const override;
 
 };

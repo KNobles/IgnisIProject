@@ -22,8 +22,6 @@ MagicWeapon& MagicWeapon::operator=(const MagicWeapon& rhs)
     return *this;
 }
 
-
-
 float MagicWeapon::strategyAccuracy(const Character& att, const Character& def)const
 {
     return ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));

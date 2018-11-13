@@ -78,6 +78,8 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
+		<Unit filename="Team.cpp" />
+		<Unit filename="Team.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
 		<Unit filename="View/Selector.cpp" />

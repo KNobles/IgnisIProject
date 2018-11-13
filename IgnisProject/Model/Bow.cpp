@@ -1,6 +1,6 @@
 #include "Bow.h"
 
-Bow::Bow():PhysycalWeapon()
+Bow::Bow():PhysicalWeapon()
 {
     //ctor
 }
@@ -10,7 +10,7 @@ Bow::~Bow()
     //dtor
 }
 
-Bow::Bow(const Bow& other):PhysycalWeapon(other)
+Bow::Bow(const Bow& other):PhysicalWeapon(other)
 {
     //copy ctor
 }
@@ -18,8 +18,13 @@ Bow::Bow(const Bow& other):PhysycalWeapon(other)
 Bow& Bow::operator=(const Bow& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    PhysycalWeapon::operator=(rhs);
+    PhysicalWeapon::operator=(rhs);
     return *this;
+}
+
+Bow* Bow::clone()const
+{
+    return new Bow(*this);
 }
 
 

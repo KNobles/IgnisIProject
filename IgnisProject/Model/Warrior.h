@@ -8,6 +8,7 @@
 #include<thread>
 #include<vector>
 #include "Sword.h"
+#include "Axe.h"
 
 
 using std::string;
@@ -28,8 +29,11 @@ class Warrior : public Character
         virtual ~Warrior();
         Warrior(const Warrior& other);
         Warrior& operator=(const Warrior& other);
+        bool operator==(const Warrior* w)const;
 
-        void setWeapon(Weapon& weapon);
+        Warrior* clone()const override;
+
+        void setWeapon(Weapon *weapon);
         std::string str()const override;    //Redéfinition de la fonction virtuelle de Character
         void addHealth();
         void addStrength();

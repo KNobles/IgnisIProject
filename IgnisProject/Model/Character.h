@@ -34,7 +34,7 @@ class Character
         virtual ~Character();
         Character(const Character& other);
         Character& operator=(const Character& other);
-        bool operator==(const Character& c)const;
+        bool operator==(const Character* c)const;
 
         int getHealth()const;
         int getStrength()const;
@@ -50,7 +50,7 @@ class Character
         int getExp()const;
         int getLevel()const;
 
-        Weapon& getWeapon()const;
+        Weapon* getWeapon()const;
 
 
         void setHealth(const int health);
@@ -66,7 +66,9 @@ class Character
         void setLuck(const int luck);
         void setExp(const int exp);
         void setLevel(const int level);
-        void setWeapon(Weapon& weapon);
+        void setWeapon(Weapon *weapon);
+
+        virtual Character* clone()const = 0;
 
 
         void die();

@@ -4,7 +4,7 @@
 #include <PhysycalWeapon.h>
 
 
-class Sword : public PhysycalWeapon
+class Sword : public PhysicalWeapon
 {
     private:
 
@@ -13,6 +13,8 @@ class Sword : public PhysycalWeapon
         virtual ~Sword();
         Sword(const Sword& other);
         Sword& operator=(const Sword& other);
+
+        Sword* clone()const;
 
         float strategyAccuracy(const Character& att, const Character& def)const override;
 

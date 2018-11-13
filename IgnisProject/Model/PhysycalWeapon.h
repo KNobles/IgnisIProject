@@ -5,13 +5,15 @@
 #include "Character.h"
 
 
-class PhysycalWeapon : public Weapon
+class PhysicalWeapon : public Weapon
 {
     public:
-        PhysycalWeapon();
-        virtual ~PhysycalWeapon();
-        PhysycalWeapon(const PhysycalWeapon& other);
-        PhysycalWeapon& operator=(const PhysycalWeapon& other);
+        PhysicalWeapon();
+        virtual ~PhysicalWeapon();
+        PhysicalWeapon(const PhysicalWeapon& other);
+        PhysicalWeapon& operator=(const PhysicalWeapon& other);
+
+        virtual PhysicalWeapon* clone()const;
 
         virtual float strategyAccuracy(const Character& att, const Character& def)const override;
         float strategyDamages(const Character& att, const Character& def)const override;
