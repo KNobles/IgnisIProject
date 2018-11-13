@@ -61,6 +61,8 @@ int main()
         window.display();
     }
 
+
+ /*
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
    // cout<<w1->str()<<endl;
@@ -72,6 +74,7 @@ int main()
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
     cout<<w1->str()<<endl;
+
     cout<<w2->str()<<endl;
 /*
     Team *t = Team::getInstance();
@@ -83,6 +86,9 @@ int main()
 
 
     t->remove(w2);
+
+    cout<<w2->str()<<endl;
+
 
     cout << t->getTeam().size() << endl;
 */

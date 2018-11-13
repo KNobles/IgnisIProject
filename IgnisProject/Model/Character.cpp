@@ -293,3 +293,5 @@ void Character::addMagic(){
 }
 void Character::addLuck(){
 }
+void Character::addSkill(){
+}

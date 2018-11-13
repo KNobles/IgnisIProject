@@ -42,7 +42,7 @@ Archer* Archer::clone()const
 std::string Archer::str()const{
     stringstream strs;
     strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl <<"RESISTANCE : "<<getResistance()
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl << "SKILL : " << getSkill() << endl <<"RESISTANCE : "<<getResistance()
     << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
     return strs.str();
 }
@@ -52,7 +52,7 @@ void Archer::addHealth(){
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=15)){
+    if((tmp>0) && (ran>=65)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -63,7 +63,7 @@ void Archer::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    if((tmp>0)&&(ran>=85)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -74,7 +74,7 @@ void Archer::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    if((tmp>0)&&(ran>=90)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -85,7 +85,7 @@ void Archer::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=50)){
+    if((tmp>0)&&(ran>=85)){
         tmp++;
     }
     this->setSpeed(tmp);
@@ -107,7 +107,7 @@ void Archer::addResistance(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=60)){
+    if((tmp>0)&&(ran>=95)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -118,7 +118,7 @@ void Archer::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    if((tmp>0)&&(ran>=100)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -129,10 +129,20 @@ void Archer::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    if((tmp>0)&&(ran>=100)){
         tmp++;
     }
     this->setLuck(tmp);
 }
-
+void Archer::addSkill(){
+    int tmp= this->getSkill();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    if((tmp>0)&&(ran>=70)){
+        tmp++;
+    }
+    this->setSkill(tmp);
+}
 
