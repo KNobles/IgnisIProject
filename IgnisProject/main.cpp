@@ -75,9 +75,12 @@ int main()
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
     cout<<w1->str()<<endl;
-    cout<<w2->str()<<endl;
-    Knight *k1 = new Knight("Pedro");
+    cout<<w2->str()<<endl;*/
+    Knight *k1 = new Knight("Axel");
     cout<<k1->str()<<endl;
+    k1->addExp(320);
+    cout<<k1->str()<<endl;
+
 /*
     Team *t = Team::getInstance();
     t->add(w1);

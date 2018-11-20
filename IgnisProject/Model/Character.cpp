@@ -245,7 +245,7 @@ void Character::addLevel(const int level){
         tmpAfter+=level;
     }
     this->setLevel(tmpAfter);
-    for (int i=tmpBefore;i<=tmpAfter;i++){
+    for (int i=tmpBefore;i<=tmpAfter-1;i++){
         this->addHealth();
         this->addStrength();
         this->addDefense();

@@ -58,7 +58,14 @@ void Knight::addHealth(){
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=55)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=25;
+    }
+    else{
+        max=55;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -69,7 +76,14 @@ void Knight::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=75)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=45;
+    }
+    else{
+        max=75;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -80,7 +94,14 @@ void Knight::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=30;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -91,7 +112,14 @@ void Knight::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
@@ -102,7 +130,14 @@ void Knight::addResistance(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=95)){
+   int max;
+    if(this->getName()=="Axel"){
+        max=10;
+    }
+    else{
+        max=50;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -113,7 +148,14 @@ void Knight::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=95;
+    }
+    else{
+        max=100;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -124,7 +166,14 @@ void Knight::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=85;
+    }
+    else{
+        max=100;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
@@ -135,7 +184,14 @@ void Knight::addSkill(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=80)){
+    int max;
+    if(this->getName()=="Axel"){
+        max=90;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSkill(tmp);
