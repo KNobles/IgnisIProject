@@ -164,7 +164,7 @@ void Character::setStrength(const int strength){
 }
 void Character::setWeapon(Weapon* weapon)
 {
-        this->weapon = weapon;
+        this->weapon = weapon->clone();
 }
 void Character::attack(Character& c)const{
     //Accuracy = chances to hit from this - chances to avoid from c
@@ -254,5 +254,14 @@ void Character::addLevel(const int level){
         this->addMagic();
         this->addLuck();
     }
+}
+string Character::str()const
+{
+    stringstream strs;
+    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl << "SKILL : " << getSkill()<< endl <<"RESISTANCE : "<<getResistance()
+    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
+    return strs.str();
+
 }
 

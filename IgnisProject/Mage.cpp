@@ -1,45 +1,43 @@
-#include "Archer.h"
+#include "Mage.h"
 
-const WeaponType Archer::types[] = {WeaponType::bow};
+const WeaponType Mage::type = WeaponType::dark;
 
-Archer::Archer(std::string name):Character ()
+Mage::Mage(string name):Character()
 {
-    this->setName(name);
-    this->setHealth(16);
-    this->setStrength(5);
-    this->setDefense(5);
-    this->setSpeed(6);
-    this->setMovement(5);
-    this->setSkill(8);
-    this->setLuck(7);
-    this->setMagic(0);
-    this->setResistance(0);
-    this->setExp(0);
-    this->setLevel(1);
-}
-Archer::~Archer()
-{
-     std::cout << "Archer Destructor" << std::endl;
+    setName(name);
 }
 
-Archer::Archer(const Archer& other):Character(other)
+Mage::~Mage()
+{
+    //dtor
+}
+
+Mage::Mage(const Mage& other):Character(other)
 {
     //copy ctor
 }
 
-Archer& Archer::operator=(const Archer& rhs)
+Mage& Mage::operator=(const Mage& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
     Character::operator=(rhs);
     return *this;
 }
 
-Archer* Archer::clone()const
+void Mage::setWeapon(Weapon* weapon)
 {
-    return new Archer(*this);
+    if(weapon->TYPE == type)
+    {
+        Character::setWeapon(weapon);
+    }
 }
 
-void Archer::addHealth(){
+Mage* Mage::clone()const
+{
+    return new Mage(*this);
+}
+
+void Mage::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
     while (ran>100){
@@ -50,63 +48,59 @@ void Archer::addHealth(){
     }
     this->setHealth(tmp);
 }
-void Archer::addStrength(){
-    int tmp= this->getStrength();
-    int ran = rand();
-    while(ran>100){
-        ran=rand();
-    }
-    if((tmp>0)&&(ran>=85)){
-        tmp++;
-    }
-    this->setStrength(tmp);
+
+void Mage::addStrength(){
 }
-void Archer::addDefense(){
+
+void Mage::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    if((tmp>0)&&(ran>=95)){
         tmp++;
     }
     this->setDefense(tmp);
 }
-void Archer::addSpeed(){
+
+void Mage::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    if((tmp>0)&&(ran>=80)){
         tmp++;
     }
     this->setSpeed(tmp);
 }
 
-void Archer::addResistance(){
+void Mage::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=95)){
+    if((tmp>0)&&(ran>=90)){
         tmp++;
     }
     this->setResistance(tmp);
 }
-void Archer::addMagic(){
+
+void Mage::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    if((tmp>0)&&(ran>=80)){
         tmp++;
     }
     this->setMagic(tmp);
 }
-void Archer::addLuck(){
+
+void Mage::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
     while(ran>100){
@@ -117,15 +111,15 @@ void Archer::addLuck(){
     }
     this->setLuck(tmp);
 }
-void Archer::addSkill(){
+
+void Mage::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=70)){
+    if((tmp>0)&&(ran>=80)){
         tmp++;
     }
     this->setSkill(tmp);
 }
-

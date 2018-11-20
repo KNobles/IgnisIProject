@@ -74,7 +74,7 @@ class Character
 
         void die();
         void attack(Character& c)const;
-        virtual string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
+        virtual string str()const;
         friend void combat(Character& c1, Character& c2);
         void addExp(const int exp);
         void addLevel(const int level);

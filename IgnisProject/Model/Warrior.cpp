@@ -59,13 +59,6 @@ void Warrior::setWeapon(Weapon* weapon)
         Character::setWeapon(weapon);
 }
 
-std::string Warrior::str()const{
-    stringstream strs;
-    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl << "SKILL : " << getSkill()<< endl <<"RESISTANCE : "<<getResistance()
-    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
-    return strs.str();
-}
 void Warrior::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -110,17 +103,7 @@ void Warrior::addSpeed(){
     }
     this->setSpeed(tmp);
 }
-void Warrior::addMovement(){
-    int tmp= this->getMovement();
-    int ran=rand();
-    while (ran>100){
-        ran = rand();
-    }
-    if((tmp>0)&&(ran>=80)){
-        tmp++;
-    }
-    this->setMovement(tmp);
-}
+
 void Warrior::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();

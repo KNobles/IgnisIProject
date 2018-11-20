@@ -29,12 +29,10 @@ class Archer : public Character
 //      void setWeapon(const Weapon weapon);
         Archer* clone()const;
 
-        std::string str()const override;
         void addHealth();
         void addStrength();
         void addDefense();
         void addSpeed();
-        void addMovement();
         void addResistance();
         void addMagic();
         void addLuck();
