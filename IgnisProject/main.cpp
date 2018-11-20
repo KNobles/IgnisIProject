@@ -62,24 +62,33 @@ int main()
         window.display();
     }
 
-
 /*
+    Archer *a1 = new Archer("Alex");
+    cout<<a1->str()<<endl;
+    a1->addExp(320);
+    cout<<a1->str()<<endl;
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
     cout<<w1->str()<<endl;
-    Archer *a1 = new Archer("Axel");
     cout<<a1->str()<<endl;
     a1->addExp(320);
     cout<<a1->str()<<endl;
     cout<<"----------------Combat---------"<<endl;
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
+    cout<<"----------------Avant Up---------"<<endl;
     cout<<w1->str()<<endl;
-    cout<<w2->str()<<endl;*/
+    cout<<w2->str()<<endl;
+    cout<<"----------------Apres Up---------"<<endl;
+    w1->addExp(320);
+    w2->addExp(6500);
+    cout<<w1->str()<<endl;
+    cout<<w2->str()<<endl;
     Knight *k1 = new Knight("Axel");
     cout<<k1->str()<<endl;
     k1->addExp(320);
     cout<<k1->str()<<endl;
+*/
 
 /*
     Team *t = Team::getInstance();

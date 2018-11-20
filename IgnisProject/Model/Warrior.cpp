@@ -65,7 +65,14 @@ void Warrior::addHealth(){
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=55)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=55;
+    }
+    else{
+        max=65;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -76,7 +83,14 @@ void Warrior::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=75)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=45;
+    }
+    else{
+        max=35;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -87,7 +101,14 @@ void Warrior::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=65;
+    }
+    else{
+        max=75;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -98,7 +119,14 @@ void Warrior::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=85;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
@@ -110,7 +138,14 @@ void Warrior::addResistance(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=95)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=75;
+    }
+    else{
+        max=70;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -121,7 +156,14 @@ void Warrior::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=95;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -132,7 +174,14 @@ void Warrior::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=85;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
@@ -143,7 +192,14 @@ void Warrior::addSkill(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=80)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSkill(tmp);

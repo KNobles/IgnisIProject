@@ -45,7 +45,14 @@ void Archer::addHealth(){
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=65)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -56,7 +63,14 @@ void Archer::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=65;
+    }
+    else{
+        max=60;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -67,7 +81,14 @@ void Archer::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=60;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -78,7 +99,14 @@ void Archer::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=25;
+    }
+    else{
+        max=40;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
@@ -90,7 +118,14 @@ void Archer::addResistance(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=95)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=85;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -101,7 +136,14 @@ void Archer::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+   int max;
+    if(this->getName()=="Alex"){
+        max=90;
+    }
+    else{
+        max=100;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -112,7 +154,14 @@ void Archer::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
@@ -123,7 +172,14 @@ void Archer::addSkill(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=70)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=55;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSkill(tmp);
