@@ -177,7 +177,7 @@ void Character::setStrength(const int strength){
 
 void Character::setWeapon(Weapon* weapon)
 {
-        this->weapon = weapon;
+        this->weapon = weapon->clone();
 }
 
 void Character::attack(Character& c)const{
@@ -270,28 +270,19 @@ void Character::addLevel(const int level){
         this->addStrength();
         this->addDefense();
         this->addSpeed();
-        this->addMovement();
         this->addResistance();
         this->addMagic();
         this->addLuck();
     }
 
 }
-void Character::addHealth(){
+
+string Character::str()const
+{
+    stringstream strs;
+    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
+    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl << "SKILL : " << getSkill()<< endl <<"RESISTANCE : "<<getResistance()
+    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
+    return strs.str();
 }
-void Character::addStrength(){
-}
-void Character::addDefense(){
-}
-void Character::addSpeed(){
-}
-void Character::addMovement(){
-}
-void Character::addResistance(){
-}
-void Character::addMagic(){
-}
-void Character::addLuck(){
-}
-void Character::addSkill(){
-}
+

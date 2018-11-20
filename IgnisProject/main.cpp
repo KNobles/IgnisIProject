@@ -62,12 +62,12 @@ int main()
     }
 
 
- /*
+
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
    // cout<<w1->str()<<endl;
     Archer *a1 = new Archer("Axel");
-/*    cout<<a1->str()<<endl;
+    cout<<a1->str()<<endl;
     a1->addExp(320);
     cout<<a1->str()<<endl;
     cout<<"----------------Combat---------"<<endl;

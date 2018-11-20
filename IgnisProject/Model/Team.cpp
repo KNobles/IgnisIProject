@@ -4,7 +4,7 @@ Team* Team::instance = 0;
 
 Team::Team()
 {
-    //ctor
+
 }
 
 Team* Team::getInstance()
@@ -29,10 +29,13 @@ void Team::add(Character* c)
     if(!contains(c))
         team.push_back(c->clone());
 }
-
+//A modifier
 void Team::remove(Character* c)
 {
-    team.erase(team.begin()+indexOf(c));
+    if(contains(c)){
+        team.erase(team.begin()+indexOf(c));
+        delete c;
+    }
 }
 
 Character* Team::get(const int index)const

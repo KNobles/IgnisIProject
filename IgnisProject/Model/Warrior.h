@@ -34,12 +34,10 @@ class Warrior : public Character
         Warrior* clone()const override;
 
         void setWeapon(Weapon *weapon);
-        std::string str()const override;    //Redéfinition de la fonction virtuelle de Character
         void addHealth();
         void addStrength();
         void addDefense();
         void addSpeed();
-        void addMovement();
         void addResistance();
         void addMagic();
         void addLuck();
