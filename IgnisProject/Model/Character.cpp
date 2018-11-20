@@ -253,6 +253,7 @@ void Character::addLevel(const int level){
         this->addResistance();
         this->addMagic();
         this->addLuck();
+        this->addSkill();
     }
 }
 string Character::str()const

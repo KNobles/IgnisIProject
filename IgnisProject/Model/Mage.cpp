@@ -14,6 +14,8 @@ Mage::Mage(string name):Character()
     setResistance(3);
     setMovement(6);
     setName(name);
+    setExp(0);
+    setLevel(1);
 }
 
 Mage::~Mage()
@@ -53,13 +55,37 @@ void Mage::addHealth(){
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=65)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=70;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
 }
 
 void Mage::addStrength(){
+    int tmp= this->getStrength();
+
+    int ran= rand();
+    while(ran>100){
+        ran = rand();
+    }
+    int max;
+    if(this->getName()=="Luana"){
+        max=80;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>=0) && (ran>=max)){
+        tmp++;
+    }
+    this->setStrength(tmp);
 }
 
 void Mage::addDefense(){
@@ -68,7 +94,14 @@ void Mage::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=95)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=80;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -80,7 +113,14 @@ void Mage::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=80)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=50;
+    }
+    else{
+        max=85;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
@@ -92,7 +132,14 @@ void Mage::addResistance(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=80;
+    }
+    else{
+        max=85;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -104,7 +151,14 @@ void Mage::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=80)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=35;
+    }
+    else{
+        max=55;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -116,7 +170,14 @@ void Mage::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=100)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=75;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
@@ -128,7 +189,14 @@ void Mage::addSkill(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=80)){
+    int max;
+    if(this->getName()=="Luana"){
+        max=55;
+    }
+    else{
+        max=75;
+    }
+    if((tmp>=0) && (ran>=max)){
         tmp++;
     }
     this->setSkill(tmp);

@@ -6,6 +6,7 @@
 #include "Warrior.h"
 #include "Archer.h"
 #include "Knight.h"
+#include "Mage.h"
 #include "Selector.h"
 #include "Team.h"
 #include "Animation.h"
@@ -88,9 +89,12 @@ int main()
     cout<<k1->str()<<endl;
     k1->addExp(320);
     cout<<k1->str()<<endl;
-*/
 
-/*
+    Mage *m1 = new Mage("Luana");
+    cout<<m1->str()<<endl;
+    m1->addExp(1235);
+    cout<<m1->str()<<endl;
+
     Team *t = Team::getInstance();
     t->add(w1);
     t->add(w2);
