@@ -5,6 +5,7 @@
 #include "TileMap.h"
 #include "Warrior.h"
 #include "Archer.h"
+#include "Knight.h"
 #include "Selector.h"
 #include "Team.h"
 #include "Animation.h"
@@ -65,17 +66,19 @@ int main()
  /*
     Warrior *w1 = new Warrior("Kevin");
     Warrior *w2 = new Warrior("Alexandre");
-   // cout<<w1->str()<<endl;
+    cout<<w1->str()<<endl;
     Archer *a1 = new Archer("Axel");
-/*    cout<<a1->str()<<endl;
+    cout<<a1->str()<<endl;
     a1->addExp(320);
     cout<<a1->str()<<endl;
     cout<<"----------------Combat---------"<<endl;
     combat(*w1, *w2);
     cout<<"----------------Result---------"<<endl;
     cout<<w1->str()<<endl;
+    cout<<w2->str()<<endl;*/
 
-    cout<<w2->str()<<endl;
+    Knight *k1 = new Knight("Pedro");
+    cout<<k1->str()<<endl;
 /*
     Team *t = Team::getInstance();
     t->add(w1);

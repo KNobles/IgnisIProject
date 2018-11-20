@@ -30,12 +30,7 @@ Warrior::~Warrior()
 
 Warrior::Warrior(const Warrior& other):Character(other)
 {
-
-    if(other.getWeapon()->TYPE == types[0] || other.getWeapon()->TYPE == types[0])
-    {
         this->setWeapon(other.getWeapon());
-    }
-
 }
 
 Warrior& Warrior::operator=(const Warrior& rhs)

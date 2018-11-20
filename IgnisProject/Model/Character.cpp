@@ -106,52 +106,42 @@ Weapon* Character::getWeapon()const
 {
     return weapon;
 }
-
-
 void Character::setName(const string name){
     this->name = name;
 }
-
 void Character::setHealth(const int health){
     if(health>=0)
         this->health = health;
     else
         this->health=0;
 }
-
 void Character::setDefense(const int defense){
     if(defense>=0)
         this->defense = defense;
 }
-
 void Character::setSkill(const int skill){
     if(skill>=0)
         this->skill = skill;
 }
-
 void Character::setResistance(const int resistance)
 {
     if(resistance>=0)
         this->resistance = resistance;
 }
-
 void Character::setMagic(const int magic)
 {
     if(magic>=0)
         this->magic = magic;
 }
-
 void Character::setLuck(const int luck)
 {
     if(luck>=0)
         this->luck = luck;
 }
-
 void Character::setMovement(const int movement){
     if(movement>=0)
         this->movement = movement;
 }
-
 void Character::setSpeed(const int speed){
     if(speed>=0)
         this->speed = speed;
@@ -164,36 +154,27 @@ void Character::setLevel(const int level){
     if(level>=0)
         this->level=level;
 }
-
 void Character::die()
 {
     Team::getInstance()->remove(this);
 }
-
 void Character::setStrength(const int strength){
     if(strength>0)
         this->strength = strength;
 }
-
 void Character::setWeapon(Weapon* weapon)
 {
         this->weapon = weapon;
 }
-
 void Character::attack(Character& c)const{
     //Accuracy = chances to hit from this - chances to avoid from c
     float accuracy = this->getWeapon()->strategyAccuracy(*this, c);
-
     float critical = this->getWeapon()->getCrit() + this->getSkill()/2;
-
     int rate = rand()%100+1;
-
     cout << rate << endl;
-
     int damage = this->getWeapon()->strategyDamages(*this, c);
     if(damage<0)
         damage=0;
-
     if(rate <= critical)
     {
         c.setHealth(c.getHealth() - damage*3);
@@ -211,7 +192,6 @@ void Character::attack(Character& c)const{
     else
         cout << this->getName() << " missed" << endl;
 }
-
 void combat(Character& c1, Character& c2){
     int diff = c1.getSpeed() - c2.getSpeed();
     if(diff >= 5){
@@ -270,28 +250,9 @@ void Character::addLevel(const int level){
         this->addStrength();
         this->addDefense();
         this->addSpeed();
-        this->addMovement();
         this->addResistance();
         this->addMagic();
         this->addLuck();
     }
+}
 
-}
-void Character::addHealth(){
-}
-void Character::addStrength(){
-}
-void Character::addDefense(){
-}
-void Character::addSpeed(){
-}
-void Character::addMovement(){
-}
-void Character::addResistance(){
-}
-void Character::addMagic(){
-}
-void Character::addLuck(){
-}
-void Character::addSkill(){
-}
