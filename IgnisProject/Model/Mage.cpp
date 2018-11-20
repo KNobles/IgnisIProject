@@ -4,6 +4,15 @@ const WeaponType Mage::type = WeaponType::dark;
 
 Mage::Mage(string name):Character()
 {
+    setHealth(16);
+    setStrength(0);
+    setMagic(3);
+    setSkill(1);
+    setSpeed(3);
+    setLuck(0);
+    setDefense(2);
+    setResistance(3);
+    setMovement(6);
     setName(name);
 }
 
@@ -14,13 +23,14 @@ Mage::~Mage()
 
 Mage::Mage(const Mage& other):Character(other)
 {
-    //copy ctor
+    setWeapon(other.getWeapon());
 }
 
 Mage& Mage::operator=(const Mage& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
     Character::operator=(rhs);
+    setWeapon(rhs.getWeapon());
     return *this;
 }
 
