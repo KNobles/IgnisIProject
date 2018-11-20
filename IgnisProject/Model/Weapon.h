@@ -54,6 +54,8 @@ class Weapon
         void setWorth(const int worth);
         void setDurability(const int uses);
 
+        virtual Weapon* clone()const=0;
+
         void decrement();
 
         virtual float strategyAccuracy(const Character& att, const Character& def)const=0;

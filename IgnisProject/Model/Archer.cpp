@@ -27,13 +27,6 @@ Archer::Archer(const Archer& other):Character(other)
     //copy ctor
 }
 
-//Weapon Archer::getWeapon()const{
-//    return weapon;
-//}
-//void Archer::setWeapon(const Weapon weapon){
-//    this->weapon=weapon;
-//}
-
 Archer& Archer::operator=(const Archer& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
@@ -41,46 +34,25 @@ Archer& Archer::operator=(const Archer& rhs)
     return *this;
 }
 
-
-//void Archer::attack(Character &c)const{
-//    //Normalement c'est un pourcentage de l'arme, ici on a mis 85. Pour le moins, en temps normal, on ajoute l'avoid de l'arme.
-//    float accuracy = ((float)((this->getSkill() * 3. + this->getLuck())/2 + 85) - (float)((c.getSpeed()*3 + c.getLuck())/2));
-//
-//    //float critical = this->weapon.getCritical() + this->skill/2;
-//
-//    int rate = rand()%100+1;
-//
-//    cout << rate << endl;
-//
-//    int damage = this->getStrength() - c.getDefense();
-//    if(damage<0)
-//        damage=0;
-//
-//    if(rate <= accuracy)
-//    {
-//        c.setHealth(c.getHealth() - damage);
-//        if(c.getHealth() <=0)
-//            c.die();
-//        cout << this->getName() << " dealt " << damage << endl;
-//    }
-//    else
-//        cout << this->getName() << " missed" << endl;
-//}
-
-std::string Archer::str()const{
-    stringstream strs;
-    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl <<"RESISTANCE : "<<getResistance()
-    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
-    return strs.str();
+Archer* Archer::clone()const
+{
+    return new Archer(*this);
 }
+
 void Archer::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=15)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -91,7 +63,14 @@ void Archer::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=65;
+    }
+    else{
+        max=60;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -102,7 +81,14 @@ void Archer::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=60;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -113,29 +99,33 @@ void Archer::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=50)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=25;
+    }
+    else{
+        max=40;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
 }
-void Archer::addMovement(){
-    int tmp= this->getMovement();
-    int ran=rand();
-    while (ran>100){
-        ran = rand();
-    }
-    if((tmp>0)&&(ran>=80)){
-        tmp++;
-    }
-    this->setMovement(tmp);
-}
+
 void Archer::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=60)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=85;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -146,7 +136,14 @@ void Archer::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=90)){
+   int max;
+    if(this->getName()=="Alex"){
+        max=90;
+    }
+    else{
+        max=100;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -157,10 +154,34 @@ void Archer::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Alex"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
 }
-
+void Archer::addSkill(){
+    int tmp= this->getSkill();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    int max;
+    if(this->getName()=="Alex"){
+        max=55;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
+        tmp++;
+    }
+    this->setSkill(tmp);
+}
 

@@ -19,7 +19,7 @@ Warrior::Warrior(std::string name):Character()
     this->setLevel(1);
 
     Weapon *weapon = new Sword();
-    setWeapon(*weapon);
+    setWeapon(weapon);
 
 }
 
@@ -30,7 +30,7 @@ Warrior::~Warrior()
 
 Warrior::Warrior(const Warrior& other):Character(other)
 {
-    //copy ctor
+        this->setWeapon(other.getWeapon());
 }
 
 Warrior& Warrior::operator=(const Warrior& rhs)
@@ -40,27 +40,39 @@ Warrior& Warrior::operator=(const Warrior& rhs)
     return *this;
 }
 
-
-void Warrior::setWeapon(Weapon& weapon)
+bool Warrior::operator==(const Warrior* w)const
 {
-    if (weapon.TYPE == types[0] || weapon.TYPE == types[1])
+    cout << "bonjour" << endl;
+    return Character::operator==(w);
+}
+
+
+Warrior* Warrior::clone()const
+{
+    return new Warrior(*this);
+}
+
+
+void Warrior::setWeapon(Weapon* weapon)
+{
+    if (weapon->TYPE == types[0] || weapon->TYPE == types[1])
         Character::setWeapon(weapon);
 }
 
-std::string Warrior::str()const{
-    stringstream strs;
-    strs << getName() << endl << "HP : " << getHealth() << endl << "STRENGTH : " << getStrength() << endl
-    << "DEFENSE : " << getDefense() << endl << "SPEED : " << getSpeed() << endl << "MOVEMENT : " << getMovement()<< endl <<"RESISTANCE : "<<getResistance()
-    << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
-    return strs.str();
-}
 void Warrior::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
     while (ran>100){
             ran=rand();
     }
-    if((tmp>0) && (ran>=15)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=55;
+    }
+    else{
+        max=65;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setHealth(tmp);
@@ -71,7 +83,14 @@ void Warrior::addStrength(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=45;
+    }
+    else{
+        max=35;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setStrength(tmp);
@@ -82,7 +101,14 @@ void Warrior::addDefense(){
     while(ran>100){
         ran = rand();
     }
-    if((tmp>0)&&(ran>=20)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=65;
+    }
+    else{
+        max=75;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setDefense(tmp);
@@ -93,29 +119,33 @@ void Warrior::addSpeed(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=50)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=85;
+    }
+    else{
+        max=95;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setSpeed(tmp);
 }
-void Warrior::addMovement(){
-    int tmp= this->getMovement();
-    int ran=rand();
-    while (ran>100){
-        ran = rand();
-    }
-    if((tmp>0)&&(ran>=80)){
-        tmp++;
-    }
-    this->setMovement(tmp);
-}
+
 void Warrior::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=60)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=75;
+    }
+    else{
+        max=70;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setResistance(tmp);
@@ -126,7 +156,14 @@ void Warrior::addMagic(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=90)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=95;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setMagic(tmp);
@@ -137,10 +174,34 @@ void Warrior::addLuck(){
     while(ran>100){
         ran=rand();
     }
-    if((tmp>0)&&(ran>=85)){
+    int max;
+    if(this->getName()=="Kevin"){
+        max=85;
+    }
+    else{
+        max=90;
+    }
+    if((tmp>0) && (ran>=max)){
         tmp++;
     }
     this->setLuck(tmp);
 }
-
+void Warrior::addSkill(){
+    int tmp= this->getSkill();
+    int ran=rand();
+    while(ran>100){
+        ran=rand();
+    }
+    int max;
+    if(this->getName()=="Kevin"){
+        max=75;
+    }
+    else{
+        max=80;
+    }
+    if((tmp>0) && (ran>=max)){
+        tmp++;
+    }
+    this->setSkill(tmp);
+}
 

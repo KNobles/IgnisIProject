@@ -12,6 +12,8 @@ class Dark : public MagicWeapon
         Dark(const Dark& other);
         Dark& operator=(const Dark& other);
 
+        Dark* clone()const;
+
         float strategyAccuracy(const Character& att, const Character& def)const override;
 
 };

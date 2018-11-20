@@ -22,17 +22,22 @@ Anima& Anima::operator=(const Anima& rhs)
     return *this;
 }
 
+Anima* Anima::clone()const
+{
+    return new Anima(*this);
+}
+
 float Anima::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula
     float accuracy = MagicWeapon::strategyAccuracy(att, def);
 
     //Weapon Triangle Advantage
-    if(def.getWeapon().TYPE == WeaponType::light)
+    if(def.getWeapon()->TYPE == WeaponType::light)
         accuracy+=5;
 
     //Weapon Triangle Disadvantage
-    else if(def.getWeapon().TYPE == WeaponType::dark)
+    else if(def.getWeapon()->TYPE == WeaponType::dark)
         accuracy-=5;
 
     return accuracy;

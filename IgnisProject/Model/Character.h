@@ -4,6 +4,7 @@
 #include<sstream>
 #include<iostream>
 #include "Weapon.h"
+#include "Team.h"
 
 using std::string;
 using std::cout;
@@ -34,7 +35,7 @@ class Character
         virtual ~Character();
         Character(const Character& other);
         Character& operator=(const Character& other);
-        bool operator==(const Character& c)const;
+        bool operator==(const Character* c)const;
 
         int getHealth()const;
         int getStrength()const;
@@ -50,7 +51,7 @@ class Character
         int getExp()const;
         int getLevel()const;
 
-        Weapon& getWeapon()const;
+        Weapon* getWeapon()const;
 
 
         void setHealth(const int health);
@@ -66,24 +67,26 @@ class Character
         void setLuck(const int luck);
         void setExp(const int exp);
         void setLevel(const int level);
-        void setWeapon(Weapon& weapon);
+        void setWeapon(Weapon *weapon);
+
+        virtual Character* clone()const = 0;
 
 
         void die();
         void attack(Character& c)const;
-        virtual string str()const=0;     //Fonction virtuelle pure qui rend la classe abstraite.
+        virtual string str()const;
         friend void combat(Character& c1, Character& c2);
         void addExp(const int exp);
         void addLevel(const int level);
         int calculatorExp(Character& c);
-        virtual void addHealth();
-        virtual void addStrength();
-        virtual void addDefense();
-        virtual void addSpeed();
-        virtual void addMovement();
-        virtual void addResistance();
-        virtual void addMagic();
-        virtual void addLuck();
+        virtual void addHealth()=0;
+        virtual void addStrength()=0;
+        virtual void addDefense()=0;
+        virtual void addSpeed()=0;
+        virtual void addResistance()=0;
+        virtual void addMagic()=0;
+        virtual void addLuck()=0;
+        virtual void addSkill()=0;
 
 };
 

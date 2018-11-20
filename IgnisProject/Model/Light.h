@@ -12,6 +12,8 @@ class Light : public MagicWeapon
         Light(const Light& other);
         Light& operator=(const Light& other);
 
+        Light* clone()const;
+
         float strategyAccuracy(const Character& att, const Character& def)const override;
 
 

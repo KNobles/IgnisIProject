@@ -1,33 +1,38 @@
 #include "PhysycalWeapon.h"
 
-PhysycalWeapon::PhysycalWeapon():Weapon()
+PhysicalWeapon::PhysicalWeapon():Weapon()
 {
     //ctor
 }
 
-PhysycalWeapon::~PhysycalWeapon()
+PhysicalWeapon::~PhysicalWeapon()
 {
     //dtor
 }
 
-PhysycalWeapon::PhysycalWeapon(const PhysycalWeapon& other):Weapon(other)
+PhysicalWeapon::PhysicalWeapon(const PhysicalWeapon& other):Weapon(other)
 {
     //copy ctor
 }
 
-PhysycalWeapon& PhysycalWeapon::operator=(const PhysycalWeapon& rhs)
+PhysicalWeapon& PhysicalWeapon::operator=(const PhysicalWeapon& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
     Weapon::operator=(rhs);
     return *this;
 }
 
-float PhysycalWeapon::strategyAccuracy(const Character& att, const Character& def)const
+PhysicalWeapon* PhysicalWeapon::clone()const
+{
+    return new PhysicalWeapon(*this);
+}
+
+float PhysicalWeapon::strategyAccuracy(const Character& att, const Character& def)const
 {
     return ((float)((att.getSkill() * 3. + att.getLuck())/2 + this->getHit()) - (float)((def.getSpeed()*3 + (float)def.getLuck())/2));
 }
 
-float PhysycalWeapon::strategyDamages(const Character& att, const Character& def)const
+float PhysicalWeapon::strategyDamages(const Character& att, const Character& def)const
 {
     return att.getStrength()+this->getDamages()-def.getDefense();
 }

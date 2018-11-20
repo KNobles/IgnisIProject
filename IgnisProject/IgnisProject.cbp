@@ -5,6 +5,7 @@
 		<Option title="IgnisProject" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="Model\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/IgnisProject" prefix_auto="1" extension_auto="1" />
@@ -70,16 +71,22 @@
 		<Unit filename="Model/Character.h" />
 		<Unit filename="Model/Dark.cpp" />
 		<Unit filename="Model/Dark.h" />
+		<Unit filename="Model/Knight.cpp" />
+		<Unit filename="Model/Knight.h" />
 		<Unit filename="Model/Lance.cpp" />
 		<Unit filename="Model/Lance.h" />
 		<Unit filename="Model/Light.cpp" />
 		<Unit filename="Model/Light.h" />
+		<Unit filename="Model/Mage.cpp" />
+		<Unit filename="Model/Mage.h" />
 		<Unit filename="Model/MagicWeapon.cpp" />
 		<Unit filename="Model/MagicWeapon.h" />
 		<Unit filename="Model/PhysycalWeapon.cpp" />
 		<Unit filename="Model/PhysycalWeapon.h" />
 		<Unit filename="Model/Sword.cpp" />
 		<Unit filename="Model/Sword.h" />
+		<Unit filename="Model/Team.cpp" />
+		<Unit filename="Model/Team.h" />
 		<Unit filename="Model/Warrior.cpp" />
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
