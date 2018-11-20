@@ -4,20 +4,17 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 #include <iostream>
-
+#include "GameDimens.h"
 using namespace std;
 class Selector : public sf::Sprite
 {
     public:
-        Selector(std::string name);
+        Selector(std::string name="selector.png");
         virtual ~Selector();
         Selector& operator=(const Selector& cursor);
         Selector(const Selector& cursor);
         void updatePosition();
         sf::Texture& getTexture();
-
-    protected:
-
     private:
         std::string name;
         sf::Texture texture;

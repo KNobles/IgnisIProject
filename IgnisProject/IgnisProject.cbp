@@ -20,6 +20,8 @@
 					<Add directory="Model" />
 					<Add directory="View" />
 					<Add directory="Model/" />
+					<Add directory="State" />
+					<Add directory="Util" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-s-d" />
@@ -39,6 +41,8 @@
 					<Add directory="Model" />
 					<Add directory="View" />
 					<Add directory="Model/" />
+					<Add directory="State" />
+					<Add directory="Util" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -52,6 +56,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
 		<Unit filename="Model/Anima.cpp" />
 		<Unit filename="Model/Anima.h" />
 		<Unit filename="Model/Archer.cpp" />
@@ -78,6 +84,14 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
+		<Unit filename="State/GameOverState.cpp" />
+		<Unit filename="State/GameOverState.h" />
+		<Unit filename="State/State.cpp" />
+		<Unit filename="State/State.h" />
+		<Unit filename="State/StateMachine.cpp" />
+		<Unit filename="State/StateMachine.h" />
+		<Unit filename="Util/InputManager.cpp" />
+		<Unit filename="Util/InputManager.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
 		<Unit filename="View/Selector.cpp" />

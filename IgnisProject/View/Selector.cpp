@@ -9,7 +9,7 @@ Selector::Selector(std::string name)
         system("pause");
     }
 //    this->setPosition(32.f,32.f);
-    this->setOrigin(2,2);
+    this->setOrigin(0,0);
     this->setTexture(this->texture);
 //    this->setTextureRect(sf::IntRect(0,0, 16, 16));
 }
@@ -40,23 +40,23 @@ Selector::Selector(const Selector& cursor)
 
 void Selector::updatePosition()
 {
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->getPosition().y < 600-16)
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->getPosition().y < HEIGHT)
     {
         this->move(0,16.f);
-        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
+        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && this->getPosition().y > 0)
     {
         this->move(0,-16.f);
-        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->getPosition().x < 800-16)
+        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->getPosition().x < WIDTH)
     {
         this->move(16.f, 0);
-        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
+        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && this->getPosition().x > 0)
     {
         this->move(-16.f, 0);
-        cout << "x: " << this->getPosition().x/16 << " y: " << this->getPosition().y/16 << endl;
+        cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
 }

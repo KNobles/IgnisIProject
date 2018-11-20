@@ -13,10 +13,6 @@ class State
 
         virtual void pause(){}
         virtual void resume(){}
-
-    protected:
-
-    private:
 };
 
 #endif // STATE_H
