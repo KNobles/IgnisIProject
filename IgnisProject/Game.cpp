@@ -1,7 +1,5 @@
 #include "Game.h"
 
-
-
 Game::Game(int width, int height, std::string title)
 {
     data->window.create(sf::VideoMode(width, height), title);
@@ -19,8 +17,13 @@ Game::~Game()
 
 void Game::run()
 {
+//    sf::Sprite sprite;
+//    sf::Texture texture;
+//    texture.loadFromFile("Assets/Sprites/Character/Roy/Roy-idle.png");
+//    sprite.setTexture(texture);
+//    sprite.setPosition(0, 0);
+//    sprite.setOrigin(0,0);
     map.loadLevel1();
-
     while (data->window.isOpen())
     {
         sf::Event event;
@@ -39,6 +42,7 @@ void Game::run()
         data->window.draw(map);
         data->window.draw(selector);
         data->window.setView(data->view);
+
         data->window.display();
     }
 }

@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+#include "CharacterSprite.h"
 
 class TileMap : public sf::Drawable, public sf::Transformable
 {

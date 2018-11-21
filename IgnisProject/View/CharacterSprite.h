@@ -6,13 +6,14 @@
 class CharacterSprite : sf::Sprite
 {
     public:
+        CharacterSprite();
         CharacterSprite(Character*);
         virtual ~CharacterSprite();
         CharacterSprite(const CharacterSprite& other);
         CharacterSprite& operator=(const CharacterSprite& other);
 
     private:
-//        sf::Sprite sprite;
+        sf::Texture texture;
         Character* character;
 };
 

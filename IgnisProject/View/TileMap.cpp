@@ -1,6 +1,5 @@
 #include "TileMap.h"
-#include <iostream>
-#include <algorithm>
+
 TileMap::TileMap()
 {
     //ctor

@@ -3,18 +3,24 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
+#include <string>
+#include <vector>
+
+#include "TileMap.h"
 #include "StateMachine.h"
 #include "InputManager.h"
-#include <string>
-#include "TileMap.h"
 #include "Selector.h"
 #include "GameDimens.h"
+#include "CharacterSprite.h"
+#include "Warrior.h"
 
 struct GameData
 {
     StateMachine machine;
     sf::RenderWindow window;
     sf::View view;
+        Warrior *jeanne;
+        CharacterSprite c;
 //    InputManager input;
 };
 
@@ -32,11 +38,13 @@ class Game
         // Updates run at 60 per second.
 //        const float deltaTime = 1.f / 60.f;
 //        sf::Clock clock;
+//        std::vector<CharacterSprite*> chars;
         GameDataRef data = std::make_shared<GameData>();
         Selector selector;
         TileMap map;
         void run();
         void moveView();
+
 };
 
 #endif // GAME_H

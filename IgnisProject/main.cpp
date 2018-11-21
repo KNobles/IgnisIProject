@@ -18,6 +18,9 @@ using namespace std;
 
 int main()
 {
+    Warrior* jeanne = new Warrior("jeanne");
+    CharacterSprite csprite(jeanne);
+
     Game game(WIDTH, HEIGHT, "Ignis");
 //    TileMap map;
 //    map.loadLevel1();
