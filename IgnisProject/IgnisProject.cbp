@@ -53,8 +53,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Game.cpp" />
-		<Unit filename="Game.h" />
 		<Unit filename="Model/Anima.cpp" />
 		<Unit filename="Model/Anima.h" />
 		<Unit filename="Model/Archer.cpp" />
@@ -84,18 +82,22 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
-		<Unit filename="State/GameOverState.cpp" />
-		<Unit filename="State/GameOverState.h" />
-		<Unit filename="State/State.cpp" />
+		<Unit filename="State/GameBattleState.cpp" />
+		<Unit filename="State/GameBattleState.h" />
 		<Unit filename="State/State.h" />
 		<Unit filename="State/StateMachine.cpp" />
 		<Unit filename="State/StateMachine.h" />
+		<Unit filename="Util/AssetManager.cpp" />
+		<Unit filename="Util/AssetManager.h" />
+		<Unit filename="Util/DEFINITIONS.h" />
 		<Unit filename="Util/InputManager.cpp" />
 		<Unit filename="Util/InputManager.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
 		<Unit filename="View/CharacterSprite.cpp" />
 		<Unit filename="View/CharacterSprite.h" />
+		<Unit filename="View/Game.cpp" />
+		<Unit filename="View/Game.h" />
 		<Unit filename="View/Selector.cpp" />
 		<Unit filename="View/Selector.h" />
 		<Unit filename="View/TileMap.cpp" />

@@ -1,26 +1,20 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
-#include <iostream>
-#include "TileMap.h"
-#include "Warrior.h"
-#include "Archer.h"
-#include "Selector.h"
-#include "Animation.h"
-#include "GameDimens.h"
-#include "Game.h"
+
 #include<sstream>
 #include<fstream>
 #include<iomanip>
 #include<time.h>
+#include <iostream>
+
+#include "GameDimens.h"
+#include "Game.h"
 
 using namespace std;
 
 int main()
 {
-    Warrior* jeanne = new Warrior("jeanne");
-    CharacterSprite csprite(jeanne);
-
     Game game(WIDTH, HEIGHT, "Ignis");
 //    TileMap map;
 //    map.loadLevel1();

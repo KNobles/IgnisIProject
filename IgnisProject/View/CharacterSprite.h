@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "Character.h"
 
-class CharacterSprite : sf::Sprite
+class CharacterSprite : public sf::Sprite
 {
     public:
         CharacterSprite();
@@ -11,10 +11,15 @@ class CharacterSprite : sf::Sprite
         virtual ~CharacterSprite();
         CharacterSprite(const CharacterSprite& other);
         CharacterSprite& operator=(const CharacterSprite& other);
+        Character* getCharacter() const;
+
+        bool getIsSelected()const;
+        void setIsSelected(bool);
 
     private:
-        sf::Texture texture;
         Character* character;
+        sf::Texture texture;
+        bool isSelected;
 };
 
 #endif // CHARACTERSPRITE_H

@@ -88,6 +88,9 @@ bool TileMap::loadFromFile(std::string fileName, std::string imageName)
 
 bool TileMap::loadLevel1()
 {
+//    Warrior* war("Chrom");
+//    CharacterSprite *chrom(war);
+//    this->characters.push_back(chrom);
     return loadFromFile("map1.txt", "Castle Blue.png");
 }
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1542786954 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/main.cpp
+1542797183 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
@@ -17,27 +17,52 @@
 	<fstream>
 	<iomanip>
 	<time.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"TileMap.h"
+	"Warrior.h"
+	"Archer.h"
+	"Selector.h"
+	"Animation.h"
+	"GameDimens.h"
+	"Game.h"
+	<sstream>
+	<fstream>
+	<iomanip>
+	<time.h>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"TileMap.h"
+	"Warrior.h"
+	"Archer.h"
+	"Selector.h"
+	"Animation.h"
+	"GameDimens.h"
+	"Game.h"
+	<sstream>
+	<fstream>
+	<iomanip>
+	<time.h>
+
+1540660605 
 
 1539987331 hics.hpp>
 
-1542786954 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
+1542958577 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
-	<iostream>
-	"TileMap.h"
-	"Warrior.h"
-	"Archer.h"
-	"Selector.h"
-	"Animation.h"
-	"GameDimens.h"
-	"Game.h"
 	<sstream>
 	<fstream>
 	<iomanip>
 	<time.h>
-
-1542749414 
+	<iostream>
+	"GameDimens.h"
+	"Game.h"
 
 1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -557,8 +582,92 @@
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
 	<SFML/System.hpp>
 	<SFML/Window/Clipboard.hpp>
 	<SFML/Window/Context.hpp>
@@ -627,8 +736,46 @@
 	<SFML/System/Utf.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
 
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Config.hpp
+	"TargetConditionals.h"
+	"TargetConditionals.h"
 	"TargetConditionals.h"
 	"TargetConditionals.h"
 
@@ -637,16 +784,28 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Export.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Time.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+	<SFML/System/Export.hpp>
+	<ostream>
 	<SFML/System/Export.hpp>
 	<ostream>
 	<SFML/System/Export.hpp>
@@ -665,8 +824,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<cstdio>
 	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/InputStream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
@@ -675,8 +850,14 @@
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -691,8 +872,20 @@
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -703,8 +896,24 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/String.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -731,12 +940,32 @@
 	<string>
 	<cstdlib>
 	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Utf.inl
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/String.inl
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
@@ -755,8 +984,18 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
 
 1539980904 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
@@ -767,10 +1006,14 @@
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Vector2.hpp
 	<SFML/System/Vector2.inl>
 	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Vector2.inl
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 
@@ -781,12 +1024,26 @@
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -801,12 +1058,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
@@ -825,8 +1094,22 @@
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
@@ -835,8 +1118,14 @@
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
@@ -849,14 +1138,28 @@
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/Touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+	<SFML/Window/Export.hpp>
+	<vector>
 	<SFML/Window/Export.hpp>
 	<vector>
 	<SFML/Window/Export.hpp>
@@ -885,8 +1188,32 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/String.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980905 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -895,12 +1222,20 @@
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
@@ -917,14 +1252,34 @@
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
@@ -939,8 +1294,20 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
@@ -955,8 +1322,24 @@
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -977,14 +1360,28 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
@@ -1011,14 +1408,42 @@
 	<map>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/String.hpp>
+	<map>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/String.hpp>
+	<map>
+	<string>
+	<vector>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -1037,14 +1462,48 @@
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -1075,6 +1534,14 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp
 	<SFML/Graphics/Export.hpp>
@@ -1085,8 +1552,26 @@
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
@@ -1115,8 +1600,34 @@
 	<SFML/System/Vector3.hpp>
 	<map>
 	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
 
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
@@ -1131,6 +1642,16 @@
 1539980902 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -1161,8 +1682,34 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
 
 1539980903 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -1175,7 +1722,7 @@
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
 	"Character.h"
 
-1542749414 .h"
+1540489423 .h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.h
 	<string>
@@ -1187,7 +1734,7 @@
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.cpp
 	"Warrior.h"
 
-1542786666 "
+1542794836 "
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.h
 	<string>
@@ -1205,7 +1752,7 @@
 
 1540045342 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\map.h
 
-1542753238 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.h
+1542917024 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<iostream>
@@ -1213,9 +1760,9 @@
 	<algorithm>
 	"CharacterSprite.h"
 
-1542754631 Sprite.h"
+1542793653 Sprite.h"
 
-1542752513 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
+1542922974 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
 	"TileMap.h"
 
 1540468593 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\cursor.h
@@ -1247,7 +1794,7 @@
 1542791720 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
 	"Selector.h"
 
-1542724091 h"
+1542791720 h"
 
 1540489423 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
 	"Animation.h"
@@ -1289,7 +1836,7 @@
 	<memory>
 	<stack>
 
-1542709141 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
+1542901264 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.cpp
 	"Anima.h"
@@ -1333,7 +1880,7 @@
 	<Weapon.h>
 	"Character.h"
 
-1542786966 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\game.cpp
+1542901401 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\game.cpp
 	"Game.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.h
@@ -1354,12 +1901,12 @@
 
 1542010732 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.cpp
 
-1542721321 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
+1542899464 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 
-1542721321 ger.h"
+1542795770 ger.h"
 
-1542786666 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\game.h
+1542901364 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1372,21 +1919,22 @@
 	"GameDimens.h"
 	"CharacterSprite.h"
 	"Warrior.h"
+	"AssetManager.h"
 
-1542719448 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
+1542898513 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
 	"Selector.h"
 	"CharacterSprite.h"
 
-1542754619 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
+1542897727 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
 	<SFML/Graphics.hpp>
 	"Character.h"
 
-1542754631 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
+1542898476 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
 1542721623 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
 
-1542723181 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
+1542968108 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
@@ -1399,10 +1947,36 @@
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
 	"Team.h"
 
-1542786966 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.cpp
+1542872238 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.cpp
+	"Game.h"
+	"Game.h"
 	"Game.h"
 
-1542786666 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.h
+1542872170 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"TileMap.h"
+	"StateMachine.h"
+	"InputManager.h"
+	"Selector.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"TileMap.h"
+	"StateMachine.h"
+	"InputManager.h"
+	"Selector.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1423,12 +1997,38 @@
 	<fstream>
 	<algorithm>
 	"CharacterSprite.h"
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"CharacterSprite.h"
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"CharacterSprite.h"
 
-1542754619 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/CharacterSprite.h
+1542897727 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/CharacterSprite.h
+	<SFML/Graphics.hpp>
+	"Character.h"
+	<SFML/Graphics.hpp>
+	"Character.h"
 	<SFML/Graphics.hpp>
 	"Character.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Character.h
+	<string>
+	<sstream>
+	<iostream>
+	"Weapon.h"
+	"Team.h"
+	<string>
+	<sstream>
+	<iostream>
+	"Weapon.h"
+	"Team.h"
 	<string>
 	<sstream>
 	<iostream>
@@ -1439,8 +2039,24 @@
 	<iostream>
 	<string>
 	<sstream>
+	<iostream>
+	<string>
+	<sstream>
+	<iostream>
+	<string>
+	<sstream>
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Team.h
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Character.h"
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Character.h"
 	<iostream>
 	<string>
 	<sstream>
@@ -1451,14 +2067,34 @@
 	"State.h"
 	<memory>
 	<stack>
+	"State.h"
+	<memory>
+	<stack>
+	"State.h"
+	<memory>
+	<stack>
 
 1542709141 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/State/State.h
 
-1542719448 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Util/InputManager.h
+1542898513 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Util/InputManager.h
+	"Selector.h"
+	"CharacterSprite.h"
+	"Selector.h"
+	"CharacterSprite.h"
 	"Selector.h"
 	"CharacterSprite.h"
 
 1542721344 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/Selector.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"GameDimens.h"
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"GameDimens.h"
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1477,18 +2113,58 @@
 	<vector>
 	"Sword.h"
 	"Axe.h"
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Sword.h"
+	"Axe.h"
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Sword.h"
+	"Axe.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Sword.h
+	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/PhysycalWeapon.h
 	<Weapon.h>
 	"Character.h"
+	<Weapon.h>
+	"Character.h"
+	<Weapon.h>
+	"Character.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Axe.h
 	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Archer.h
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
 	<string>
 	<sstream>
 	<random>
@@ -1501,69 +2177,119 @@
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Anima.cpp
 	"Anima.h"
+	"Anima.h"
+	"Anima.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Anima.h
+	<MagicWeapon.h>
+	<MagicWeapon.h>
 	<MagicWeapon.h>
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/MagicWeapon.h
 	<Weapon.h>
 	"Character.h"
+	<Weapon.h>
+	"Character.h"
+	<Weapon.h>
+	"Character.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Archer.cpp
+	"Archer.h"
+	"Archer.h"
 	"Archer.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Axe.cpp
 	"Axe.h"
+	"Axe.h"
+	"Axe.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Bow.cpp
+	"Bow.h"
+	"Bow.h"
 	"Bow.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Bow.h
 	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Character.cpp
+	"Character.h"
+	"Character.h"
 	"Character.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Dark.cpp
 	"Dark.h"
+	"Dark.h"
+	"Dark.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Dark.h
 	<MagicWeapon.h>
+	<MagicWeapon.h>
+	<MagicWeapon.h>
 
-1542723181 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/GameDimens.cpp
+1542797278 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/GameDimens.cpp
+	"GameDimens.h"
+	"GameDimens.h"
 	"GameDimens.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Lance.cpp
 	"Lance.h"
+	"Lance.h"
+	"Lance.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Lance.h
+	<PhysycalWeapon.h>
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Light.cpp
 	"Light.h"
+	"Light.h"
+	"Light.h"
 
 1542749414 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Light.h
+	<MagicWeapon.h>
+	<MagicWeapon.h>
 	<MagicWeapon.h>
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/MagicWeapon.cpp
 	"MagicWeapon.h"
+	"MagicWeapon.h"
+	"MagicWeapon.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/PhysycalWeapon.cpp
+	"PhysycalWeapon.h"
+	"PhysycalWeapon.h"
 	"PhysycalWeapon.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Sword.cpp
 	"Sword.h"
+	"Sword.h"
+	"Sword.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Team.cpp
+	"Team.h"
+	"Team.h"
 	"Team.h"
 
 1542749414 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Warrior.cpp
 	"Warrior.h"
+	"Warrior.h"
+	"Warrior.h"
 
 1540660605 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Model/Weapon.cpp
+	"Weapon.h"
+	"Weapon.h"
 	"Weapon.h"
 
 1542010473 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/State/GameOverState.cpp
@@ -1572,19 +2298,75 @@
 
 1540664905 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/State/StateMachine.cpp
 	"StateMachine.h"
+	"StateMachine.h"
+	"StateMachine.h"
 
-1542721321 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Util/InputManager.cpp
+1542898447 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Util/InputManager.cpp
+	"InputManager.h"
+	"InputManager.h"
 	"InputManager.h"
 
 1540489423 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/Animation.cpp
 	"Animation.h"
+	"Animation.h"
+	"Animation.h"
 
-1542754631 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/CharacterSprite.cpp
+1542898476 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/CharacterSprite.cpp
+	"CharacterSprite.h"
+	"CharacterSprite.h"
 	"CharacterSprite.h"
 
-1542724091 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/Selector.cpp
+1542791720 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/Selector.cpp
+	"Selector.h"
+	"Selector.h"
 	"Selector.h"
 
-1542752513 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/TileMap.cpp
+1542794836 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/TileMap.cpp
 	"TileMap.h"
+	"TileMap.h"
+	"TileMap.h"
+
+1542901337 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1542901419 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\mainmenustate.cpp
+
+1542900762 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.cpp
+	"AssetManager.h"
+
+1542924825 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\battlestartedstate.cpp
+	"BattleStartedState.h"
+
+1542925030 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\battlestartedstate.h
+	<SFML/Graphics.hpp>
+	"State.h"
+	"TileMap.h"
+	"Game.h"
+	"Selector.h"
+
+1542967872 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"StateMachine.h"
+	"InputManager.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	"AssetManager.h"
+
+1542967974 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
+	"GameBattleState.h"
+
+1542967894 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+	"Game.h"
+	"GameDimens.h"
+	"TileMap.h"
+
+1542966111 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+	"Game.h"
+	"GameBattleState.h"
 

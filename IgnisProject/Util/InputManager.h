@@ -8,8 +8,8 @@ class InputManager
         InputManager() {}
         virtual ~InputManager(){}
 
-        bool isCharacterSelected(CharacterSprite&,Selector& selector, sf::RenderWindow& window);
-        sf::Vector2i getSelectorPosition(Selector& selector);
+        bool isCharacterSelected(CharacterSprite&, Selector&, sf::RenderWindow&);
+        void moveCharacter(CharacterSprite&, Selector&);
 
     protected:
 
