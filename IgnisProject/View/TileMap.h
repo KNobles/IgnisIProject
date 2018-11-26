@@ -6,6 +6,7 @@
 #include <fstream>
 #include <algorithm>
 #include "CharacterSprite.h"
+#include "Warrior.h"
 
 class TileMap : public sf::Drawable, public sf::Transformable
 {

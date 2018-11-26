@@ -52,7 +52,7 @@
 
 1539987331 hics.hpp>
 
-1542958577 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
+1543067613 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1752,13 +1752,14 @@
 
 1540045342 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\map.h
 
-1542917024 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.h
+1543149792 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<iostream>
 	<fstream>
 	<algorithm>
 	"CharacterSprite.h"
+	"Warrior.h"
 
 1542793653 Sprite.h"
 
@@ -1782,7 +1783,7 @@
 1540660605 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.cpp
 	"Weapon.h"
 
-1542721344 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
+1543081899 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -1791,7 +1792,7 @@
 
 1542723181 s.h"
 
-1542791720 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
+1543081891 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
 	"Selector.h"
 
 1542791720 h"
@@ -1901,7 +1902,7 @@
 
 1542010732 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.cpp
 
-1542899464 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
+1543080782 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 
 1542795770 ger.h"
@@ -1921,15 +1922,18 @@
 	"Warrior.h"
 	"AssetManager.h"
 
-1542898513 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
+1543080788 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
+	<vector>
+	<cmath>
 	"Selector.h"
 	"CharacterSprite.h"
 
-1542897727 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
+1543067701 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
 	<SFML/Graphics.hpp>
 	"Character.h"
+	"Warrior.h"
 
-1542898476 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
+1543067681 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
 1542721623 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
@@ -2345,7 +2349,7 @@
 	"Game.h"
 	"Selector.h"
 
-1542967872 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
+1542968684 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -2358,15 +2362,17 @@
 	"Warrior.h"
 	"AssetManager.h"
 
-1542967974 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
+1543084331 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
-1542967894 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+1543083763 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
+	<vector>
+	"Warrior.h"
 
-1542966111 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+1543080099 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 

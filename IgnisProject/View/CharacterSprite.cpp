@@ -1,9 +1,9 @@
 #include "CharacterSprite.h"
 
-CharacterSprite::CharacterSprite()
-{
-
-}
+//CharacterSprite::CharacterSprite()
+//{
+//
+//}
 
 CharacterSprite::CharacterSprite(Character* character)
 {

@@ -13,7 +13,7 @@ class Selector : public sf::Sprite
         virtual ~Selector();
         Selector& operator=(const Selector& cursor);
         Selector(const Selector& cursor);
-        void updatePosition();
+//        void updatePosition();
         sf::Texture& getTexture();
     private:
         std::string name;

@@ -78,6 +78,7 @@
 		<Unit filename="Model/Sword.cpp" />
 		<Unit filename="Model/Sword.h" />
 		<Unit filename="Model/Team.cpp" />
+		<Unit filename="Model/Team.h" />
 		<Unit filename="Model/Warrior.cpp" />
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />

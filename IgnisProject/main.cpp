@@ -15,6 +15,8 @@ using namespace std;
 
 int main()
 {
+    Warrior* w = new Warrior("maga");
+    CharacterSprite c(w);
     Game game(WIDTH, HEIGHT, "Ignis");
 //    TileMap map;
 //    map.loadLevel1();

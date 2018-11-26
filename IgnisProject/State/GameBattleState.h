@@ -3,6 +3,8 @@
 #include "Game.h"
 #include "GameDimens.h"
 #include "TileMap.h"
+#include <vector>
+#include "Warrior.h"
 
 class GameBattleState : public State
 {
@@ -13,10 +15,15 @@ class GameBattleState : public State
         void update(float dt);
         void draw(float dt);
 
-        void moveView();
     protected:
 
     private:
+        void moveView();
+        void moveSelector();
+        void showMovement(CharacterSprite&);
+
+        Warrior* w;
+        CharacterSprite ch;
         GameDataRef data;
         sf::Clock clock;
         Selector selector;

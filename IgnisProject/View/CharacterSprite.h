@@ -2,12 +2,12 @@
 #define CHARACTERSPRITE_H
 #include <SFML/Graphics.hpp>
 #include "Character.h"
+#include "Warrior.h"
 
 class CharacterSprite : public sf::Sprite
 {
     public:
-        CharacterSprite();
-        CharacterSprite(Character*);
+        CharacterSprite(Character* character = new Warrior("Maga"));
         virtual ~CharacterSprite();
         CharacterSprite(const CharacterSprite& other);
         CharacterSprite& operator=(const CharacterSprite& other);
