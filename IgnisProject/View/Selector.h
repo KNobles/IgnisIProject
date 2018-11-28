@@ -5,7 +5,10 @@
 #include <SFML/System.hpp>
 #include <iostream>
 #include "GameDimens.h"
+#include "Animation.h"
+
 using namespace std;
+
 class Selector : public sf::Sprite
 {
     public:
@@ -18,7 +21,6 @@ class Selector : public sf::Sprite
     private:
         std::string name;
         sf::Texture texture;
-
 };
 
 #endif // CURSOR_H
