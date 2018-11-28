@@ -22,6 +22,7 @@
 					<Add directory="State" />
 					<Add directory="Util" />
 					<Add directory="/usr/include/SFML" />
+					<Add directory="Util/" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
@@ -43,6 +44,7 @@
 					<Add directory="Model/" />
 					<Add directory="State" />
 					<Add directory="Util" />
+					<Add directory="Util/" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -91,6 +93,8 @@
 		<Unit filename="Util/AssetManager.cpp" />
 		<Unit filename="Util/AssetManager.h" />
 		<Unit filename="Util/DEFINITIONS.h" />
+		<Unit filename="Util/IA.cpp" />
+		<Unit filename="Util/IA.h" />
 		<Unit filename="Util/InputManager.cpp" />
 		<Unit filename="Util/InputManager.h" />
 		<Unit filename="View/Animation.cpp" />
