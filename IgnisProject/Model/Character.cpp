@@ -154,10 +154,7 @@ void Character::setLevel(const int level){
     if(level>=0)
         this->level=level;
 }
-void Character::die()
-{
-    Team::getInstance()->remove(this);
-}
+
 void Character::setStrength(const int strength){
     if(strength>0)
         this->strength = strength;
@@ -178,15 +175,11 @@ void Character::attack(Character& c)const{
     if(rate <= critical)
     {
         c.setHealth(c.getHealth() - damage*3);
-        if(c.getHealth() <=0)
-            c.die();
         cout << this->getName() << " dealt " << damage << endl;
     }
     else if (rate <= accuracy)
     {
         c.setHealth(c.getHealth() - damage);
-        if(c.getHealth() <=0)
-            c.die();
         cout << this->getName() << " dealt " << damage << endl;
     }
     else

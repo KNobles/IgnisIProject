@@ -21,7 +21,7 @@ IA& IA::operator=(const IA& rhs)
     //assignment operator
     return *this;
 }
-void IA::moveIA(CharacterSprite ch){
+void IA::moveIA(){
 }
 void IA::attackIA(){
 }

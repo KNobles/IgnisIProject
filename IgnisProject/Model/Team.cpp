@@ -1,17 +1,40 @@
 #include "Team.h"
 
-Team* Team::instance = 0;
-
 Team::Team()
 {
 
 }
 
-Team* Team::getInstance()
+Team::~Team(){
+    for(unsigned int i=0; i<team.size(); i++)
+    {
+        delete team[i];
+    }
+    team.clear();
+}
+
+Team::Team(const Team& other)
 {
-    if(instance==0)
-        instance = new Team();
-    return instance;
+    for(unsigned int i=0; i<other.team.size(); i++)
+    {
+        Character* c = other.team[i]->clone();
+        team.push_back(c);
+    }
+}
+
+Team& Team::operator=(const Team& rhs)
+{
+    for(unsigned int i=0; i<team.size(); i++)
+    {
+        delete team[i];
+    }
+    team.clear();
+
+    for(unsigned int i=0; i<rhs.team.size(); i++)
+    {
+        Character* c = rhs.team[i]->clone();
+        team.push_back(c);
+    }
 }
 
 bool Team::contains(const Character* c)const
