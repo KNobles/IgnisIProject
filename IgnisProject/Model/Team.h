@@ -18,15 +18,14 @@ class Team
 
     private:
         vector<Character*> team;
-        Team();
-        static Team* instance;
 
 
     public:
-        Team(const Team& other) = delete;
-        Team& operator=(const Team& other) = delete;
+        Team();
+        Team(const Team& other);
+        Team& operator=(const Team& other);
+        virtual ~Team();
 
-        static Team* getInstance();
         bool contains(const Character* c)const;
         void add(Character* c);
         void remove(Character* c);
