@@ -55,3 +55,8 @@ void CharacterSprite::setIsSelected(bool isSelected)
 {
     this->isSelected = isSelected;
 }
+
+bool CharacterSprite::operator==(const CharacterSprite& other)const
+{
+    return this->character == other.character;
+}
