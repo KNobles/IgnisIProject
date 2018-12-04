@@ -105,6 +105,8 @@
 		<Unit filename="View/Game.h" />
 		<Unit filename="View/Selector.cpp" />
 		<Unit filename="View/Selector.h" />
+		<Unit filename="View/TeamSprite.cpp" />
+		<Unit filename="View/TeamSprite.h" />
 		<Unit filename="View/TileMap.cpp" />
 		<Unit filename="View/TileMap.h" />
 		<Unit filename="main.cpp" />

@@ -1,13 +1,13 @@
 #ifndef IA_H
 #define IA_H
 #include "CharacterSprite.h"
-#include "Game.h"
+#include "TeamSprite.h"
 
 
 class IA
 {
     public:
-        IA(GameDataRef);
+        IA(TeamSprite ally);
         virtual ~IA();
         IA(const IA& other);
         IA& operator=(const IA& other);
@@ -16,11 +16,10 @@ class IA
 
     private:
         CharacterSprite ch;
+        TeamSprite teamAlly;
         void moveIA();
         void attackIA();
-        void chooseTargetIA();
-        GameDataRef data;
-
+        CharacterSprite chooseTargetIA();
 };
 
 #endif // IA_H

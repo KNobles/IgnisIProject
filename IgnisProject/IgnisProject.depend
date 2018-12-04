@@ -3771,10 +3771,18 @@
 	"CharacterSprite.h"
 	<vector>
 
-1543400710 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
+1543924194 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
 	"IA.h"
 
-1543400723 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.h
+1543923310 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.h
 	"CharacterSprite.h"
-	"Game.h"
+	"TeamSprite.h"
+
+1543923439 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.cpp
+	"TeamSprite.h"
+
+1543923411 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.h
+	<SFML/Graphics.hpp>
+	"CharacterSprite.h"
+	<vector>
 
