@@ -10,14 +10,13 @@ class InputManager
         InputManager() {}
         virtual ~InputManager(){}
 
-//        bool isCharacterSelected(CharacterSprite&, Selector&, sf::RenderWindow&);
         bool isCharacterSelected(CharacterSprite&, Selector&);
         void moveCharacter(CharacterSprite&, Selector&);
 
     protected:
 
     private:
-//        void displayMovement(CharacterSprite&, sf::RenderWindow&);
+        void displayMovement(CharacterSprite&, sf::RenderWindow&);
 };
 
 #endif // INPUTMANAGER_H

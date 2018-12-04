@@ -18,9 +18,6 @@ struct GameData
 {
     StateMachine machine;
     sf::RenderWindow window;
-//    sf::View view;
-//    Selector selector;
-//    TileMap map;
     InputManager input;
     AssetManager assets;
 };
@@ -31,7 +28,6 @@ class Game
 {
     public:
         Game(int width, int height, std::string title);
-//        void moveView();
     private:
         // Updates run at 60 per second.
         const float deltaTime = 1.f / 60.f;
