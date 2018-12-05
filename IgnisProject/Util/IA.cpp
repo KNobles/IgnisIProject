@@ -23,30 +23,51 @@ IA& IA::operator=(const IA& rhs)
 }
 void IA::moveIA(){
     int step=this->ch.getCharacter()->getMovement();
+    int range=this->ch.getCharacter()->getWeapon()->getRange();
     CharacterSprite tmpCh =chooseTargetIA();
     int tmpDestiX = tmpCh.getPosition().x;
     int tmpDestiY = tmpCh.getPosition().y;
     for (int i=0;i<=step;i++){
         int pass =0;
         if ((ch.getPosition().x>tmpDestiX)&&pass==0){
+                if(tmpDestiX-ch.getPosition().x==range){
+                    this->attackIA();
+                    i=step;
+                }
             ch.setPosition(ch.getPosition().x-1,ch.getPosition().y);
             pass=1;
         }
         if ((ch.getPosition().x<tmpDestiX)&&pass==0){
+                if(ch.getPosition().x-tmpDestiX==range){
+                    this->attackIA();
+                    i=step;
+                }
             ch.setPosition(ch.getPosition().x+1,ch.getPosition().y);
             pass=1;
         }
         if ((ch.getPosition().y>tmpDestiY)&&pass==0){
+            if(tmpDestiY-ch.getPosition().y==range){
+                    this->attackIA();
+                    i=step;
+                }
             ch.setPosition(ch.getPosition().x,ch.getPosition().y-1);
             pass=1;
         }
         if ((ch.getPosition().y<tmpDestiY)&&pass==0){
+            if(ch.getPosition().y-tmpDestiY==range){
+                    this->attackIA();
+                    i=step;
+                }
             ch.setPosition(ch.getPosition().x,ch.getPosition().y+1);
             pass=1;
         }
     }
 }
 void IA::attackIA(){
+    Character* tmpCh;
+    tmpCh=chooseTargetIA().getCharacter();
+    combat(*this->ch.getCharacter(), *tmpCh);
+
 }
 CharacterSprite IA::chooseTargetIA(){
     int tmpxMin=99;
