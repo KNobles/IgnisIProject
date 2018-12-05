@@ -87,6 +87,8 @@
 		<Unit filename="Model/Weapon.h" />
 		<Unit filename="State/GameBattleState.cpp" />
 		<Unit filename="State/GameBattleState.h" />
+		<Unit filename="State/MenuState.cpp" />
+		<Unit filename="State/MenuState.h" />
 		<Unit filename="State/State.h" />
 		<Unit filename="State/StateMachine.cpp" />
 		<Unit filename="State/StateMachine.h" />

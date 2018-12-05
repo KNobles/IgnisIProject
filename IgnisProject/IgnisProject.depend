@@ -3099,7 +3099,18 @@
 	"Game.h"
 	"GameBattleState.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
+1544015530 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<sstream>
+	<fstream>
+	<iomanip>
+	<time.h>
+	<iostream>
+	"IA.h"
+	"GameDimens.h"
+	"Game.h"
 
 1543395175 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/View/Game.h
 	<SFML/Graphics.hpp>
@@ -4136,9 +4147,10 @@
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\assetmanager.cpp
 	"AssetManager.h"
 
-1543928952 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
+1544023885 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
+	"MenuState.h"
 
 1543223359 source:c:\c++\ignisiproject\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
@@ -4164,7 +4176,7 @@
 	"CharacterSprite.h"
 	<vector>
 
-1543927228 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
+1544010479 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
 	"IA.h"
 
 1543923310 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.h
@@ -4178,4 +4190,14 @@
 	<SFML/Graphics.hpp>
 	"CharacterSprite.h"
 	<vector>
+
+1544024790 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.cpp
+	"MenuState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
+
+1544024545 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.h
+	"Game.h"
+	"GameDimens.h"
 

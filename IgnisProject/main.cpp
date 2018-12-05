@@ -7,9 +7,10 @@
 #include<iomanip>
 #include<time.h>
 #include <iostream>
-
+#include "IA.h"
 #include "GameDimens.h"
 #include "Game.h"
+
 
 using namespace std;
 
