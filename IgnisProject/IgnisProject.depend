@@ -4147,10 +4147,11 @@
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\assetmanager.cpp
 	"AssetManager.h"
 
-1544023885 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
+1544027441 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 	"MenuState.h"
+	"GameoverState.h"
 
 1543223359 source:c:\c++\ignisiproject\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
@@ -4191,13 +4192,23 @@
 	"CharacterSprite.h"
 	<vector>
 
-1544024790 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.cpp
+1544025025 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.cpp
 	"MenuState.h"
 	<SFML\Graphics.hpp>
 	<string>
 	<iostream>
 
 1544024545 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.h
+	"Game.h"
+	"GameDimens.h"
+
+1544027344 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.cpp
+	"GameoverState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
+
+1544027605 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.h
 	"Game.h"
 	"GameDimens.h"
 
