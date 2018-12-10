@@ -7,12 +7,15 @@ void InputManager::moveCharacter(CharacterSprite& character, Selector& selector)
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::X))
         {
             character.setIsSelected(false);
-            std::cout << "Deslected" << std::endl;
+            std::cout << "Deselected" << std::endl;
         }
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         {
-            sf::sleep(sf::milliseconds(100));
+            while(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+            {
+                sf::sleep(sf::milliseconds(100));
+            }
             int sum = abs(selector.getPosition().x - character.getPosition().x) / 16 + abs(selector.getPosition().y - character.getPosition().y) /16;
 //            std::cout << "From : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
             std::cout << "Sum : " << sum << std::endl;
@@ -24,12 +27,20 @@ void InputManager::moveCharacter(CharacterSprite& character, Selector& selector)
                 character.setIsSelected(false);
                 sum = 0;
             }
+            else
+            {
+                cout<<"on est dans le else"<<endl;
+            }
         }
     }
     else
     {
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D) && character.getPosition() == selector.getPosition())
         {
+            while(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+            {
+                sf::sleep(sf::milliseconds(100));
+            }
             std::cout << "Selected" << std::endl;
             character.setIsSelected(true);
         }

@@ -16,8 +16,16 @@ using namespace std;
 
 int main()
 {
+    Team t;
+
+
+    Mage* m = new Mage("Luana");
+    t.add(m);
+
     Warrior* w = new Warrior("maga");
-    CharacterSprite c(w);
+  //  CharacterSprite c(w);
+    t.add(w);
+   // TeamSprite* blue = new TeamSprite(t);
     Game game(WIDTH, HEIGHT, "Ignis");
 //    TileMap map;
 //    map.loadLevel1();

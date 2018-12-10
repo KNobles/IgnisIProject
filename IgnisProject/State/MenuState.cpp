@@ -1,4 +1,5 @@
 #include "MenuState.h"
+#include "GameBattleState.h"
 #include <SFML\Graphics.hpp>
 
 #include <string>
@@ -66,11 +67,14 @@ void MenuState::handleInput()
         {
             if (event.type == sf::Event::Closed)
                 data->window.close();
+
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+                data->machine.addState(stateRef(new GameBattleState(data)), true);
         }
 }
-void MenuState::moveSelector()
-{
-}
+
+
+
 void MenuState::draw(float deltaTime)
 {
         data->window.clear();
