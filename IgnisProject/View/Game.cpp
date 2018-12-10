@@ -1,9 +1,11 @@
 #include "Game.h"
 #include "GameBattleState.h"
+#include "MenuState.h"
+#include "GameoverState.h"
 Game::Game(int width, int height, std::string title)
 {
     data->window.create(sf::VideoMode(width, height), title);
-    data->machine.addState(stateRef(new GameBattleState(this->data)));
+    data->machine.addState(stateRef(new GameoverState(this->data)));
     this->run();
 }
 

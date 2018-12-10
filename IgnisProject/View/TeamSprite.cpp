@@ -1,5 +1,6 @@
 #include "TeamSprite.h"
 
+TeamSprite::TeamSprite(){}
 
 TeamSprite::TeamSprite(const Team& t)
 {
@@ -66,4 +67,8 @@ void TeamSprite::remove(CharacterSprite* c)
         }
     }
 
+}
+vector <CharacterSprite*> TeamSprite::getTeam() const
+{
+    return sprites;
 }

@@ -87,6 +87,10 @@
 		<Unit filename="Model/Weapon.h" />
 		<Unit filename="State/GameBattleState.cpp" />
 		<Unit filename="State/GameBattleState.h" />
+		<Unit filename="State/GameoverState.cpp" />
+		<Unit filename="State/GameoverState.h" />
+		<Unit filename="State/MenuState.cpp" />
+		<Unit filename="State/MenuState.h" />
 		<Unit filename="State/State.h" />
 		<Unit filename="State/StateMachine.cpp" />
 		<Unit filename="State/StateMachine.h" />
@@ -107,6 +111,8 @@
 		<Unit filename="View/Game.h" />
 		<Unit filename="View/Selector.cpp" />
 		<Unit filename="View/Selector.h" />
+		<Unit filename="View/TeamSprite.cpp" />
+		<Unit filename="View/TeamSprite.h" />
 		<Unit filename="View/TileMap.cpp" />
 		<Unit filename="View/TileMap.h" />
 		<Unit filename="main.cpp" />

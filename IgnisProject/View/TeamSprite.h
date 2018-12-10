@@ -10,6 +10,7 @@ using std::vector;
 class TeamSprite
 {
     public:
+        TeamSprite();
         TeamSprite(const Team& t);
         virtual ~TeamSprite();
         TeamSprite(const TeamSprite& other);
@@ -17,6 +18,7 @@ class TeamSprite
 
         void add(CharacterSprite* c);
         void remove(CharacterSprite* c);
+        vector <CharacterSprite*> getTeam() const;
 
     private:
         vector <CharacterSprite*> sprites;
