@@ -3,6 +3,7 @@
 GameBattleState::GameBattleState(GameDataRef data)
 {
     this->data = data;
+
 //    this->w = new Warrior("jeanne");
 //    this->ch(w);
 }

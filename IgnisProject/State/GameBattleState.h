@@ -5,6 +5,7 @@
 #include "TileMap.h"
 #include <vector>
 #include "Warrior.h"
+#include "AnimatedSprite.h"
 
 class GameBattleState : public State
 {
@@ -29,6 +30,15 @@ class GameBattleState : public State
         Selector selector;
         TileMap map;
         sf::View view;
+
+        Animation walkingAnimationUp;
+        Animation walkingAnimationDown;
+        Animation walkingAnimationLeft;
+        Animation walkingAnimationRight;
+
+        Animation* currentAnimation = &walkingAnimationDown;
+        AnimatedSprite animatedSprite;
+
 };
 
 #endif // GAMEBATTLESTATE_H

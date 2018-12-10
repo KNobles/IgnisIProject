@@ -48,7 +48,7 @@ void InputManager::displayMovement(CharacterSprite& character, sf::RenderWindow&
             rect->setFillColor(sf::Color::Blue);
             movements.push_back(rect);
         }
-        for(int x = 0; x < movements.size(); x++)
+        for(unsigned int x = 0; x < movements.size(); x++)
         {
             movements[x]->move(x*16.f, x*16.f);
             window.draw(*movements[x]);

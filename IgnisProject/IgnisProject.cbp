@@ -97,6 +97,8 @@
 		<Unit filename="Util/IA.h" />
 		<Unit filename="Util/InputManager.cpp" />
 		<Unit filename="Util/InputManager.h" />
+		<Unit filename="View/AnimatedSprite.cpp" />
+		<Unit filename="View/AnimatedSprite.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
 		<Unit filename="View/CharacterSprite.cpp" />

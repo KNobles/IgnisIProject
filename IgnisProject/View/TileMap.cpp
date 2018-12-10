@@ -83,7 +83,9 @@ bool TileMap::loadFromFile(std::string fileName, std::string imageName)
     std::copy(arr.begin(), arr.end(), lvl);
 
     if (!this->load("Assets/Sprites/Tiles/" + imageName, sf::Vector2u(16, 16), lvl, tileWidth, tileHeight))
-        return 0;
+        return false;
+
+    return true;
 }
 
 bool TileMap::loadLevel1()
