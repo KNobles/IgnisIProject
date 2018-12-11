@@ -4,6 +4,7 @@
 #include<sstream>
 #include<random>
 #include "Character.h"
+#include "Bow.h"
 #include<iostream>
 #include<thread>
 #include<vector>

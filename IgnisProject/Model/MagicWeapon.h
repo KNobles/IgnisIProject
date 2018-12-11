@@ -8,7 +8,7 @@
 class MagicWeapon : public Weapon
 {
     public:
-        MagicWeapon();
+        MagicWeapon(string name="DEFAULT", int damages=1, int hit=85, int range=1, int crit=0, int worth=1, int uses = 40, WeaponType type=WeaponType::light);
         virtual ~MagicWeapon();
         MagicWeapon(const MagicWeapon& other);
         MagicWeapon& operator=(const MagicWeapon& other);

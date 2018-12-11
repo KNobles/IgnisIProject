@@ -1,6 +1,6 @@
 #include "Axe.h"
 
-Axe::Axe():PhysicalWeapon()
+Axe::Axe(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):PhysicalWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }
@@ -26,7 +26,7 @@ Axe* Axe::clone()const
 {
     return new Axe(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Axe::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

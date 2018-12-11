@@ -34,10 +34,12 @@ class GameBattleState : public State
         void moveSelector();
         void showMovement(CharacterSprite&);
 
+        bool allyTurn;
         Warrior* w;
         CharacterSprite ch;
         CharacterSprite* ch2;
-        vector<CharacterSprite*> v;
+        vector<CharacterSprite*> allies;
+        vector<CharacterSprite*> ennemies;
         GameDataRef data;
         sf::Clock clock;
         Selector selector;

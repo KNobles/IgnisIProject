@@ -1,6 +1,6 @@
 #include "Dark.h"
 
-Dark::Dark():MagicWeapon()
+Dark::Dark(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):MagicWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }
@@ -26,7 +26,7 @@ Dark* Dark::clone()const
 {
     return new Dark(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Dark::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

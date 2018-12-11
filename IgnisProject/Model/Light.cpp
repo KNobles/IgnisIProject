@@ -1,6 +1,6 @@
 #include "Light.h"
 
-Light::Light():MagicWeapon()
+Light::Light(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):MagicWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }
@@ -26,7 +26,7 @@ Light* Light::clone()const
 {
     return new Light(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Light::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

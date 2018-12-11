@@ -9,10 +9,27 @@ GameBattleState::GameBattleState(GameDataRef data)
     Character* cavalier = new Cavalier("Georgette");
     ch2 = new CharacterSprite(cavalier);
 
+<<<<<<< HEAD
     v.push_back(ch2);
     v.push_back(&ch);
     v[1]->setPosition(sf::Vector2f(16,16));
 >>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
+=======
+    allies.push_back(ch2);
+    allies.push_back(&ch);
+    allies[1]->setPosition(sf::Vector2f(16,16));
+
+    Character* archer = new Archer("Axel");
+    Character* knight = new Knight("Orlermo");
+    CharacterSprite* ch3 = new CharacterSprite(archer);
+    CharacterSprite* ch4 = new CharacterSprite(knight);
+    ennemies.push_back(ch3);
+    ennemies.push_back(ch4);
+    ennemies[0]->setPosition(sf::Vector2f(192,192));
+    ennemies[1]->setPosition(sf::Vector2f(192,208));
+
+    allyTurn=true;
+>>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
 
 //    this->w = new Warrior("jeanne");
 //    this->ch(w);
@@ -39,23 +56,86 @@ void GameBattleState::handleInput()
                 data->window.close();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             data->input.moveCharacter(this->ch, this->selector);
 =======
             for(CharacterSprite* c:v)
+=======
+            if(allyTurn)
+>>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
             {
-                if((selector.getPosition() == c->getPosition() || c->getIsSelected()) && !c->getIsDone())
+                for(CharacterSprite* c:allies)
                 {
-                    data->input.moveCharacter(c, this->selector);
-                  /*  if(sf::Keyboard::isKeyPressed(d))
-                        c->setIsDone(true);*/
-                    endTurn();
+                    if((selector.getPosition() == c->getPosition() || c->getIsSelected()) && !c->getIsDone())
+                    {
+                        data->input.moveCharacter(c, this->selector, ennemies);
+;                       for(unsigned int i=0; i<ennemies.size(); i++)
+                        {
+                            if(ennemies[i]->getCharacter()->isDead())
+                            {
+                                delete ennemies[i];
+                                ennemies.erase(ennemies.begin() + i);
+                                this->draw(60);
+                            }
+                        }
+                        for(unsigned int i=0; i<allies.size(); i++)
+                        {
+                            if(allies[i]->getCharacter()->isDead())
+                            {
+                                delete allies[i];
+                                allies.erase(allies.begin() + i);
+                                this->draw(60);
+                            }
+                        }
+                        endTurn();
+                    }
                 }
+
+
+                moveView();
+            }
+            else
+            {
+                for(CharacterSprite* c:ennemies)
+                {
+                    if((selector.getPosition() == c->getPosition() || c->getIsSelected()) && !c->getIsDone())
+                    {
+                        data->input.moveCharacter(c, this->selector, allies);
+                        for(unsigned int i=0; i<ennemies.size(); i++)
+                        {
+                            if(ennemies[i]->getCharacter()->isDead())
+                            {
+                                delete ennemies[i];
+                                ennemies.erase(ennemies.begin() + i);
+                                this->draw(60);
+                            }
+                        }
+                        for(unsigned int i=0; i<allies.size(); i++)
+                        {
+                            if(allies[i]->getCharacter()->isDead())
+                            {
+                                delete allies[i];
+                                allies.erase(allies.begin() + i);
+                                this->draw(60);
+                            }
+                        }
+                      /*  if(sf::Keyboard::isKeyPressed(d))
+                            c->setIsDone(true);*/
+                        endTurn();
+                    }
+                }
+
+
+                moveView();
             }
 
 
+<<<<<<< HEAD
 >>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
             moveView();
+=======
+>>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
         }
 
 }
@@ -71,8 +151,14 @@ void GameBattleState::draw(float deltaTime)
 
         data->window.clear();
         data->window.draw(this->map);
-        data->window.draw(*v[0]);
-        data->window.draw(*v[1]);
+        for(c:allies)
+        {
+            data->window.draw(*c);
+        }
+        for(c:ennemies)
+        {
+            data->window.draw(*c);
+        }
 
         data->window.draw(this->selector);
         data->window.setView(this->view);
@@ -155,23 +241,50 @@ void GameBattleState::showMovement(CharacterSprite& character)
 
 void GameBattleState::endTurn()
 {
-    for(CharacterSprite* c:v)
+    if(allyTurn)
     {
-        if(!c->getIsDone())
+        for(CharacterSprite* c:allies)
         {
-            return;
+            if(!c->getIsDone())
+            {
+                return;
+            }
         }
+        allyTurn = !allyTurn;
+        nextTurn();
     }
-    std::cout << "nextturn";
-    nextTurn();
+    else
+    {
+        for(CharacterSprite* c:ennemies)
+        {
+            if(!c->getIsDone())
+            {
+                return;
+            }
+        }
+        allyTurn = !allyTurn;
+        nextTurn();
+    }
+
 }
 
 void GameBattleState::nextTurn()
 {
-    for(CharacterSprite* c:v)
+    if(allyTurn)
     {
-        c->setIsDone(false);
+        for(CharacterSprite* c:allies)
+        {
+            c->setIsDone(false);
+        }
     }
+    else
+    {
+        for(CharacterSprite* c:ennemies)
+        {
+            c->setIsDone(false);
+        }
+    }
+
 }
 
 

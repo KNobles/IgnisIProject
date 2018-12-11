@@ -1,6 +1,6 @@
 #include "Anima.h"
 
-Anima::Anima():MagicWeapon()
+Anima::Anima(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):MagicWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }
@@ -26,7 +26,7 @@ Anima* Anima::clone()const
 {
     return new Anima(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Anima::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

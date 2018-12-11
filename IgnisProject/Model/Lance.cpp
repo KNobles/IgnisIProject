@@ -1,6 +1,6 @@
 #include "Lance.h"
 
-Lance::Lance():PhysicalWeapon()
+Lance::Lance(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):PhysicalWeapon(name, damages, hit, range, crit, worth, uses , type)
 {
     //ctor
 }
@@ -26,7 +26,7 @@ Lance* Lance::clone()const
 {
     return new Lance(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Lance::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

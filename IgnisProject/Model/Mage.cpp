@@ -16,6 +16,8 @@ Mage::Mage(string name):Character()
     setName(name);
     setExp(0);
     setLevel(1);
+    Dark dark;
+    this->setWeapon(&dark);
 }
 
 Mage::~Mage()
@@ -48,7 +50,7 @@ Mage* Mage::clone()const
 {
     return new Mage(*this);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -67,7 +69,7 @@ void Mage::addHealth(){
     }
     this->setHealth(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addStrength(){
     int tmp= this->getStrength();
 
@@ -87,7 +89,7 @@ void Mage::addStrength(){
     }
     this->setStrength(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
@@ -106,7 +108,7 @@ void Mage::addDefense(){
     }
     this->setDefense(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
@@ -125,7 +127,7 @@ void Mage::addSpeed(){
     }
     this->setSpeed(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
@@ -144,7 +146,7 @@ void Mage::addResistance(){
     }
     this->setResistance(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
@@ -163,7 +165,7 @@ void Mage::addMagic(){
     }
     this->setMagic(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
@@ -182,7 +184,7 @@ void Mage::addLuck(){
     }
     this->setLuck(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Mage::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();

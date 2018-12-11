@@ -57,6 +57,11 @@ bool CharacterSprite::getIsDone()const
     return this->isDone;
 }
 
+int CharacterSprite::sumPositions()const
+{
+    return getPosition().x + getPosition().y;
+}
+
 void CharacterSprite::setIsDone(bool isDone)
 {
     this->isDone = isDone;

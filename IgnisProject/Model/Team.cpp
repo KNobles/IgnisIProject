@@ -36,7 +36,7 @@ Team& Team::operator=(const Team& rhs)
         team.push_back(c);
     }
 }
-
+//Methode qui determine si le character et deja present
 bool Team::contains(const Character* c)const
 {
     for(unsigned int i=0; i<team.size(); i++)
@@ -46,13 +46,13 @@ bool Team::contains(const Character* c)const
     }
     return false;
 }
-
+//Methode quipermet d'ajouter un character a une team
 void Team::add(Character* c)
 {
     if(!contains(c))
         team.push_back(c->clone());
 }
-//A modifier
+//Methode qui permet de retire un character a une team
 void Team::remove(Character* c)
 {
     if(contains(c)){
@@ -60,12 +60,12 @@ void Team::remove(Character* c)
         delete c;
     }
 }
-
+//Methode qui permet d'obtenir un character grace a son index
 Character* Team::get(const int index)const
 {
     return team[index];
 }
-
+//Methode qui permet d'obtenir l'index d'un character
 int Team::indexOf(const Character* c)const
 {
     if(contains(c))
