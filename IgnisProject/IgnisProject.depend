@@ -4117,7 +4117,7 @@
 
 1544437359 c:\c++\ignisiproject\ignisproject\state\state.h
 
-1544437359 c:\c++\ignisiproject\ignisproject\util\inputmanager.h
+1544537048 c:\c++\ignisiproject\ignisproject\util\inputmanager.h
 	<vector>
 	<cmath>
 	"Selector.h"
@@ -4149,7 +4149,7 @@
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 
-1544437359 c:\c++\ignisiproject\ignisproject\view\charactersprite.h
+1544535747 c:\c++\ignisiproject\ignisproject\view\charactersprite.h
 	<SFML/Graphics.hpp>
 	"Character.h"
 	"Warrior.h"
@@ -4240,16 +4240,16 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1544449174 source:c:\c++\ignisiproject\ignisproject\util\inputmanager.cpp
+1544537597 source:c:\c++\ignisiproject\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 
-1544440014 source:c:\c++\ignisiproject\ignisproject\view\charactersprite.cpp
+1544535818 source:c:\c++\ignisiproject\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
 1544437359 source:c:\c++\ignisiproject\ignisproject\view\selector.cpp
 	"Selector.h"
 
-1544437359 source:c:\c++\ignisiproject\ignisproject\view\tilemap.cpp
+1544449549 source:c:\c++\ignisiproject\ignisproject\view\tilemap.cpp
 	"TileMap.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\view\tilemap.h
@@ -4419,15 +4419,19 @@
 1544437359 source:c:\c++\ignisiproject\ignisproject\model\weapon.cpp
 	"Weapon.h"
 
-1544437359 source:c:\c++\ignisiproject\ignisproject\state\gamebattlestate.cpp
+1544538237 source:c:\c++\ignisiproject\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
-1544439991 c:\c++\ignisiproject\ignisproject\state\gamebattlestate.h
+1544536159 c:\c++\ignisiproject\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
 	<vector>
 	"Warrior.h"
+	"Mage.h"
+	"Archer.h"
+	"Cavalier.h"
+	"Knight.h"
 
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\assetmanager.cpp
 	"AssetManager.h"

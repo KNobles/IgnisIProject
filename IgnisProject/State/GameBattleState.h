@@ -5,6 +5,10 @@
 #include "TileMap.h"
 #include <vector>
 #include "Warrior.h"
+#include "Mage.h"
+#include "Archer.h"
+#include "Cavalier.h"
+#include "Knight.h"
 
 class GameBattleState : public State
 {
@@ -14,6 +18,9 @@ class GameBattleState : public State
         void handleInput();
         void update(float dt);
         void draw(float dt);
+        void endTurn();
+        void nextTurn();
+
 
     protected:
 
@@ -24,6 +31,8 @@ class GameBattleState : public State
 
         Warrior* w;
         CharacterSprite ch;
+        CharacterSprite* ch2;
+        vector<CharacterSprite*> v;
         GameDataRef data;
         sf::Clock clock;
         Selector selector;

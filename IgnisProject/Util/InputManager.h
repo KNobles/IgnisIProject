@@ -11,7 +11,7 @@ class InputManager
         virtual ~InputManager(){}
 
         bool isCharacterSelected(CharacterSprite&, Selector&);
-        void moveCharacter(CharacterSprite&, Selector&);
+        void moveCharacter(CharacterSprite*, Selector&);
 
     protected:
 
