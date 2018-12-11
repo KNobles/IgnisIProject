@@ -12,6 +12,7 @@
 #include "GameDimens.h"
 #include "CharacterSprite.h"
 #include "Warrior.h"
+#include "Mage.h"
 #include "AssetManager.h"
 
 struct GameData

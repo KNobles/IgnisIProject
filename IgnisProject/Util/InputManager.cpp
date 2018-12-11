@@ -1,37 +1,56 @@
 #include "InputManager.h"
 
-void InputManager::moveCharacter(CharacterSprite& character, Selector& selector)
+void InputManager::moveCharacter(CharacterSprite* character, Selector& selector)
 {
-    if(character.getIsSelected())
+
+    if(character->getIsSelected())
     {
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::X))
         {
-            character.setIsSelected(false);
-            std::cout << "Deslected" << std::endl;
+            character->setIsSelected(false);
+            std::cout << "Deselected" << std::endl;
         }
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         {
+<<<<<<< HEAD
             sf::sleep(sf::milliseconds(100));
             int sum = abs(selector.getPosition().x - character.getPosition().x) / PIXEL_SIZE + abs(selector.getPosition().y - character.getPosition().y) /PIXEL_SIZE;
+=======
+            while(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+            {
+                sf::sleep(sf::milliseconds(100));
+            }
+            int sum = abs(selector.getPosition().x - character->getPosition().x) / 16 + abs(selector.getPosition().y - character->getPosition().y) /16;
+>>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
 //            std::cout << "From : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
             std::cout << "Sum : " << sum << std::endl;
 //            displayMovement(character, selector);
-            if(selector.getPosition() != character.getPosition() && sum <= character.getCharacter()->getMovement())
+            if(selector.getPosition() != character->getPosition() && sum <= character->getCharacter()->getMovement())
             {
-                character.setPosition(selector.getPosition());
+                character->setPosition(selector.getPosition());
 //                std::cout << "To : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
-                character.setIsSelected(false);
+
                 sum = 0;
             }
+            else
+            {
+                //code à implémenter
+            }
+            character->setIsSelected(false);
+            character->setIsDone(true);
         }
     }
     else
     {
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::D) && character.getPosition() == selector.getPosition())
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::D) && character->getPosition() == selector.getPosition())
         {
+            while(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+            {
+                sf::sleep(sf::milliseconds(100));
+            }
             std::cout << "Selected" << std::endl;
-            character.setIsSelected(true);
+            character->setIsSelected(true);
         }
     }
 }

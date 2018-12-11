@@ -5,7 +5,11 @@
 Game::Game(int width, int height, std::string title)
 {
     data->window.create(sf::VideoMode(width, height), title);
+<<<<<<< HEAD
     data->machine.addState(stateRef(new GameBattleState(this->data)));
+=======
+    data->machine.addState(stateRef(new MenuState(this->data)));
+>>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
     this->run();
 }
 

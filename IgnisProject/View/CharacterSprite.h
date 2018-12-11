@@ -15,6 +15,8 @@ class CharacterSprite : public sf::Sprite
 
         bool getIsSelected()const;
         void setIsSelected(bool);
+        bool getIsDone()const;
+        void setIsDone(bool);
 
         bool operator==(const CharacterSprite& other)const;
 
@@ -22,6 +24,7 @@ class CharacterSprite : public sf::Sprite
         Character* character;
         sf::Texture texture;
         bool isSelected;
+        bool isDone;
 };
 
 #endif // CHARACTERSPRITE_H

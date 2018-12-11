@@ -13,7 +13,6 @@ class MenuState: public State
         MenuState& operator=(const MenuState& other);
         void init();
         void handleInput();
-        void moveSelector();
         void draw(float dt);
         void update(float dt);
         void setNewText();

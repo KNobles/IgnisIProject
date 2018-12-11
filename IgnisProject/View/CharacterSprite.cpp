@@ -12,6 +12,7 @@ CharacterSprite::CharacterSprite(Character* character)
     this->setTexture(this->texture);
     this->character = character;
     this->setPosition(0.f, 0.f);
+    this->isDone = false;
     this->isSelected = false;
 }
 
@@ -49,6 +50,16 @@ Character* CharacterSprite::getCharacter()const
 bool CharacterSprite::getIsSelected()const
 {
     return this->isSelected;
+}
+
+bool CharacterSprite::getIsDone()const
+{
+    return this->isDone;
+}
+
+void CharacterSprite::setIsDone(bool isDone)
+{
+    this->isDone = isDone;
 }
 
 void CharacterSprite::setIsSelected(bool isSelected)

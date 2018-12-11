@@ -6,8 +6,11 @@ TeamSprite::TeamSprite(const Team& t)
 {
     for(unsigned int i=0; i< t.getTeam().size(); i++)
     {
+        cout << "on construit un charactersprite" << endl;
         CharacterSprite* c = new CharacterSprite(t.get(i));
+        cout << "on ajoute le sprite dans la team" << endl;
         sprites.push_back(c);
+        cout << "sprite ajoute" << endl;
     }
 }
 

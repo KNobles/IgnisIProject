@@ -2,7 +2,17 @@
 
 GameBattleState::GameBattleState(GameDataRef data)
 {
+
     this->data = data;
+<<<<<<< HEAD
+=======
+    Character* cavalier = new Cavalier("Georgette");
+    ch2 = new CharacterSprite(cavalier);
+
+    v.push_back(ch2);
+    v.push_back(&ch);
+    v[1]->setPosition(sf::Vector2f(16,16));
+>>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
 
 //    this->w = new Warrior("jeanne");
 //    this->ch(w);
@@ -28,8 +38,23 @@ void GameBattleState::handleInput()
             if (event.type == sf::Event::Closed)
                 data->window.close();
 
+<<<<<<< HEAD
 
             data->input.moveCharacter(this->ch, this->selector);
+=======
+            for(CharacterSprite* c:v)
+            {
+                if((selector.getPosition() == c->getPosition() || c->getIsSelected()) && !c->getIsDone())
+                {
+                    data->input.moveCharacter(c, this->selector);
+                  /*  if(sf::Keyboard::isKeyPressed(d))
+                        c->setIsDone(true);*/
+                    endTurn();
+                }
+            }
+
+
+>>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
             moveView();
         }
 
@@ -42,9 +67,13 @@ void GameBattleState::update(float deltaTime)
 
 void GameBattleState::draw(float deltaTime)
 {
+
+
         data->window.clear();
         data->window.draw(this->map);
-        data->window.draw(this->ch);
+        data->window.draw(*v[0]);
+        data->window.draw(*v[1]);
+
         data->window.draw(this->selector);
         data->window.setView(this->view);
 //
@@ -123,3 +152,26 @@ void GameBattleState::showMovement(CharacterSprite& character)
 {
 
 }
+
+void GameBattleState::endTurn()
+{
+    for(CharacterSprite* c:v)
+    {
+        if(!c->getIsDone())
+        {
+            return;
+        }
+    }
+    std::cout << "nextturn";
+    nextTurn();
+}
+
+void GameBattleState::nextTurn()
+{
+    for(CharacterSprite* c:v)
+    {
+        c->setIsDone(false);
+    }
+}
+
+
