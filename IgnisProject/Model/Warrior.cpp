@@ -58,7 +58,7 @@ void Warrior::setWeapon(Weapon* weapon)
     if (weapon->TYPE == types[0] || weapon->TYPE == types[1])
         Character::setWeapon(weapon);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -77,6 +77,7 @@ void Warrior::addHealth(){
     }
     this->setHealth(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addStrength(){
     int tmp= this->getStrength();
     int ran = rand();
@@ -95,6 +96,7 @@ void Warrior::addStrength(){
     }
     this->setStrength(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
@@ -113,6 +115,7 @@ void Warrior::addDefense(){
     }
     this->setDefense(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
@@ -131,7 +134,7 @@ void Warrior::addSpeed(){
     }
     this->setSpeed(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
@@ -150,6 +153,7 @@ void Warrior::addResistance(){
     }
     this->setResistance(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
@@ -168,6 +172,7 @@ void Warrior::addMagic(){
     }
     this->setMagic(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
@@ -186,6 +191,7 @@ void Warrior::addLuck(){
     }
     this->setLuck(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Warrior::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();

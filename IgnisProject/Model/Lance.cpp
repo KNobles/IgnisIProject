@@ -26,7 +26,7 @@ Lance* Lance::clone()const
 {
     return new Lance(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Lance::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

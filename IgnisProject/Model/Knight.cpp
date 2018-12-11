@@ -54,6 +54,7 @@ std::string Knight::str()const{
     << endl <<"MAGIC : "<<getMagic()<< endl <<"LUCK : "<<getLuck()<< endl <<"EXPERIENCE : " <<getExp()<< endl  <<"LEVEL : " <<getLevel()<<endl;
     return strs.str();
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -72,6 +73,7 @@ void Knight::addHealth(){
     }
     this->setHealth(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addStrength(){
     int tmp= this->getStrength();
     int ran = rand();
@@ -90,6 +92,7 @@ void Knight::addStrength(){
     }
     this->setStrength(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
@@ -108,6 +111,7 @@ void Knight::addDefense(){
     }
     this->setDefense(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
@@ -126,6 +130,7 @@ void Knight::addSpeed(){
     }
     this->setSpeed(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
@@ -144,6 +149,7 @@ void Knight::addResistance(){
     }
     this->setResistance(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
@@ -162,6 +168,7 @@ void Knight::addMagic(){
     }
     this->setMagic(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
@@ -180,6 +187,7 @@ void Knight::addLuck(){
     }
     this->setLuck(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Knight::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();

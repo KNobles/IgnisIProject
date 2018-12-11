@@ -26,7 +26,7 @@ Dark* Dark::clone()const
 {
     return new Dark(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Dark::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

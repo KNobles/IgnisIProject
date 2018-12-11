@@ -41,6 +41,7 @@ Archer* Archer::clone()const
     return new Archer(*this);
 }
 
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -59,6 +60,7 @@ void Archer::addHealth(){
     }
     this->setHealth(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addStrength(){
     int tmp= this->getStrength();
     int ran = rand();
@@ -77,6 +79,7 @@ void Archer::addStrength(){
     }
     this->setStrength(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
@@ -95,6 +98,7 @@ void Archer::addDefense(){
     }
     this->setDefense(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
@@ -113,7 +117,7 @@ void Archer::addSpeed(){
     }
     this->setSpeed(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
@@ -132,6 +136,7 @@ void Archer::addResistance(){
     }
     this->setResistance(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
@@ -150,6 +155,7 @@ void Archer::addMagic(){
     }
     this->setMagic(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
@@ -168,6 +174,7 @@ void Archer::addLuck(){
     }
     this->setLuck(tmp);
 }
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Archer::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();
