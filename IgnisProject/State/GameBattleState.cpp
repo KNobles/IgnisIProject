@@ -4,17 +4,9 @@ GameBattleState::GameBattleState(GameDataRef data)
 {
 
     this->data = data;
-<<<<<<< HEAD
-=======
     Character* cavalier = new Cavalier("Georgette");
     ch2 = new CharacterSprite(cavalier);
 
-<<<<<<< HEAD
-    v.push_back(ch2);
-    v.push_back(&ch);
-    v[1]->setPosition(sf::Vector2f(16,16));
->>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
-=======
     allies.push_back(ch2);
     allies.push_back(&ch);
     allies[1]->setPosition(sf::Vector2f(16,16));
@@ -29,7 +21,6 @@ GameBattleState::GameBattleState(GameDataRef data)
     ennemies[1]->setPosition(sf::Vector2f(192,208));
 
     allyTurn=true;
->>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
 
 //    this->w = new Warrior("jeanne");
 //    this->ch(w);
@@ -55,15 +46,7 @@ void GameBattleState::handleInput()
             if (event.type == sf::Event::Closed)
                 data->window.close();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-            data->input.moveCharacter(this->ch, this->selector);
-=======
-            for(CharacterSprite* c:v)
-=======
             if(allyTurn)
->>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
             {
                 for(CharacterSprite* c:allies)
                 {
@@ -130,12 +113,6 @@ void GameBattleState::handleInput()
                 moveView();
             }
 
-
-<<<<<<< HEAD
->>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
-            moveView();
-=======
->>>>>>> de703b7d56dc20f51b4f00e4f50cf7745fb70a97
         }
 
 }
@@ -147,7 +124,6 @@ void GameBattleState::update(float deltaTime)
 
 void GameBattleState::draw(float deltaTime)
 {
-
 
         data->window.clear();
         data->window.draw(this->map);
@@ -162,29 +138,6 @@ void GameBattleState::draw(float deltaTime)
 
         data->window.draw(this->selector);
         data->window.setView(this->view);
-//
-//            sf::Vector2f vect(16.f,16.f);
-////            for(int i = 1; i <= ch.getCharacter()->getMovement(); i++)
-////            {
-////                sf::RectangleShape* rect = new sf::RectangleShape(vect);
-////                rect->setFillColor(sf::Color::Black);
-////                rect->setOrigin(i * 16.f, i * 16.f);
-////                data->window.draw(*rect);
-////            }
-//                std::vector<sf::RectangleShape*> rects;
-//                for(int i = 0; i < this->ch.getCharacter()->getMovement(); i ++)
-//                {
-//                    sf::RectangleShape rect(vect);
-//                    rect.setFillColor(sf::Color::Black);
-//                    rect.setOrigin(i * 16.f, i * 16.f);
-////                    data->window.draw(*rect);
-//                    rects.push_back(*rect);
-//                }
-//
-//                for(int i = 0; i < rects.size(); i++)
-//                {
-//                    data->window.draw(*rects[i]);
-//                }
 
         data->window.display();
 }

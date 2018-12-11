@@ -3,17 +3,17 @@
 #include "Game.h"
 #include "GameDimens.h"
 #include "TileMap.h"
+
 #include <vector>
 #include "Warrior.h"
-<<<<<<< HEAD
+#include "CharacterSprite.h"
 #include "AnimatedSprite.h"
 
-=======
 #include "Mage.h"
 #include "Archer.h"
 #include "Cavalier.h"
 #include "Knight.h"
->>>>>>> 08ce0446e3886cf9d44003058f52b91c989bcc40
+
 
 class GameBattleState : public State
 {
