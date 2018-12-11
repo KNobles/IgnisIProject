@@ -7,7 +7,7 @@
 class Dark : public MagicWeapon
 {
     public:
-        Dark();
+        Dark(string name="Dark", int damages=3, int hit=95, int range=2, int crit=0, int worth=1, int uses = 40, WeaponType type=sword);
         virtual ~Dark();
         Dark(const Dark& other);
         Dark& operator=(const Dark& other);

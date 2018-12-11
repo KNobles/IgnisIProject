@@ -27,6 +27,7 @@ class Character
         int movement;
         int exp;
         int level;
+        bool dead;
         static int increment;
         Weapon* weapon;
 
@@ -50,6 +51,7 @@ class Character
         int* getCharId()const;
         int getExp()const;
         int getLevel()const;
+        bool isDead()const;
 
         Weapon* getWeapon()const;
 
@@ -75,7 +77,7 @@ class Character
         void die();
         void attack(Character& c)const;
         virtual string str()const;
-        friend void combat(Character& c1, Character& c2);
+        friend void combat(Character& c1, Character& c2, int dist);
         void addExp(const int exp);
         void addLevel(const int level);
         int calculatorExp(Character& c);

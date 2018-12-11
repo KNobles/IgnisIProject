@@ -2,6 +2,7 @@
 #define MAGE_H
 
 #include "Character.h"
+#include "Dark.h"
 
 
 class Mage : public Character

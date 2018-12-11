@@ -1,6 +1,6 @@
 #include "PhysycalWeapon.h"
 
-PhysicalWeapon::PhysicalWeapon():Weapon()
+PhysicalWeapon::PhysicalWeapon(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):Weapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }

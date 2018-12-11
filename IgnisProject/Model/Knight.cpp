@@ -17,6 +17,8 @@ Knight::Knight(std::string name):Character()
     this->setResistance(3);
     this->setExp(0);
     this->setLevel(1);
+    Lance* lance = new Lance("Lance en bronze", 4, 85, 1, 0, 20, 50, WeaponType::lance);
+    this->setWeapon(lance);
 }
 
 Knight::~Knight()

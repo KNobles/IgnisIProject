@@ -16,6 +16,8 @@ Mage::Mage(string name):Character()
     setName(name);
     setExp(0);
     setLevel(1);
+    Dark dark;
+    this->setWeapon(&dark);
 }
 
 Mage::~Mage()

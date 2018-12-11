@@ -16,6 +16,8 @@ Archer::Archer(std::string name):Character ()
     this->setResistance(0);
     this->setExp(0);
     this->setLevel(1);
+    Bow bow;
+    this->setWeapon(&bow);
 }
 Archer::~Archer()
 {

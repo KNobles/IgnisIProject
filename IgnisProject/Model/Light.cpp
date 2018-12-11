@@ -1,6 +1,6 @@
 #include "Light.h"
 
-Light::Light():MagicWeapon()
+Light::Light(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):MagicWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }

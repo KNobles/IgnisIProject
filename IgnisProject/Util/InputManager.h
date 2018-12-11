@@ -4,6 +4,8 @@
 #include <cmath>
 #include "Selector.h"
 #include "CharacterSprite.h"
+#include "math.h"
+#include "Character.h"
 class InputManager
 {
     public:
@@ -11,7 +13,7 @@ class InputManager
         virtual ~InputManager(){}
 
         bool isCharacterSelected(CharacterSprite&, Selector&);
-        void moveCharacter(CharacterSprite*, Selector&);
+        void moveCharacter(CharacterSprite*, Selector&, vector<CharacterSprite*> ennemies);
 
     protected:
 

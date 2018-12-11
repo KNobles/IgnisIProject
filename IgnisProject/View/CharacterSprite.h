@@ -17,6 +17,7 @@ class CharacterSprite : public sf::Sprite
         void setIsSelected(bool);
         bool getIsDone()const;
         void setIsDone(bool);
+        int sumPositions()const;
 
         bool operator==(const CharacterSprite& other)const;
 

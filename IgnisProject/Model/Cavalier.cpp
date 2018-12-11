@@ -16,6 +16,8 @@ Cavalier::Cavalier(string name):Character()
     this->setResistance(0);
     this->setExp(0);
     this->setLevel(0);
+    Sword sword;
+    this->setWeapon(&sword);
 }
 
 Cavalier::~Cavalier()

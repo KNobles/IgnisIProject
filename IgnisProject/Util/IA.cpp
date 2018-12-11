@@ -66,7 +66,7 @@ void IA::moveIA(){
 void IA::attackIA(){
     Character* tmpCh;
     tmpCh=chooseTargetIA().getCharacter();
-    combat(*this->ch.getCharacter(), *tmpCh);
+    combat(*this->ch.getCharacter(), *tmpCh, tmpCh->getWeapon()->getRange());
 
 }
 CharacterSprite IA::chooseTargetIA(){

@@ -1,6 +1,6 @@
 #include "Anima.h"
 
-Anima::Anima():MagicWeapon()
+Anima::Anima(string name, int damages, int hit, int range, int crit, int worth, int uses, WeaponType type):MagicWeapon(name, damages, hit, range, crit, worth, uses, type)
 {
     //ctor
 }

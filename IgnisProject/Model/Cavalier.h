@@ -1,7 +1,9 @@
 #ifndef CAVALIER_H
 #define CAVALIER_H
 
-#include <Character.h>
+#include "Character.h"
+#include "Sword.h"
+#include "Lance.h"
 
 using std::string;
 using std::stringstream;

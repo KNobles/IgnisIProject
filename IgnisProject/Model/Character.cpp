@@ -5,6 +5,7 @@ int Character::increment=1000;
 Character::Character()
 {
     charId = new int(increment++);
+    dead=false;
 }
 
 Character::~Character()
@@ -28,6 +29,7 @@ Character::Character(const Character& other)
     this->charId = new int(*other.charId);
     this->exp=other.exp;
     this->level=other.level;
+    this->dead=other.dead;
 }
 
 Character& Character::operator=(const Character& rhs)
@@ -41,6 +43,7 @@ Character& Character::operator=(const Character& rhs)
     this->movement = rhs.movement;
     this->exp=rhs.exp;
     this->level=rhs.exp;
+    this->dead=rhs.dead;
     delete charId;
     this->charId = new int(*rhs.charId);
     return *this;
@@ -106,6 +109,12 @@ Weapon* Character::getWeapon()const
 {
     return weapon;
 }
+
+bool Character::isDead()const
+{
+    return dead;
+}
+
 void Character::setName(const string name){
     this->name = name;
 }
@@ -163,6 +172,11 @@ void Character::setWeapon(Weapon* weapon)
 {
         this->weapon = weapon->clone();
 }
+
+void Character::die()
+{
+    dead=true;
+}
 void Character::attack(Character& c)const{
     //Accuracy = chances to hit from this - chances to avoid from c
     float accuracy = this->getWeapon()->strategyAccuracy(*this, c);
@@ -185,25 +199,40 @@ void Character::attack(Character& c)const{
     else
         cout << this->getName() << " missed" << endl;
 }
-void combat(Character& c1, Character& c2){
+void combat(Character& c1, Character& c2, int dist){
     int diff = c1.getSpeed() - c2.getSpeed();
-    if(diff >= 5){
-        c1.attack(c2);
-        c2.attack(c1);
-        c1.attack(c2);
-    }
-    else if(diff <= -5 ){
-        c1.attack(c2);
-        c2.attack(c1);
-        c2.attack(c1);
+
+    if(c2.getWeapon()->getRange() == dist)
+    {
+        if(diff >= 5){
+            c1.attack(c2);
+            c2.attack(c1);
+            c1.attack(c2);
+        }
+        else if(diff <= -5 ){
+            c1.attack(c2);
+            c2.attack(c1);
+            c2.attack(c1);
+        }
+        else{
+            c1.attack(c2);
+            c2.attack(c1);
+        }
+        c1.addExp(c1.calculatorExp(c2));
+        c2.addExp(c2.calculatorExp(c1));
     }
     else{
-        c1.attack(c2);
-        c2.attack(c1);
+        if(diff >= 5){
+            c1.attack(c2);
+            c1.attack(c2);
+        }
+        else {
+            c1.attack(c2);
+        }
+        c1.addExp(c1.calculatorExp(c2));
     }
-    c1.addExp(c1.calculatorExp(c2));
-    c2.addExp(c2.calculatorExp(c1));
 }
+
 void Character::addExp(const int exp){
     int tmp= this->getExp();
     int cmp=0 ;
