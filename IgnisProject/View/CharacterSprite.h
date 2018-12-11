@@ -7,7 +7,7 @@
 class CharacterSprite : public sf::Sprite
 {
     public:
-        CharacterSprite(Character* character = new Warrior("Maga"));
+        CharacterSprite(Character* character = new Warrior("Maga"), std::string file="warrior.png");
         virtual ~CharacterSprite();
         CharacterSprite(const CharacterSprite& other);
         CharacterSprite& operator=(const CharacterSprite& other);
@@ -18,7 +18,7 @@ class CharacterSprite : public sf::Sprite
         bool getIsDone()const;
         void setIsDone(bool);
         int sumPositions()const;
-
+        void setTextureFromFile(std::string);
         bool operator==(const CharacterSprite& other)const;
 
     private:
