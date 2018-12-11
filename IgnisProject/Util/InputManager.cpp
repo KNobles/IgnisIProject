@@ -1,5 +1,5 @@
 #include "InputManager.h"
-
+#include "GameDimens.h"
 void InputManager::moveCharacter(CharacterSprite* character, Selector& selector, vector<CharacterSprite*> ennemies)
 {
 
@@ -13,11 +13,13 @@ void InputManager::moveCharacter(CharacterSprite* character, Selector& selector,
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         {
+
             while(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
             {
                 sf::sleep(sf::milliseconds(100));
             }
-            int sum = abs(selector.getPosition().x - character->getPosition().x) / 16 + abs(selector.getPosition().y - character->getPosition().y) /16;
+            int sum = abs(selector.getPosition().x - character->getPosition().x) / PIXEL_SIZE + abs(selector.getPosition().y - character->getPosition().y) /PIXEL_SIZE;
+
 //            std::cout << "From : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
             std::cout << "Sum : " << sum << std::endl;
 //            displayMovement(character, selector);
@@ -34,7 +36,7 @@ void InputManager::moveCharacter(CharacterSprite* character, Selector& selector,
                     std::cout << distX << " " << distY << endl;
                     int dist = (int(std::sqrt(std::pow(distX, 2) + std::pow(distY, 2))));
                     std::cout << dist << endl;
-                    if(dist - character->getCharacter()->getWeapon()->getRange()*16 == 0 || dist/10 - character->getCharacter()->getWeapon()->getRange() == 0)
+                    if(dist - character->getCharacter()->getWeapon()->getRange()*PIXEL_SIZE == 0 || dist/10 - character->getCharacter()->getWeapon()->getRange() == 0)
                     {
                         std::cout << "Combat" << endl;
                         combat(*character->getCharacter(), *c->getCharacter(), character->getCharacter()->getWeapon()->getRange());
@@ -70,7 +72,7 @@ void InputManager::displayMovement(CharacterSprite& character, sf::RenderWindow&
 {
     if(character.getIsSelected())
     {
-        const sf::Vector2f tileSize(16.f, 16.f);
+        const sf::Vector2f tileSize(PIXEL_SIZE, PIXEL_SIZE);
         std::vector<sf::RectangleShape*> movements;
         for(int i = 0; i <= character.getCharacter()->getMovement(); i++)
         {
@@ -78,9 +80,9 @@ void InputManager::displayMovement(CharacterSprite& character, sf::RenderWindow&
             rect->setFillColor(sf::Color::Blue);
             movements.push_back(rect);
         }
-        for(int x = 0; x < movements.size(); x++)
+        for(unsigned int x = 0; x < movements.size(); x++)
         {
-            movements[x]->move(x*16.f, x*16.f);
+            movements[x]->move(x*PIXEL_SIZE, x*PIXEL_SIZE);
             window.draw(*movements[x]);
         }
 

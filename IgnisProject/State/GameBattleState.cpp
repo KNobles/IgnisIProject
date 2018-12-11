@@ -113,7 +113,6 @@ void GameBattleState::handleInput()
                 moveView();
             }
 
-
         }
 
 }
@@ -125,7 +124,6 @@ void GameBattleState::update(float deltaTime)
 
 void GameBattleState::draw(float deltaTime)
 {
-
 
         data->window.clear();
         data->window.draw(this->map);
@@ -140,29 +138,6 @@ void GameBattleState::draw(float deltaTime)
 
         data->window.draw(this->selector);
         data->window.setView(this->view);
-//
-//            sf::Vector2f vect(16.f,16.f);
-////            for(int i = 1; i <= ch.getCharacter()->getMovement(); i++)
-////            {
-////                sf::RectangleShape* rect = new sf::RectangleShape(vect);
-////                rect->setFillColor(sf::Color::Black);
-////                rect->setOrigin(i * 16.f, i * 16.f);
-////                data->window.draw(*rect);
-////            }
-//                std::vector<sf::RectangleShape*> rects;
-//                for(int i = 0; i < this->ch.getCharacter()->getMovement(); i ++)
-//                {
-//                    sf::RectangleShape rect(vect);
-//                    rect.setFillColor(sf::Color::Black);
-//                    rect.setOrigin(i * 16.f, i * 16.f);
-////                    data->window.draw(*rect);
-//                    rects.push_back(*rect);
-//                }
-//
-//                for(int i = 0; i < rects.size(); i++)
-//                {
-//                    data->window.draw(*rects[i]);
-//                }
 
         data->window.display();
 }
@@ -171,21 +146,21 @@ void GameBattleState::moveView()
 {
     moveSelector();
 
-    if(selector.getPosition().x > this->view.getCenter().x - 16.f && this->view.getCenter().x*1.28 < WIDTH) // à changer plus tard (1.28)
+    if(selector.getPosition().x > this->view.getCenter().x - PIXEL_SIZE && this->view.getCenter().x*1.28 < WIDTH) // à changer plus tard (1.28)
     {
-       this->view.move(16.f, 0);
+       this->view.move(PIXEL_SIZE, 0);
     }
     if(selector.getPosition().x < this->view.getCenter().x && this->view.getCenter().x > WIDTH/4)
     {
-       this->view.move(-16.f, 0);
+       this->view.move(-PIXEL_SIZE, 0);
     }
     if(selector.getPosition().y > this->view.getCenter().y && this->view.getCenter().y*1.28 < HEIGHT)
     {
-       this->view.move(0, 16.f);
+       this->view.move(0, PIXEL_SIZE);
     }
     if(selector.getPosition().y < this->view.getCenter().y && this->view.getCenter().y > HEIGHT/4)
     {
-       this->view.move(0, -16.f);
+       this->view.move(0, -PIXEL_SIZE);
     }
 }
 
@@ -193,21 +168,21 @@ void GameBattleState::moveSelector()
 {
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->selector.getPosition().y < HEIGHT)
     {
-        this->selector.move(0,16.f);
+        this->selector.move(0,PIXEL_SIZE);
         //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && this->selector.getPosition().y > 0)
     {
-        this->selector.move(0,-16.f);
+        this->selector.move(0,-PIXEL_SIZE);
         //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;    }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->selector.getPosition().x < WIDTH)
     {
-        this->selector.move(16.f, 0);
+        this->selector.move(PIXEL_SIZE, 0);
         //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && this->selector.getPosition().x > 0)
     {
-        this->selector.move(-16.f, 0);
+        this->selector.move(-PIXEL_SIZE, 0);
         //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
 }

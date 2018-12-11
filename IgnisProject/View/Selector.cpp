@@ -9,7 +9,7 @@ Selector::Selector(std::string name)
         system("pause");
     }
 //    this->setPosition(32.f,32.f);
-    this->setOrigin(0,0);
+    this->setOrigin(4,4);
     this->setTexture(this->texture);
 //    this->setTextureRect(sf::IntRect(0,0, 16, 16));
 }

@@ -7,7 +7,7 @@ CreditState::CreditState(GameDataRef data)
     this->data=data;
     this->background.loadFromFile("Assets/Background/Menu.jpg");
     this->backgroundImage.setTexture(this->background);
-    this->newFont.loadFromFile("Assets/Font/Dearest/Dearest.ttf");
+    this->newFont.loadFromFile("Assets/Font/arial.ttf");
     this->setNewText();
     this->titleFont.loadFromFile("Assets/Font/Kingthings-Italique/Kingthings_Italique.ttf");
     this->setTitleText();
@@ -32,7 +32,7 @@ CreditState& CreditState::operator=(const CreditState& rhs)
 }
 
 void CreditState::setNewText(){
-    newText.setFont(titleFont);
+    newText.setFont(newFont);
     newText.setStyle(sf::Text::Bold);
     newText.setString("Jeu réalisé par Axel Lux, Kevin Nobles,\nAlexandre Rocroix.\nétudiants de la HELHa Campus Mons,\ndans le cadre du cours de Mr. V. Altares.");
     newText.setFillColor(sf::Color::Black);
@@ -67,6 +67,7 @@ void CreditState::handleInput()
             if (event.type == sf::Event::Closed)
             {
                 data->window.close();
+
             }
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))

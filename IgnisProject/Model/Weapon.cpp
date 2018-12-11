@@ -129,7 +129,7 @@ void Weapon::setDurability(const int uses)
     if(uses >= 0)
         this->uses = uses;
 }
-
+//Methode qui gere la durabilité de l'arme
 void Weapon::decrement()
 {
     this->uses--;

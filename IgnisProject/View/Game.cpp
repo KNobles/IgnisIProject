@@ -1,9 +1,15 @@
+#define _WIN32_WINNT 0x0500
 #include "Game.h"
 #include "GameBattleState.h"
 #include "MenuState.h"
+#include "CreditState.h"
 #include "GameoverState.h"
+#include "windows.h"
+#include <iostream>
 Game::Game(int width, int height, std::string title)
 {
+    HWND hwnd = GetConsoleWindow();
+    ShowWindow(hwnd, SW_HIDE);
     data->window.create(sf::VideoMode(width, height), title);
     data->machine.addState(stateRef(new MenuState(this->data)));
     this->run();
@@ -11,7 +17,6 @@ Game::Game(int width, int height, std::string title)
 
 void Game::run()
 {
-
     float newTime, frameTime, interpolation;
     float currentTime = this->clock.getElapsedTime().asSeconds();
     float accumulator = 0.f;

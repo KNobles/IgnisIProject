@@ -48,7 +48,7 @@ Cavalier* Cavalier::clone()const
 {
     return new Cavalier(*this);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addHealth(){
     int tmp= this->getHealth();
     int ran=rand();
@@ -67,7 +67,7 @@ void Cavalier::addHealth(){
     }
     this->setHealth(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addStrength(){
     int tmp= this->getStrength();
     int ran = rand();
@@ -86,7 +86,7 @@ void Cavalier::addStrength(){
     }
     this->setStrength(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addDefense(){
     int tmp= this->getDefense();
     int ran= rand();
@@ -105,7 +105,7 @@ void Cavalier::addDefense(){
     }
     this->setDefense(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addSpeed(){
     int tmp= this->getSpeed();
     int ran=rand();
@@ -124,7 +124,7 @@ void Cavalier::addSpeed(){
     }
     this->setSpeed(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addResistance(){
     int tmp= this->getResistance();
     int ran=rand();
@@ -143,7 +143,7 @@ void Cavalier::addResistance(){
     }
     this->setResistance(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addMagic(){
     int tmp= this->getMagic();
     int ran=rand();
@@ -162,7 +162,7 @@ void Cavalier::addMagic(){
     }
     this->setMagic(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addLuck(){
     int tmp= this->getLuck();
     int ran=rand();
@@ -181,7 +181,7 @@ void Cavalier::addLuck(){
     }
     this->setLuck(tmp);
 }
-
+//Methode qui ajoute un point de caracteristique selon un random et qui le compare une variable qui determine la chance d'obtenir un point en plus
 void Cavalier::addSkill(){
     int tmp= this->getSkill();
     int ran=rand();

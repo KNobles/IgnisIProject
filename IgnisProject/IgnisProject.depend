@@ -1,4 +1,8 @@
 # depslib dependency file v1.0
+229036040 <<<<<<< HEAD
+
+229036040 =======
+
 1543067613 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
@@ -68,11 +72,31 @@
 	"GameDimens.h"
 	"Game.h"
 
-1540660605 
+1544565632 
+	"GameBattleState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
 
-1539987331 hics.hpp>
+1543395175 hics.hpp>
 
-1543067613 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
+1544027605 4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"StateMachine.h"
+	"InputManager.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	"AssetManager.h"
+	<SFML/Graphics.hpp>
+	"Character.h"
+	"Warrior.h"
+	"InputManager.h"
+
+1544561240 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -81,6 +105,7 @@
 	<iomanip>
 	<time.h>
 	<iostream>
+	"IA.h"
 	"GameDimens.h"
 	"Game.h"
 
@@ -112,6 +137,12 @@
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
+
+1544554041 D
+	"CreditState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
 
 1539980901 hics/View.hpp>
 
@@ -154,28 +185,31 @@
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 
-1539980901 em/Vector3.hpp>
-
 1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\config.hpp
+	"TargetConditionals.h"
 	"TargetConditionals.h"
 
 1539980901 ditionals.h"
+
+1539980901 em/Vector3.hpp>
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\clock.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 
-1539980905 em/Time.hpp>
-
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
-
-1539980902 ig.hpp>
+	<SFML/Config.hpp>
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1539980904 em/Export.hpp>
+
+1539980905 em/Time.hpp>
+
+1539980902 ig.hpp>
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\err.hpp
 	<SFML/System/Export.hpp>
@@ -547,6 +581,22 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
+1544441189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
+
+1544539189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"StateMachine.h"
+	"InputManager.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	"Mage.h"
+	"AssetManager.h"
+
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics.hpp
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
@@ -575,141 +625,49 @@
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
+
+1540664944 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.h
+	"State.h"
+	<memory>
+	<stack>
+	"State.h"
+	<memory>
+	<stack>
+
+1542901264 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
+
+1544561230 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
+	<vector>
+	<cmath>
+	"Selector.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"math.h"
+	"Character.h"
+
+1543393022 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
+	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"GameDimens.h"
+	"Animation.h"
+	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"GameDimens.h"
+	"Animation.h"
+
+1543922620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.h
+	<vector>
 	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
 	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
+
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
+	<SFML/Graphics.hpp>
+	"Character.h"
+	"Warrior.h"
 
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window.hpp
 	<SFML/System.hpp>
@@ -2261,24 +2219,33 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
 	"Character.h"
 
 1540489423 .h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.h
 	<string>
 	<sstream>
 	<iostream>
 	"Weapon.h"
 	"Team.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.cpp
 	"Warrior.h"
 
-1543083763 "
+1543923421 "
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.h
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Sword.h"
+	"Axe.h"
 	<string>
 	<sstream>
 	<random>
@@ -2302,10 +2269,17 @@
 	<algorithm>
 	"CharacterSprite.h"
 	"Warrior.h"
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"CharacterSprite.h"
+	"Warrior.h"
 
 1543067681 Sprite.h"
 
-1543394226 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
+1544534790 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
 	"TileMap.h"
 
 1540468593 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\cursor.h
@@ -2321,132 +2295,122 @@
 	<iostream>
 	<string>
 	<sstream>
+	<iostream>
+	<string>
+	<sstream>
 
-1540660605 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.cpp
 	"Weapon.h"
 
-1543393022 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<iostream>
-	"GameDimens.h"
-	"Animation.h"
+1544565331 s.h"
 
-1542968108 s.h"
-
-1543255528 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
+1544535061 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
 	"Selector.h"
 
 1542925030 h"
 
-1540489423 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
+1543923284 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
 	"Animation.h"
-
-1540488446 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
+	"Animation.h"
 
 1540488446 em.hpp>
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.h
 	<PhysycalWeapon.h>
 
 1542749414 eapon.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.cpp
 	"Sword.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.cpp
 	"Archer.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.h
 	<string>
 	<sstream>
 	<random>
 	"Character.h"
+	"Bow.h"
 	<iostream>
 	<thread>
 	<vector>
 
-1540664905 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.cpp
+1544561562 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
 
 1540664905 ine.h"
 
-1540664944 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.h
-	"State.h"
-	<memory>
-	<stack>
-
-1542901264 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.cpp
 	"Anima.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.h
 	<MagicWeapon.h>
 
 1542749414 on.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.cpp
 	"Axe.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.h
 	<PhysycalWeapon.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.cpp
 	"Bow.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.h
 	<PhysycalWeapon.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.cpp
 	"Dark.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.h
 	<MagicWeapon.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.cpp
 	"Lance.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.h
 	<PhysycalWeapon.h>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.cpp
 	"Light.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.h
 	<MagicWeapon.h>
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.h
 	<Weapon.h>
 	"Character.h"
 
 1542901401 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\game.cpp
 	"Game.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.h
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.h
 	<Weapon.h>
 	"Character.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.cpp
 	"MagicWeapon.h"
 
 1542749414 on.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.cpp
 	"PhysycalWeapon.h"
 
 1542749414 eapon.h"
 
-1542010473 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.cpp
+1544438968 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.cpp
+	"GameoverState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
 
 1542010732 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.cpp
 
-1543394203 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
+1544562004 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
+	"GameDimens.h"
 
 1542900762 ger.h"
 
@@ -2465,33 +2429,25 @@
 	"Warrior.h"
 	"AssetManager.h"
 
-1543080788 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
-	<vector>
-	<cmath>
-	"Selector.h"
+1544561534 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
-1543067701 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
-	<SFML/Graphics.hpp>
-	"Character.h"
-	"Warrior.h"
-
-1543067681 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
-	"CharacterSprite.h"
-
-1542721623 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
-
-1542968108 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
+1544535332 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
+1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Character.h"
 	<iostream>
 	<string>
 	<sstream>
 	<vector>
 	"Character.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
 	"Team.h"
 
 1542872238 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.cpp
@@ -3048,10 +3004,13 @@
 1542901337 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.h
 	<SFML/Graphics.hpp>
 	<string>
+	<SFML/Graphics.hpp>
+	<string>
 
 1542901419 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\mainmenustate.cpp
 
 1542900762 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.cpp
+	"AssetManager.h"
 	"AssetManager.h"
 
 1542924825 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\battlestartedstate.cpp
@@ -3066,40 +3025,34 @@
 	"Game.h"
 	"Selector.h"
 
-1542968684 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<string>
-	<vector>
-	"StateMachine.h"
-	"InputManager.h"
-	"GameDimens.h"
-	"CharacterSprite.h"
-	"Warrior.h"
-	"AssetManager.h"
-
-1543084331 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
+1544561943 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
-
-1543080099 D
 
 1543224756 eState.h"
 
 1543923411 e05b9ae69d4f6fb4558e6afbeee8ede1ebc7b
 
-1543083763 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+1544561265 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
+	"BattleMenu.h"
 	<vector>
 	"Warrior.h"
+	"CharacterSprite.h"
+	"AnimatedSprite.h"
+	"Mage.h"
+	"Archer.h"
+	"Cavalier.h"
+	"Knight.h"
 
-1543080099 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+1544561129 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
+	"MenuState.h"
+	"GameoverState.h"
 
-1544015530 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
+1544558408 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -4071,7 +4024,7 @@
 
 1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\gamedimens.h
 
-1543928952 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -4082,6 +4035,7 @@
 	"GameDimens.h"
 	"CharacterSprite.h"
 	"Warrior.h"
+	"Mage.h"
 	"AssetManager.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\model\gamedimens.h
@@ -4109,11 +4063,13 @@
 
 1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\state.h
 
-1543928952 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\inputmanager.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\inputmanager.h
 	<vector>
 	<cmath>
 	"Selector.h"
 	"CharacterSprite.h"
+	"math.h"
+	"Character.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\state\state.h
 
@@ -4139,10 +4095,30 @@
 	"GameDimens.h"
 	"Animation.h"
 
-1543400369 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\charactersprite.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\charactersprite.h
+
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.cpp
+	"IA.h"
+
+1544438968 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.h
+	"CharacterSprite.h"
+	"TeamSprite.h"
+
+1544539189 ated upstream
+
+1544558010 03b7d56dc20f51b4f00e4f50cf7745fb70a97
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
+
+1544438968 e.h"
+
+1544555828 shed changes
 	<SFML/Graphics.hpp>
 	"Character.h"
 	"Warrior.h"
+	"GameDimens.h"
+	"Game.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\view\animation.h
 	<SFML/Graphics.hpp>
@@ -4154,7 +4130,12 @@
 	"Character.h"
 	"Warrior.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\character.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\character.h
+	<string>
+	<sstream>
+	<iostream>
+	"Weapon.h"
+	"Team.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\model\character.h
 	<string>
@@ -4197,34 +4178,42 @@
 	"Sword.h"
 	"Axe.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\sword.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\sword.h
 	<PhysycalWeapon.h>
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\physycalweapon.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\physycalweapon.h
 	<Weapon.h>
 	"Character.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\axe.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\axe.h
 	<PhysycalWeapon.h>
 
 1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\assetmanager.h
 	<SFML/Graphics.hpp>
 	<string>
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\anima.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\anima.cpp
 	"Anima.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\anima.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\anima.h
 	<MagicWeapon.h>
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\magicweapon.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\magicweapon.h
 	<Weapon.h>
 	"Character.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\archer.cpp
+1544558338 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\archer.cpp
 	"Archer.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\archer.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\archer.h
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	"Bow.h"
+	<iostream>
+	<thread>
+	<vector>
 
 1544437359 c:\c++\ignisiproject\ignisproject\model\sword.h
 	<PhysycalWeapon.h>
@@ -4286,46 +4275,46 @@
 	<thread>
 	<vector>
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\axe.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\axe.cpp
 	"Axe.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\bow.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\bow.cpp
 	"Bow.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\bow.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\bow.h
 	<PhysycalWeapon.h>
 
-1543400369 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\character.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\character.cpp
 	"Character.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\dark.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\dark.cpp
 	"Dark.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\dark.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\dark.h
 	<MagicWeapon.h>
 
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\lance.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\lance.cpp
 	"Lance.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\lance.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\lance.h
 	<PhysycalWeapon.h>
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\light.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\light.cpp
 	"Light.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\light.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\light.h
 	<MagicWeapon.h>
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\magicweapon.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\magicweapon.cpp
 	"MagicWeapon.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\physycalweapon.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\physycalweapon.cpp
 	"PhysycalWeapon.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\sword.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\sword.cpp
 	"Sword.h"
 
 1543400369 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\team.cpp
@@ -4340,8 +4329,26 @@
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
 
-1543928952 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\inputmanager.cpp
+1544534657 e0446e3886cf9d44003058f52b91c989bcc40
+	<string>
+	<sstream>
+	<Character.h>
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Lance.h"
+
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
+
+1543923353 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animatedsprite.cpp
+	"AnimatedSprite.h"
+
+1543923353 prite.h"
 
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\animation.cpp
 	"Animation.h"
@@ -4351,28 +4358,33 @@
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
 
-1543400369 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\charactersprite.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\selector.cpp
 	"Selector.h"
 
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\tilemap.cpp
-	"TileMap.h"
+1543923344 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animatedsprite.h
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/System/Vector2.hpp>
+	"Animation.h"
 
-1543394786 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\tilemap.h
-	<SFML/Graphics.hpp>
-	<vector>
-	<iostream>
-	<fstream>
-	<algorithm>
-	"CharacterSprite.h"
-	"Warrior.h"
-
-1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gamebattlestate.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
-1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gamebattlestate.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gamebattlestate.h
+	"Game.h"
+	"GameDimens.h"
+	"TileMap.h"
+	<vector>
+	"Warrior.h"
+	"Mage.h"
+	"Archer.h"
+	"Cavalier.h"
+	"Knight.h"
 
 1544437359 source:c:\c++\ignisiproject\ignisproject\model\axe.cpp
 	"Axe.h"
@@ -4436,7 +4448,7 @@
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\assetmanager.cpp
 	"AssetManager.h"
 
-1544027441 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 	"MenuState.h"
@@ -4472,32 +4484,37 @@
 	<sstream>
 	<string>
 
-1544010479 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.cpp
 	"IA.h"
 
 1543923310 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\ia.h
 	"CharacterSprite.h"
 	"TeamSprite.h"
 
-1543923439 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.cpp
 	"TeamSprite.h"
 
-1543923411 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\teamsprite.h
 	<SFML/Graphics.hpp>
 	"CharacterSprite.h"
+	"Team.h"
 	<vector>
+	<iostream>
+	<sstream>
+	<string>
 
-1544025025 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.cpp
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.cpp
 	"MenuState.h"
+	"GameBattleState.h"
 	<SFML\Graphics.hpp>
 	<string>
 	<iostream>
 
-1544024545 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.h
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\menustate.h
 	"Game.h"
 	"GameDimens.h"
 
-1544027344 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.cpp
+1544027681 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.cpp
 	"GameoverState.h"
 	<SFML\Graphics.hpp>
 	<string>
@@ -4506,6 +4523,32 @@
 1544027605 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.h
 	"Game.h"
 	"GameDimens.h"
+
+1544539189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\teamsprite.h
+	<SFML/Graphics.hpp>
+	"CharacterSprite.h"
+	"Team.h"
+	<vector>
+	<iostream>
+	<sstream>
+	<string>
+
+1544438968 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.h
+	"Game.h"
+	"GameDimens.h"
+
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\cavalier.cpp
+	"Cavalier.h"
+
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\cavalier.h
+	"Character.h"
+	"Sword.h"
+	"Lance.h"
+
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\knight.cpp
+	"Knight.h"
+
+1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\knight.h
 
 1544437359 source:c:\c++\ignisiproject\ignisproject\state\gameoverstate.cpp
 	"GameoverState.h"
@@ -4551,19 +4594,26 @@
 	"Knight.h"
 
 1544437359 c:\c++\ignisiproject\ignisproject\model\knight.h
-	<string>
-	<sstream>
-	<Character.h>
-	<string>
-	<sstream>
-	<random>
-	"Character.h"
-	<iostream>
-	<thread>
-	<vector>
-	"Lance.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\main.cpp
+1544561069 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\mage.cpp
+	"Mage.h"
+
+1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\mage.h
+	"Character.h"
+	"Dark.h"
+
+1543919619 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\merchant.cpp
+	"Merchant.h"
+
+1543919619 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\merchant.h
+	<vector>
+	<sstream>
+	"Weapon.h"
+
+1544539189 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.cpp
+	"MenuState.h"
+
+1544565959 source:f:\projets\ignisiproject\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -4575,6 +4625,10 @@
 	"IA.h"
 	"GameDimens.h"
 	"Game.h"
+
+1544539189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.h
+	"Game.h"
+	"GameDimens.h"
 
 1540410636 f:\projets\ignisiproject\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -5043,7 +5097,7 @@
 	<sstream>
 	<string>
 
-1544542551 f:\projets\ignisiproject\ignisproject\model\gamedimens.h
+1544565959 f:\projets\ignisiproject\ignisproject\model\gamedimens.h
 
 1544542551 f:\projets\ignisiproject\ignisproject\view\game.h
 	<SFML/Graphics.hpp>
@@ -5066,10 +5120,11 @@
 
 1544542551 f:\projets\ignisiproject\ignisproject\state\state.h
 
-1544545414 f:\projets\ignisiproject\ignisproject\util\inputmanager.h
+1544565959 f:\projets\ignisiproject\ignisproject\util\inputmanager.h
 	<vector>
 	<cmath>
 	"Selector.h"
+	"GameDimens.h"
 	"CharacterSprite.h"
 	"math.h"
 	"Character.h"
@@ -5082,10 +5137,10 @@
 	"GameDimens.h"
 	"Animation.h"
 
-1544542551 f:\projets\ignisiproject\ignisproject\view\animation.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
+1544565959 f:\projets\ignisiproject\ignisproject\view\animation.h
+	<vector>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Texture.hpp>
 
 1544545977 f:\projets\ignisiproject\ignisproject\model\mage.h
 	"Character.h"
@@ -5095,7 +5150,7 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1544549813 source:f:\projets\ignisiproject\ignisproject\model\anima.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\anima.cpp
 	"Anima.h"
 
 1544549542 f:\projets\ignisiproject\ignisproject\model\anima.h
@@ -5105,7 +5160,7 @@
 	<Weapon.h>
 	"Character.h"
 
-1544545844 source:f:\projets\ignisiproject\ignisproject\model\archer.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\archer.cpp
 	"Archer.h"
 
 1544545912 f:\projets\ignisiproject\ignisproject\model\archer.h
@@ -5118,7 +5173,7 @@
 	<thread>
 	<vector>
 
-1544549774 source:f:\projets\ignisiproject\ignisproject\model\axe.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\axe.cpp
 	"Axe.h"
 
 1544549780 source:f:\projets\ignisiproject\ignisproject\model\bow.cpp
@@ -5127,46 +5182,46 @@
 1544546610 f:\projets\ignisiproject\ignisproject\model\bow.h
 	<PhysycalWeapon.h>
 
-1544553596 source:f:\projets\ignisiproject\ignisproject\model\character.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\character.cpp
 	"Character.h"
 
-1544549820 source:f:\projets\ignisiproject\ignisproject\model\dark.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\dark.cpp
 	"Dark.h"
 
 1544549613 f:\projets\ignisiproject\ignisproject\model\dark.h
 	<MagicWeapon.h>
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\model\gamedimens.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
-1544546453 source:f:\projets\ignisiproject\ignisproject\model\lance.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\lance.cpp
 	"Lance.h"
 
 1544546490 f:\projets\ignisiproject\ignisproject\model\lance.h
 	<PhysycalWeapon.h>
 
-1544549828 source:f:\projets\ignisiproject\ignisproject\model\light.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\light.cpp
 	"Light.h"
 
 1544549597 f:\projets\ignisiproject\ignisproject\model\light.h
 	<MagicWeapon.h>
 
-1544549736 source:f:\projets\ignisiproject\ignisproject\model\magicweapon.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\magicweapon.cpp
 	"MagicWeapon.h"
 
-1544549726 source:f:\projets\ignisiproject\ignisproject\model\physycalweapon.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\physycalweapon.cpp
 	"PhysycalWeapon.h"
 
-1544549795 source:f:\projets\ignisiproject\ignisproject\model\sword.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\sword.cpp
 	"Sword.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\model\team.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\team.cpp
 	"Team.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\model\warrior.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\warrior.cpp
 	"Warrior.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\model\weapon.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\weapon.cpp
 	"Weapon.h"
 
 1544542551 source:f:\projets\ignisiproject\ignisproject\state\gameoverstate.cpp
@@ -5179,22 +5234,23 @@
 	"Game.h"
 	"GameDimens.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\state\statemachine.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
 
-1544557404 source:f:\projets\ignisiproject\ignisproject\util\inputmanager.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
+	"GameDimens.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\view\animation.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\animation.cpp
 	"Animation.h"
 
-1544544847 source:f:\projets\ignisiproject\ignisproject\view\charactersprite.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\view\selector.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\selector.cpp
 	"Selector.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\view\tilemap.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\tilemap.cpp
 	"TileMap.h"
 
 1544542551 f:\projets\ignisiproject\ignisproject\view\tilemap.h
@@ -5206,7 +5262,7 @@
 	"CharacterSprite.h"
 	"Warrior.h"
 
-1544545812 source:f:\projets\ignisiproject\ignisproject\model\cavalier.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\cavalier.cpp
 	"Cavalier.h"
 
 1544545897 f:\projets\ignisiproject\ignisproject\model\cavalier.h
@@ -5214,7 +5270,7 @@
 	"Sword.h"
 	"Lance.h"
 
-1544549840 source:f:\projets\ignisiproject\ignisproject\model\knight.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\knight.cpp
 	"Knight.h"
 
 1544542551 f:\projets\ignisiproject\ignisproject\model\knight.h
@@ -5230,27 +5286,33 @@
 	<vector>
 	"Lance.h"
 
-1544546022 source:f:\projets\ignisiproject\ignisproject\model\mage.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\model\mage.cpp
 	"Mage.h"
 
 1544565632 source:f:\projets\ignisiproject\ignisproject\state\menustate.cpp
 	"MenuState.h"
 	"GameBattleState.h"
-	"CreditState.h"
-	<SFML\Graphics.hpp>
-	<string>
-	<iostream>
+
+1544539190 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\teamsprite.cpp
+	"TeamSprite.h"
+	"GameDimens.h"
+	"TeamSprite.h"
+	"GameDimens.h"
+
+1544555828 s/remotes/origin/master
 
 1544564766 f:\projets\ignisiproject\ignisproject\state\menustate.h
 	"Game.h"
 	"GameDimens.h"
 
-1544543407 f:\projets\ignisiproject\ignisproject\state\gamebattlestate.h
+1544565959 f:\projets\ignisiproject\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
 	<vector>
 	"Warrior.h"
+	"CharacterSprite.h"
+	"AnimatedSprite.h"
 	"Mage.h"
 	"Archer.h"
 	"Cavalier.h"
@@ -5262,19 +5324,23 @@
 1544550289 source:f:\projets\ignisiproject\ignisproject\util\ia.cpp
 	"IA.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\view\game.cpp
+1544566759 source:f:\projets\ignisiproject\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 	"MenuState.h"
+	"CreditState.h"
 	"GameoverState.h"
+	"windows.h"
+	<iostream>
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\view\teamsprite.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\teamsprite.cpp
 	"TeamSprite.h"
+	"GameDimens.h"
 
-1544554041 source:f:\projets\ignisiproject\ignisproject\state\gamebattlestate.cpp
+1544565959 source:f:\projets\ignisiproject\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
-1544565629 source:f:\projets\ignisiproject\ignisproject\state\creditstate.cpp
+1544566481 source:f:\projets\ignisiproject\ignisproject\state\creditstate.cpp
 	"CreditState.h"
 	"MenuState.h"
 	<SFML\Graphics.hpp>
@@ -5282,4 +5348,52 @@
 1544565331 f:\projets\ignisiproject\ignisproject\state\creditstate.h
 	"Game.h"
 	"GameDimens.h"
+
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\mage.h
+	"Character.h"
+	"Dark.h"
+
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\cavalier.cpp
+	"Cavalier.h"
+
+1544558010 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\cavalier.h
+	"Character.h"
+	"Sword.h"
+	"Lance.h"
+
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\knight.cpp
+	"Knight.h"
+
+1543224756 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\knight.h
+	<string>
+	<sstream>
+	<Character.h>
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Lance.h"
+
+1544558010 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\model\mage.cpp
+	"Mage.h"
+
+1544561901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\battlemenu.h
+	<SFML/Graphics.hpp>
+
+1544555828 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\battlemenu.cpp
+	"BattleMenu.h"
+
+1544565959 f:\projets\ignisiproject\ignisproject\view\animatedsprite.h
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/System/Vector2.hpp>
+	"Animation.h"
+
+1544565959 source:f:\projets\ignisiproject\ignisproject\view\animatedsprite.cpp
+	"AnimatedSprite.h"
 

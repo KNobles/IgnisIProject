@@ -26,7 +26,7 @@ Sword* Sword::clone()const
 {
     return new Sword(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Sword::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

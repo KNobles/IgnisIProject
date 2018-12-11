@@ -10,6 +10,7 @@ StateMachine::~StateMachine()
     //dtor
 }
 
+
 void StateMachine::addState(stateRef newState, bool isReplacing)
 {
     this->_isAdding = true;

@@ -26,7 +26,7 @@ Anima* Anima::clone()const
 {
     return new Anima(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Anima::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

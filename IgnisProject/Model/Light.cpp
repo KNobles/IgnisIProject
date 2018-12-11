@@ -26,7 +26,7 @@ Light* Light::clone()const
 {
     return new Light(*this);
 }
-
+//Methode qui determine la chance que possede le premiere caractere de toucher le second
 float Light::strategyAccuracy(const Character& att, const Character& def)const
 {
     //basic formula

@@ -8,7 +8,7 @@
 CharacterSprite::CharacterSprite(Character* character)
 {
 //    this->sprite = sprite;
-    this->texture.loadFromFile("Assets/Sprites/Character/Roy/Roy-idle.png");
+    this->texture.loadFromFile("Assets/Sprites/Character/cavalier.png");
     this->setTexture(this->texture);
     this->character = character;
     this->setPosition(0.f, 0.f);

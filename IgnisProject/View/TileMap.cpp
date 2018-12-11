@@ -83,7 +83,9 @@ bool TileMap::loadFromFile(std::string fileName, std::string imageName)
     std::copy(arr.begin(), arr.end(), lvl);
 
     if (!this->load("Assets/Sprites/Tiles/" + imageName, sf::Vector2u(16, 16), lvl, tileWidth, tileHeight))
-        return 0;
+        return false;
+
+    return true;
 }
 
 bool TileMap::loadLevel1()
@@ -92,7 +94,7 @@ bool TileMap::loadLevel1()
 //    CharacterSprite chrom(war);
 //    this->characters.push_back(&chrom);
 //
-    return loadFromFile("map1.txt", "Castle Blue.png");
+    return loadFromFile("map1.txt", "MAP16.png");
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
