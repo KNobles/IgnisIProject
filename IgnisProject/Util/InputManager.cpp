@@ -13,7 +13,7 @@ void InputManager::moveCharacter(CharacterSprite& character, Selector& selector)
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         {
             sf::sleep(sf::milliseconds(100));
-            int sum = abs(selector.getPosition().x - character.getPosition().x) / 16 + abs(selector.getPosition().y - character.getPosition().y) /16;
+            int sum = abs(selector.getPosition().x - character.getPosition().x) / PIXEL_SIZE + abs(selector.getPosition().y - character.getPosition().y) /PIXEL_SIZE;
 //            std::cout << "From : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
             std::cout << "Sum : " << sum << std::endl;
 //            displayMovement(character, selector);

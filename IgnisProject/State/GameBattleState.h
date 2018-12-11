@@ -7,6 +7,7 @@
 #include "Warrior.h"
 #include "AnimatedSprite.h"
 
+
 class GameBattleState : public State
 {
     public:

@@ -5,13 +5,12 @@
 Game::Game(int width, int height, std::string title)
 {
     data->window.create(sf::VideoMode(width, height), title);
-    data->machine.addState(stateRef(new GameoverState(this->data)));
+    data->machine.addState(stateRef(new GameBattleState(this->data)));
     this->run();
 }
 
 void Game::run()
 {
-
     float newTime, frameTime, interpolation;
     float currentTime = this->clock.getElapsedTime().asSeconds();
     float accumulator = 0.f;

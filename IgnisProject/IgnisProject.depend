@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-<<<<<<< HEAD
-=======
+229036040 <<<<<<< HEAD
+
+229036040 =======
+
 1543067613 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
@@ -72,10 +74,25 @@
 
 1540660605 
 
-1539987331 hics.hpp>
+1543395175 hics.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
-1543067613 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
+1544027605 4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"StateMachine.h"
+	"InputManager.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	"AssetManager.h"
+	<SFML/Graphics.hpp>
+	"Character.h"
+	"Warrior.h"
+	"InputManager.h"
+
+1544438968 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -84,6 +101,7 @@
 	<iomanip>
 	<time.h>
 	<iostream>
+	"IA.h"
 	"GameDimens.h"
 	"Game.h"
 
@@ -116,11 +134,10 @@
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
 
-<<<<<<< HEAD
-=======
+1543149792 D
+
 1539980901 hics/View.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window.hpp
 	<SFML/System.hpp>
 	<SFML/Window/Clipboard.hpp>
@@ -138,11 +155,8 @@
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
 
-<<<<<<< HEAD
-=======
 1539980901 ow/WindowStyle.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system.hpp
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
@@ -163,44 +177,32 @@
 	<SFML/System/Vector2.hpp>
 	<SFML/System/Vector3.hpp>
 
-<<<<<<< HEAD
 1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\config.hpp
 	"TargetConditionals.h"
-
-=======
-1539980901 em/Vector3.hpp>
-
-1539980901 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\config.hpp
 	"TargetConditionals.h"
 
 1539980901 ditionals.h"
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
+1539980901 em/Vector3.hpp>
+
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\clock.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 
-<<<<<<< HEAD
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
-
-=======
-1539980905 em/Time.hpp>
-
-1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\export.hpp
-	<SFML/Config.hpp>
-
-1539980902 ig.hpp>
-
-1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 
 1539980904 em/Export.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
+1539980905 em/Time.hpp>
+
+1539980902 ig.hpp>
+
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\err.hpp
 	<SFML/System/Export.hpp>
 	<ostream>
@@ -224,11 +226,8 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 em/NonCopyable.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\memoryinputstream.hpp
 	<SFML/Config.hpp>
 	<SFML/System/InputStream.hpp>
@@ -251,11 +250,8 @@
 	<string>
 	<SFML/System/String.inl>
 
-<<<<<<< HEAD
-=======
 1539980904 em/String.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\utf.hpp
 	<SFML/Config.hpp>
 	<algorithm>
@@ -264,11 +260,8 @@
 	<cstdlib>
 	<SFML/System/Utf.inl>
 
-<<<<<<< HEAD
-=======
 1539980905 em/Utf.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\utf.inl
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\string.inl
@@ -279,11 +272,8 @@
 	<cstdlib>
 	<SFML/System/Thread.inl>
 
-<<<<<<< HEAD
-=======
 1539980904 em/Thread.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\thread.inl
 
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\threadlocal.hpp
@@ -295,42 +285,30 @@
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 
-<<<<<<< HEAD
-=======
 1539980904 em/ThreadLocalPtr.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980904 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\threadlocalptr.inl
 
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 
-<<<<<<< HEAD
-=======
 1539980905 em/Vector2.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\vector2.inl
 
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\vector3.hpp
 	<SFML/System/Vector3.inl>
 
-<<<<<<< HEAD
-=======
 1539980905 em/Vector3.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\system\vector3.inl
 
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\clipboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 
-<<<<<<< HEAD
-=======
 1539980905 em/String.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 
@@ -352,11 +330,8 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 em/Vector2.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\event.hpp
 	<SFML/Config.hpp>
 	<SFML/Window/Joystick.hpp>
@@ -364,11 +339,8 @@
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
 
-<<<<<<< HEAD
-=======
 1539980905 ow/Sensor.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\joystick.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
@@ -376,11 +348,8 @@
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 
-<<<<<<< HEAD
-=======
 1539980905 ow/Export.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980905 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\window\mouse.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
@@ -419,11 +388,8 @@
 1539980902 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 
-<<<<<<< HEAD
-=======
 1539980902 hics/Export.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980902 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 
@@ -431,11 +397,8 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 hics/Shape.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\shape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -447,21 +410,15 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 
-<<<<<<< HEAD
-=======
 1539980902 hics/RenderStates.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\renderstates.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 hics/Transform.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\transform.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -472,11 +429,8 @@
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
 
-<<<<<<< HEAD
-=======
 1539980902 hics/Rect.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980902 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\rect.inl
 
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\transformable.hpp
@@ -521,21 +475,15 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 hics/Rect.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\texture.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 ow/GlResource.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980902 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\image.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
@@ -571,11 +519,8 @@
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
 
-<<<<<<< HEAD
-=======
 1539980903 ow/ContextSettings.hpp>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\renderwindow.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
@@ -600,11 +545,8 @@
 	<SFML/System/Vector3.hpp>
 	<SFML/Graphics/Glsl.inl>
 
-<<<<<<< HEAD
-=======
 1539980902 hics/Glsl.inl>
 
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
 1539980902 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\glsl.inl
 
 1539980903 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\libraries\sfml-2.5.1\include\sfml\graphics\sprite.hpp
@@ -631,12 +573,21 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-<<<<<<< HEAD
-1542721623 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
+1544441189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
 
 1543395175 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
 	<SFML/Graphics.hpp>
-=======
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<string>
+	<vector>
+	"StateMachine.h"
+	"InputManager.h"
+	"GameDimens.h"
+	"CharacterSprite.h"
+	"Warrior.h"
+	"AssetManager.h"
+
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Graphics.hpp
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
@@ -665,32 +616,31 @@
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/Graphics/VertexBuffer.hpp>
 	<SFML/Graphics/View.hpp>
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<string>
-	<vector>
-	"StateMachine.h"
-	"InputManager.h"
-	"GameDimens.h"
-	"CharacterSprite.h"
-	"Warrior.h"
-	"AssetManager.h"
 
 1540664944 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.h
+	"State.h"
+	<memory>
+	<stack>
 	"State.h"
 	<memory>
 	<stack>
 
 1542901264 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
 
-1543838553 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
+1544535235 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
 	<vector>
 	<cmath>
 	"Selector.h"
+	"GameDimens.h"
 	"CharacterSprite.h"
 
 1543393022 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
+	<SFML/Graphics.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"GameDimens.h"
+	"Animation.h"
 	<SFML/Graphics.hpp>
 	<SFML/Window.hpp>
 	<SFML/System.hpp>
@@ -702,97 +652,11 @@
 	<vector>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Texture.hpp>
-<<<<<<< HEAD
 
 1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
-=======
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/VertexBuffer.hpp>
-	<SFML/Graphics/View.hpp>
+	<SFML/Graphics.hpp>
+	"Character.h"
+	"Warrior.h"
 
 1539980901 /media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/libraries/SFML-2.5.1/include/SFML/Window.hpp
 	<SFML/System.hpp>
@@ -2344,7 +2208,8 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
+1543919619 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
+	"Character.h"
 	"Character.h"
 
 1540489423 .h"
@@ -2355,13 +2220,28 @@
 	<iostream>
 	"Weapon.h"
 	"Team.h"
+	<string>
+	<sstream>
+	<iostream>
+	"Weapon.h"
+	"Team.h"
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.cpp
 	"Warrior.h"
+	"Warrior.h"
 
-1543083763 "
+1543923421 "
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.h
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Sword.h"
+	"Axe.h"
 	<string>
 	<sstream>
 	<random>
@@ -2385,10 +2265,17 @@
 	<algorithm>
 	"CharacterSprite.h"
 	"Warrior.h"
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<fstream>
+	<algorithm>
+	"CharacterSprite.h"
+	"Warrior.h"
 
 1543067681 Sprite.h"
 
-1543394226 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
+1544534790 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
 	"TileMap.h"
 
 1540468593 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\cursor.h
@@ -2404,44 +2291,39 @@
 	<iostream>
 	<string>
 	<sstream>
+	<iostream>
+	<string>
+	<sstream>
 
 1540660605 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.cpp
 	"Weapon.h"
-
-1543393022 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<iostream>
-	"GameDimens.h"
-	"Animation.h"
+	"Weapon.h"
 
 1542968108 s.h"
 
-1543255528 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
+1544535061 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
 	"Selector.h"
 
 1542925030 h"
 
-1540489423 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
+1543923284 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
 	"Animation.h"
-
-1540488446 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
+	"Animation.h"
 
 1540488446 em.hpp>
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.h
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 eapon.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.cpp
 	"Sword.h"
+	"Sword.h"
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.cpp
+	"Archer.h"
 	"Archer.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.h
@@ -2452,58 +2334,73 @@
 	<iostream>
 	<thread>
 	<vector>
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
 
 1540664905 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.cpp
+	"StateMachine.h"
 	"StateMachine.h"
 
 1540664905 ine.h"
 
-1540664944 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.h
-	"State.h"
-	<memory>
-	<stack>
-
-1542901264 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.h
-
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.cpp
+	"Anima.h"
 	"Anima.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.h
+	<MagicWeapon.h>
 	<MagicWeapon.h>
 
 1542749414 on.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.cpp
 	"Axe.h"
+	"Axe.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.h
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.cpp
 	"Bow.h"
+	"Bow.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.h
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.cpp
 	"Dark.h"
+	"Dark.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.h
+	<MagicWeapon.h>
 	<MagicWeapon.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.cpp
 	"Lance.h"
+	"Lance.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.h
+	<PhysycalWeapon.h>
 	<PhysycalWeapon.h>
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.cpp
 	"Light.h"
+	"Light.h"
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.h
 	<MagicWeapon.h>
+	<MagicWeapon.h>
 
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.h
+	<Weapon.h>
+	"Character.h"
 	<Weapon.h>
 	"Character.h"
 
@@ -2513,22 +2410,30 @@
 1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.h
 	<Weapon.h>
 	"Character.h"
+	<Weapon.h>
+	"Character.h"
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.cpp
+	"MagicWeapon.h"
 	"MagicWeapon.h"
 
 1542749414 on.h"
 
 1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.cpp
 	"PhysycalWeapon.h"
+	"PhysycalWeapon.h"
 
 1542749414 eapon.h"
 
-1542010473 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.cpp
+1544438968 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.cpp
+	"GameoverState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
 
 1542010732 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.cpp
 
-1543394203 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
+1544535221 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 
 1542900762 ger.h"
@@ -2548,33 +2453,26 @@
 	"Warrior.h"
 	"AssetManager.h"
 
-1543080788 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.h
-	<vector>
-	<cmath>
-	"Selector.h"
+1544535814 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
-1543067701 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
-	<SFML/Graphics.hpp>
-	"Character.h"
-	"Warrior.h"
-
-1543067681 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
-	"CharacterSprite.h"
-
-1542721623 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.h
-
-1542968108 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
+1544535332 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
+1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	"Character.h"
 	<iostream>
 	<string>
 	<sstream>
 	<vector>
 	"Character.h"
 
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
+1543919620 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
+	"Team.h"
 	"Team.h"
 
 1542872238 source:/media/roku/School/3BI/Dev-JV/Projects/IgnisRepos/IgnisProject/Game.cpp
@@ -3131,10 +3029,13 @@
 1542901337 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.h
 	<SFML/Graphics.hpp>
 	<string>
+	<SFML/Graphics.hpp>
+	<string>
 
 1542901419 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\mainmenustate.cpp
 
 1542900762 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.cpp
+	"AssetManager.h"
 	"AssetManager.h"
 
 1542924825 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\battlestartedstate.cpp
@@ -3149,38 +3050,26 @@
 	"Game.h"
 	"Selector.h"
 
-1542968684 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.h
-	<SFML/Graphics.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	<string>
-	<vector>
-	"StateMachine.h"
-	"InputManager.h"
-	"GameDimens.h"
-	"CharacterSprite.h"
-	"Warrior.h"
-	"AssetManager.h"
-
-1543084331 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
+1544453356 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
-
-1543080099 D
 
 1543224756 eState.h"
 
 1543923411 e05b9ae69d4f6fb4558e6afbeee8ede1ebc7b
 
-1543083763 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+1544441119 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
 	<vector>
 	"Warrior.h"
+	"AnimatedSprite.h"
 
-1543080099 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+1544534855 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
+	"MenuState.h"
+	"GameoverState.h"
 
 1544015530 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
@@ -3975,147 +3864,15 @@
 1543393128 c:\c++\ignisiproject\ignisproject\view\selector.h
 
 1543400369 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\view\charactersprite.h
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
-	<SFML/Graphics.hpp>
-	"Character.h"
-	"Warrior.h"
 
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.h
-	<string>
-	<sstream>
-	<iostream>
-	"Weapon.h"
-	"Team.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.h
-	<iostream>
-	<string>
-	<sstream>
-
-1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
-	<iostream>
-	<string>
-	<sstream>
-	<vector>
-	"Character.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.h
-	<string>
-	<sstream>
-	<random>
-	"Character.h"
-	<iostream>
-	<thread>
-	<vector>
-	"Sword.h"
-	"Axe.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.h
-	<PhysycalWeapon.h>
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.h
-	<Weapon.h>
-	"Character.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.h
-	<PhysycalWeapon.h>
-
-1542901337 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.h
-	<SFML/Graphics.hpp>
-	<string>
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.cpp
-	"Anima.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\anima.h
-	<MagicWeapon.h>
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.h
-	<Weapon.h>
-	"Character.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.cpp
-	"Archer.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\archer.h
-	<string>
-	<sstream>
-	<random>
-	"Character.h"
-	<iostream>
-	<thread>
-	<vector>
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\axe.cpp
-	"Axe.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.cpp
-	"Bow.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\bow.h
-	<PhysycalWeapon.h>
-
-1543919619 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\character.cpp
-	"Character.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.cpp
-	"Dark.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\dark.h
-	<MagicWeapon.h>
-
-1542968108 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
-	"GameDimens.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.cpp
-	"Lance.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\lance.h
-	<PhysycalWeapon.h>
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.cpp
-	"Light.h"
-
-1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\light.h
-	<MagicWeapon.h>
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\magicweapon.cpp
-	"MagicWeapon.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\physycalweapon.cpp
-	"PhysycalWeapon.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\sword.cpp
-	"Sword.h"
-
-1543919620 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.cpp
-	"Team.h"
-
-1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\warrior.cpp
-	"Warrior.h"
-
-1540660605 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\weapon.cpp
-	"Weapon.h"
-
-1540664905 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\statemachine.cpp
-	"StateMachine.h"
-
-<<<<<<< HEAD
-1542900762 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\assetmanager.cpp
-	"AssetManager.h"
-
-1543919620 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.cpp
+1544438968 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.cpp
 	"IA.h"
 
-1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.h
+1544438968 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\ia.h
 	"CharacterSprite.h"
-	"Game.h"
+	"TeamSprite.h"
 
-1543923394 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
-=======
 1543928952 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\util\inputmanager.cpp
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
-	"InputManager.h"
 
 1543923353 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animatedsprite.cpp
 	"AnimatedSprite.h"
@@ -4128,40 +3885,6 @@
 	<SFML/System/Vector2.hpp>
 	"Animation.h"
 
-1543923284 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\animation.cpp
-	"Animation.h"
-
-1543919620 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
-	"CharacterSprite.h"
-
-1543915711 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
-	"Game.h"
-	"GameBattleState.h"
-
-1544437314 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
-	"Game.h"
-	"GameDimens.h"
-	"TileMap.h"
-	<vector>
-	"Warrior.h"
-	"AnimatedSprite.h"
-
-1543149792 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.h
-	<SFML/Graphics.hpp>
-	<vector>
-	<iostream>
-	<fstream>
-	<algorithm>
-	"CharacterSprite.h"
-	"Warrior.h"
-
-<<<<<<< HEAD
-1543255528 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
-	"Selector.h"
-
-1543923421 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\tilemap.cpp
-	"TileMap.h"
-=======
 1543224756 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
@@ -4284,5 +4007,63 @@
 1544027605 c:\users\axoul\desktop\c++\ignisiproject\ignisproject\state\gameoverstate.h
 	"Game.h"
 	"GameDimens.h"
->>>>>>> dee4b86ed9cf5cff53bf7ab7a96bcd5982a32dd2
+
+1544534636 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\teamsprite.h
+	<SFML/Graphics.hpp>
+	"CharacterSprite.h"
+	<vector>
+
+1544438968 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gameoverstate.h
+	"Game.h"
+	"GameDimens.h"
+
+1542968926 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\cavalier.cpp
+	"Cavalier.h"
+
+1542968926 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\cavalier.h
+	<Character.h>
+
+1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\knight.cpp
+	"Knight.h"
+
+1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\knight.h
+	<string>
+	<sstream>
+	<Character.h>
+	<string>
+	<sstream>
+	<random>
+	"Character.h"
+	<iostream>
+	<thread>
+	<vector>
+	"Lance.h"
+
+1542749414 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\mage.cpp
+	"Mage.h"
+
+1542749414 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\mage.h
+	"Character.h"
+
+1543919619 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\merchant.cpp
+	"Merchant.h"
+
+1543919619 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\merchant.h
+	<vector>
+	<sstream>
+	"Weapon.h"
+
+1544438968 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.cpp
+	"MenuState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
+
+1544438968 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.h
+	"Game.h"
+	"GameDimens.h"
+
+1544534657 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\teamsprite.cpp
+	"TeamSprite.h"
+	"GameDimens.h"
 

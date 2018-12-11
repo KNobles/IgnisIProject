@@ -3,6 +3,7 @@
 #include <vector>
 #include <cmath>
 #include "Selector.h"
+#include "GameDimens.h"
 #include "CharacterSprite.h"
 class InputManager
 {

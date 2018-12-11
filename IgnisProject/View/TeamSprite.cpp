@@ -1,5 +1,5 @@
 #include "TeamSprite.h"
-
+#include "GameDimens.h"
 TeamSprite::TeamSprite(){}
 
 TeamSprite::TeamSprite(const Team& t)
