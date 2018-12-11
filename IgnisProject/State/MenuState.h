@@ -3,7 +3,7 @@
 #include "Game.h"
 #include "GameDimens.h"
 
-
+using std::string;
 class MenuState: public State
 {
     public:

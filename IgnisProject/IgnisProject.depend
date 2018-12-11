@@ -5182,7 +5182,7 @@
 1544542551 source:f:\projets\ignisiproject\ignisproject\state\statemachine.cpp
 	"StateMachine.h"
 
-1544556881 source:f:\projets\ignisiproject\ignisproject\util\inputmanager.cpp
+1544557404 source:f:\projets\ignisiproject\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 
 1544542551 source:f:\projets\ignisiproject\ignisproject\view\animation.cpp
@@ -5233,14 +5233,15 @@
 1544546022 source:f:\projets\ignisiproject\ignisproject\model\mage.cpp
 	"Mage.h"
 
-1544542551 source:f:\projets\ignisiproject\ignisproject\state\menustate.cpp
+1544565632 source:f:\projets\ignisiproject\ignisproject\state\menustate.cpp
 	"MenuState.h"
 	"GameBattleState.h"
+	"CreditState.h"
 	<SFML\Graphics.hpp>
 	<string>
 	<iostream>
 
-1544542551 f:\projets\ignisiproject\ignisproject\state\menustate.h
+1544564766 f:\projets\ignisiproject\ignisproject\state\menustate.h
 	"Game.h"
 	"GameDimens.h"
 
@@ -5272,4 +5273,13 @@
 
 1544554041 source:f:\projets\ignisiproject\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
+
+1544565629 source:f:\projets\ignisiproject\ignisproject\state\creditstate.cpp
+	"CreditState.h"
+	"MenuState.h"
+	<SFML\Graphics.hpp>
+
+1544565331 f:\projets\ignisiproject\ignisproject\state\creditstate.h
+	"Game.h"
+	"GameDimens.h"
 
