@@ -5,11 +5,10 @@
 //
 //}
 
-CharacterSprite::CharacterSprite(Character* character)
+CharacterSprite::CharacterSprite(Character* character, std::string file)
 {
 //    this->sprite = sprite;
-    this->texture.loadFromFile("Assets/Sprites/Character/cavalier.png");
-    this->setTexture(this->texture);
+    setTextureFromFile(file);
     this->character = character;
     this->setPosition(0.f, 0.f);
     this->isDone = false;
@@ -75,4 +74,10 @@ void CharacterSprite::setIsSelected(bool isSelected)
 bool CharacterSprite::operator==(const CharacterSprite& other)const
 {
     return this->character == other.character;
+}
+
+void CharacterSprite::setTextureFromFile(std::string file)
+{
+    this->texture.loadFromFile("Assets/Sprites/Character/" + file);
+    this->setTexture(texture);
 }

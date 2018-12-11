@@ -664,7 +664,7 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Texture.hpp>
 
-1544561069 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
+1544567687 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.h
 	<SFML/Graphics.hpp>
 	"Character.h"
 	"Warrior.h"
@@ -2429,10 +2429,10 @@
 	"Warrior.h"
 	"AssetManager.h"
 
-1544561534 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
+1544567696 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
-1544535332 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
+1544562158 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
 1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
@@ -3025,18 +3025,17 @@
 	"Game.h"
 	"Selector.h"
 
-1544561943 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
+1544567403 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.cpp
 	"GameBattleState.h"
 
 1543224756 eState.h"
 
 1543923411 e05b9ae69d4f6fb4558e6afbeee8ede1ebc7b
 
-1544561265 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+1544562392 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
-	"BattleMenu.h"
 	<vector>
 	"Warrior.h"
 	"CharacterSprite.h"
@@ -3046,7 +3045,7 @@
 	"Cavalier.h"
 	"Knight.h"
 
-1544561129 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+1544562322 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 	"MenuState.h"

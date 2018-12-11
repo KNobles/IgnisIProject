@@ -5,7 +5,7 @@ GameBattleState::GameBattleState(GameDataRef data)
 
     this->data = data;
     Character* cavalier = new Cavalier("Georgette");
-    ch2 = new CharacterSprite(cavalier);
+    ch2 = new CharacterSprite(cavalier, "cavalier.png");
 
     allies.push_back(ch2);
     allies.push_back(&ch);
@@ -13,17 +13,14 @@ GameBattleState::GameBattleState(GameDataRef data)
 
     Character* archer = new Archer("Axel");
     Character* knight = new Knight("Orlermo");
-    CharacterSprite* ch3 = new CharacterSprite(archer);
-    CharacterSprite* ch4 = new CharacterSprite(knight);
+    CharacterSprite* ch3 = new CharacterSprite(archer, "enemy-archer.png");
+    CharacterSprite* ch4 = new CharacterSprite(knight, "enemy-knight.png");
     ennemies.push_back(ch3);
     ennemies.push_back(ch4);
     ennemies[0]->setPosition(sf::Vector2f(192,192));
-    ennemies[1]->setPosition(sf::Vector2f(192,208));
+    ennemies[1]->setPosition(sf::Vector2f(208,208));
 
     allyTurn=true;
-
-//    this->w = new Warrior("jeanne");
-//    this->ch(w);
 }
 
 void GameBattleState::init()
@@ -146,7 +143,7 @@ void GameBattleState::moveView()
 {
     moveSelector();
 
-    if(selector.getPosition().x > this->view.getCenter().x - PIXEL_SIZE && this->view.getCenter().x*1.28 < WIDTH) // à changer plus tard (1.28)
+    if(selector.getPosition().x > this->view.getCenter().x - PIXEL_SIZE && this->view.getCenter().x*1.28 < WIDTH)
     {
        this->view.move(PIXEL_SIZE, 0);
     }
@@ -169,21 +166,18 @@ void GameBattleState::moveSelector()
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && this->selector.getPosition().y < HEIGHT)
     {
         this->selector.move(0,PIXEL_SIZE);
-        //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && this->selector.getPosition().y > 0)
     {
         this->selector.move(0,-PIXEL_SIZE);
-        //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;    }
+    }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && this->selector.getPosition().x < WIDTH)
     {
         this->selector.move(PIXEL_SIZE, 0);
-        //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && this->selector.getPosition().x > 0)
     {
         this->selector.move(-PIXEL_SIZE, 0);
-        //cout << "x: " << this->getPosition().x << " y: " << this->getPosition().y << endl;
     }
 }
 
