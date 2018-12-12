@@ -1,22 +1,23 @@
-#ifndef MENUSTATE_H
-#define MENUSTATE_H
+#ifndef CREDITSTATE_H
+#define CREDITSTATE_H
 #include "Game.h"
 #include "GameDimens.h"
 
-using std::string;
-class MenuState: public State
+
+class CreditState: public State
 {
     public:
-        MenuState(GameDataRef);
-        virtual ~MenuState();
-        MenuState(const MenuState& other);
-        MenuState& operator=(const MenuState& other);
+        CreditState(GameDataRef);
+        virtual ~CreditState();
+        CreditState(const CreditState& other);
+        CreditState& operator=(const CreditState& other);
         void init();
         void handleInput();
         void draw(float dt);
         void update(float dt);
-        void setNewText();
         void setTitleText();
+        void setNewText();
+
     protected:
 
     private:
@@ -31,4 +32,4 @@ class MenuState: public State
         sf::Font titleFont;
 };
 
-#endif // MENUSTATE_H
+#endif // CREDITSTATE_H

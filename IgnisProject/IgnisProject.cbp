@@ -81,8 +81,6 @@
 		<Unit filename="Model/Mage.h" />
 		<Unit filename="Model/MagicWeapon.cpp" />
 		<Unit filename="Model/MagicWeapon.h" />
-		<Unit filename="Model/Merchant.cpp" />
-		<Unit filename="Model/Merchant.h" />
 		<Unit filename="Model/PhysycalWeapon.cpp" />
 		<Unit filename="Model/PhysycalWeapon.h" />
 		<Unit filename="Model/Sword.cpp" />
@@ -93,6 +91,8 @@
 		<Unit filename="Model/Warrior.h" />
 		<Unit filename="Model/Weapon.cpp" />
 		<Unit filename="Model/Weapon.h" />
+		<Unit filename="State/CreditState.cpp" />
+		<Unit filename="State/CreditState.h" />
 		<Unit filename="State/GameBattleState.cpp" />
 		<Unit filename="State/GameBattleState.h" />
 		<Unit filename="State/GameoverState.cpp" />

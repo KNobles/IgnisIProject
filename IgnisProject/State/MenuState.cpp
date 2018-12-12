@@ -1,5 +1,6 @@
 #include "MenuState.h"
 #include "GameBattleState.h"
+#include "CreditState.h"
 #include <SFML\Graphics.hpp>
 
 #include <string>
@@ -70,6 +71,11 @@ void MenuState::handleInput()
 
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
                 data->machine.addState(stateRef(new GameBattleState(data)), true);
+            else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+            {
+                data->machine.addState(stateRef(new CreditState(data)), true);
+            }
+
         }
 }
 

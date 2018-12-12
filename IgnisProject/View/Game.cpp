@@ -1,11 +1,17 @@
+#define _WIN32_WINNT 0x0500
 #include "Game.h"
 #include "GameBattleState.h"
 #include "MenuState.h"
+#include "CreditState.h"
 #include "GameoverState.h"
+#include "windows.h"
+#include <iostream>
 Game::Game(int width, int height, std::string title)
 {
+    HWND hwnd = GetConsoleWindow();
+    ShowWindow(hwnd, SW_HIDE);
     data->window.create(sf::VideoMode(width, height), title);
-    data->machine.addState(stateRef(new GameBattleState(this->data)));
+    data->machine.addState(stateRef(new MenuState(this->data)));
     this->run();
 }
 
