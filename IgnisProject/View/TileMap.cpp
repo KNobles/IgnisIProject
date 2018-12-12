@@ -94,7 +94,7 @@ bool TileMap::loadLevel1()
 //    CharacterSprite chrom(war);
 //    this->characters.push_back(&chrom);
 //
-    return loadFromFile("map1.txt", "MAP16.png");
+    return loadFromFile("map2final.txt", "MAP16.png");
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const

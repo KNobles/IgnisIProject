@@ -104,7 +104,6 @@
 		<Unit filename="State/StateMachine.h" />
 		<Unit filename="Util/AssetManager.cpp" />
 		<Unit filename="Util/AssetManager.h" />
-		<Unit filename="Util/DEFINITIONS.h" />
 		<Unit filename="Util/IA.cpp" />
 		<Unit filename="Util/IA.h" />
 		<Unit filename="Util/InputManager.cpp" />
@@ -113,6 +112,8 @@
 		<Unit filename="View/AnimatedSprite.h" />
 		<Unit filename="View/Animation.cpp" />
 		<Unit filename="View/Animation.h" />
+		<Unit filename="View/BattleMenu.cpp" />
+		<Unit filename="View/BattleMenu.h" />
 		<Unit filename="View/CharacterSprite.cpp" />
 		<Unit filename="View/CharacterSprite.h" />
 		<Unit filename="View/Game.cpp" />
