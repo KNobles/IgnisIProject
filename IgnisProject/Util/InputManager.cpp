@@ -1,5 +1,9 @@
 #include "InputManager.h"
 #include "GameDimens.h"
+
+/**
+Fonction permettant de selectionner et déplacer un personnage en fonction de ses points de mouvements
+*/
 void InputManager::moveCharacter(CharacterSprite* character, Selector& selector, vector<CharacterSprite*> ennemies)
 {
 
@@ -20,13 +24,10 @@ void InputManager::moveCharacter(CharacterSprite* character, Selector& selector,
             }
             int sum = abs(selector.getPosition().x - character->getPosition().x) / PIXEL_SIZE + abs(selector.getPosition().y - character->getPosition().y) /PIXEL_SIZE;
 
-//            std::cout << "From : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
             std::cout << "Sum : " << sum << std::endl;
-//            displayMovement(character, selector);
             if(sum <= character->getCharacter()->getMovement())
             {
                 character->setPosition(selector.getPosition());
-//                std::cout << "To : " << character.getPosition().x << ", " << character.getPosition().y << std::endl;
 
                 sum = 0;
                 for(CharacterSprite* c:ennemies)
@@ -65,26 +66,5 @@ void InputManager::moveCharacter(CharacterSprite* character, Selector& selector,
             std::cout << "Selected" << std::endl;
             character->setIsSelected(true);
         }
-    }
-}
-
-void InputManager::displayMovement(CharacterSprite& character, sf::RenderWindow& window)
-{
-    if(character.getIsSelected())
-    {
-        const sf::Vector2f tileSize(PIXEL_SIZE, PIXEL_SIZE);
-        std::vector<sf::RectangleShape*> movements;
-        for(int i = 0; i <= character.getCharacter()->getMovement(); i++)
-        {
-            sf::RectangleShape* rect = new sf::RectangleShape(tileSize);
-            rect->setFillColor(sf::Color::Blue);
-            movements.push_back(rect);
-        }
-        for(unsigned int x = 0; x < movements.size(); x++)
-        {
-            movements[x]->move(x*PIXEL_SIZE, x*PIXEL_SIZE);
-            window.draw(*movements[x]);
-        }
-
     }
 }

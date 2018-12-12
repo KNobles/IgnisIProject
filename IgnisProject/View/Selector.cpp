@@ -8,10 +8,8 @@ Selector::Selector(std::string name)
         std::cout << "FAILED TO LOAD" << std::endl;
         system("pause");
     }
-//    this->setPosition(32.f,32.f);
     this->setOrigin(4,4);
     this->setTexture(this->texture);
-//    this->setTextureRect(sf::IntRect(0,0, 16, 16));
 }
 
 sf::Texture& Selector::getTexture()

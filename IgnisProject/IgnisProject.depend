@@ -2304,7 +2304,7 @@
 
 1544565331 s.h"
 
-1544535061 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
+1544599627 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\selector.cpp
 	"Selector.h"
 
 1542925030 h"
@@ -2408,7 +2408,7 @@
 
 1542010732 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\state.cpp
 
-1544562004 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
+1544599387 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\util\inputmanager.cpp
 	"InputManager.h"
 	"GameDimens.h"
 
@@ -2432,7 +2432,7 @@
 1544567696 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\charactersprite.cpp
 	"CharacterSprite.h"
 
-1544576528 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
+1544576865 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\gamedimens.cpp
 	"GameDimens.h"
 
 1543919620 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\model\team.h
@@ -3032,7 +3032,7 @@
 
 1543923411 e05b9ae69d4f6fb4558e6afbeee8ede1ebc7b
 
-1544562392 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
+1544599804 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\gamebattlestate.h
 	"Game.h"
 	"GameDimens.h"
 	"TileMap.h"
@@ -3045,11 +3045,14 @@
 	"Cavalier.h"
 	"Knight.h"
 
-1544562322 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
+1544600250 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\view\game.cpp
 	"Game.h"
 	"GameBattleState.h"
 	"MenuState.h"
+	"CreditState.h"
 	"GameoverState.h"
+	"windows.h"
+	<iostream>
 
 1544558408 source:c:\users\axoul\desktop\c++\ignisiproject\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
@@ -4609,8 +4612,13 @@
 	<sstream>
 	"Weapon.h"
 
-1544539189 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.cpp
+1544576919 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.cpp
 	"MenuState.h"
+	"GameBattleState.h"
+	"CreditState.h"
+	<SFML\Graphics.hpp>
+	<string>
+	<iostream>
 
 1544565959 source:f:\projets\ignisiproject\ignisproject\main.cpp
 	<SFML/Graphics.hpp>
@@ -4625,7 +4633,7 @@
 	"GameDimens.h"
 	"Game.h"
 
-1544539189 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.h
+1544576919 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\menustate.h
 	"Game.h"
 	"GameDimens.h"
 
@@ -5395,4 +5403,13 @@
 
 1544565959 source:f:\projets\ignisiproject\ignisproject\view\animatedsprite.cpp
 	"AnimatedSprite.h"
+
+1544576919 source:e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\creditstate.cpp
+	"CreditState.h"
+	"MenuState.h"
+	<SFML\Graphics.hpp>
+
+1544576919 e:\3bi\dev-jv\projects\ignisrepos\ignisproject\state\creditstate.h
+	"Game.h"
+	"GameDimens.h"
 

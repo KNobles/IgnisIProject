@@ -4,12 +4,16 @@ GameBattleState::GameBattleState(GameDataRef data)
 {
 
     this->data = data;
+
     Character* cavalier = new Cavalier("Georgette");
+
     ch2 = new CharacterSprite(cavalier, "cavalier.png");
 
     allies.push_back(ch2);
     allies.push_back(&ch);
-    allies[1]->setPosition(sf::Vector2f(16,16));
+
+    allies[0]->setPosition(sf::Vector2f(16.f * 15, 16 * 3));
+    allies[1]->setPosition(sf::Vector2f(16 *14 ,16 * 4));
 
     Character* archer = new Archer("Axel");
     Character* knight = new Knight("Orlermo");

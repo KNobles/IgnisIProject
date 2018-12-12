@@ -9,7 +9,7 @@
 Game::Game(int width, int height, std::string title)
 {
     HWND hwnd = GetConsoleWindow();
-    ShowWindow(hwnd, SW_HIDE);
+    //ShowWindow(hwnd, SW_HIDE);
     data->window.create(sf::VideoMode(width, height), title);
     data->machine.addState(stateRef(new MenuState(this->data)));
     this->run();
